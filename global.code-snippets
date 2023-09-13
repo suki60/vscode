@@ -1,0 +1,212 @@
+{
+  // es modules
+  "import default": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_i",
+    "body": "import $1 from '$2'"
+  },
+  "import none default": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_in",
+    "body": "import { $2 } from '$1'"
+  },
+  "export": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_ex",
+    "body": "export "
+  },
+  "export none default": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_exn",
+    "body": "export { $1 }"
+  },
+  "export default": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_exd",
+    "body": "export default "
+  },
+  // javascript
+  "console.log": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_log",
+    "body": "console.log($1)"
+  },
+  "console.error": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_err",
+    "body": "console.error($1)"
+  },
+  "const": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_c",
+    "body": "const $1 = "
+  },
+  "let": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_l",
+    "body": "let $1 = "
+  },
+  "arrow function without args": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_af",
+    "body": "() => "
+  },
+  "arrow function with args": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_afa",
+    "body": "($1) => "
+  },
+  "arrow function explicit": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_afe",
+    "body": ["() => {", "  $1", "}"]
+  },
+  "return": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_r",
+    "body": "return "
+  },
+  "destructure array": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_da",
+    "body": "const [$2] = $1"
+  },
+  "destructure object": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_do",
+    "body": "const { $2 } = $1"
+  },
+  "if": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_if",
+    "body": "if ($1) "
+  },
+  "if explicit": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_ife",
+    "body": ["if ($1) {", "  $2", "}"]
+  },
+  // typescript
+  "type": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_typ",
+    "body": "type $1 = "
+  },
+  "interface": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_int",
+    "body": "interface $1 {$2}"
+  },
+  // jsx
+  "component": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_com",
+    "body": "<$1 />"
+  },
+  "component with children": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_comchi",
+    "body": "<$1>$2</$1>"
+  },
+  "div": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_div",
+    "body": "<div>$1</div>"
+  },
+  "p": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_p",
+    "body": "<p>$1</p>"
+  },
+  "a": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_a",
+    "body": "<a>$1</a>"
+  },
+  "h1": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_h1",
+    "body": "<h1>$1</h1>"
+  },
+  "h2": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_h2",
+    "body": "<h2>$1</h2>"
+  },
+  "h3": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_h3",
+    "body": "<h3>$1</h3>"
+  },
+  "h4": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_h4",
+    "body": "<h4>$1</h4>"
+  },
+  "h5": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_h5",
+    "body": "<h5>$1</h5>"
+  },
+  "h6": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_h6",
+    "body": "<h6>$1</h6>"
+  },
+  "className": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_cn",
+    "body": "className="
+  },
+  // jest
+  "describe": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_des",
+    "body": "describe('$1', () => {$2})"
+  },
+  "test": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_test",
+    "body": "test('$1', () => {$2})"
+  },
+  "expect": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_exp",
+    "body": "expect($1)"
+  },
+  // init files
+  "index": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_iindex",
+    "body": ["import $0 from './$0'", "", "export default $0", ""]
+  },
+  "init javascript component": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_icom",
+    "body": [
+      "const $0 = () => (",
+      "  <div>$0</div>",
+      ")",
+      "",
+      "export default $0",
+      ""
+    ]
+  },
+  "init test": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_itest",
+    "body": [
+      "import { render, screen } from '@testing-library/react'",
+      "import $1 from './$1'",
+      "",
+      "describe('$1', () => {$0})",
+      ""
+    ]
+  },
+  // json
+  "snippet": {
+	"scope": "json,jsonc",
+    "prefix": "_s",
+    "body": ["\"$1\": {", "  \"prefix\": $2,", "  \"body\": $3,", "},"]
+  },
+}
