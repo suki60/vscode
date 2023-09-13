@@ -1,0 +1,17 @@
+{
+    "editor.fontFamily": "Roboto Mono",
+    "editor.fontSize": 15,
+    "editor.tabSize": 2,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.formatOnPaste": false,
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "file-icons",
+    "workbench.editor.focusRecentEditorAfterClose": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "terminal.integrated.fontSize": 15,
+    "git.suggestSmartCommit": false,
+    "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
+    "extensions.ignoreRecommendations": true
+}
