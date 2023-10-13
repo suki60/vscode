@@ -124,10 +124,6 @@
     "command": "workbench.files.action.focusFilesExplorer"
   },
   {
-    "key": "ctrl+o",
-    "command": "git.openFile"
-  },
-  {
     "key": "ctrl+up",
     "command": "runCommands",
     "args": {
@@ -167,8 +163,7 @@
   },
   {
     "key": "shift+cmd+s",
-    "command": "workbench.view.scm",
-    "when": "workbench.scm.active"
+    "command": "workbench.view.scm"
   },
   {
     "key": "shift+cmd+g",
@@ -196,8 +191,7 @@
   },
   {
     "key": "shift+cmd+l",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
+    "command": "workbench.action.terminal.toggleTerminal"
   },
   {
     "key": "shift+cmd+'",
@@ -222,6 +216,14 @@
   {
     "key": "shift+cmd+c",
     "command": "git.openChange"
+  },
+  {
+    "key": "cmd+o",
+    "command": "git.openFile"
+  },
+  {
+    "key": "shift+cmd+;",
+    "command": "editor.action.revealDefinition"
   },
   {
     "key": "cmd+k shift+cmd+u",
