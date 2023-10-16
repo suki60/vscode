@@ -90,12 +90,16 @@
     "command": "workbench.action.keepEditor"
   },
   {
-    "key": "shift+cmd+w",
-    "command": "workbench.action.closeAllGroups"
+    "key": "cmd+i",
+    "command": "git.openChange"
   },
   {
-    "key": "shift+cmd+o",
-    "command": "workbench.action.files.openFolderViaWorkspace"
+    "key": "cmd+o",
+    "command": "git.openFile"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "workbench.action.closeAllGroups"
   },
   {
     "key": "shift+cmd+,",
@@ -122,6 +126,10 @@
   {
     "key": "ctrl+e",
     "command": "workbench.files.action.focusFilesExplorer"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "workbench.files.action.showActiveFileInExplorer"
   },
   {
     "key": "ctrl+up",
@@ -153,6 +161,10 @@
   },
 
   // views
+  {
+    "key": "shift+cmd+o",
+    "command": "workbench.action.files.openFolderViaWorkspace"
+  },
   {
     "key": "shift+cmd+k",
     "command": "workbench.action.openGlobalKeybindings"
@@ -194,10 +206,6 @@
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "shift+cmd+'",
-    "command": "workbench.action.openSettingsJson"
-  },
-  {
     "key": "shift+cmd+b",
     "command": "workbench.actions.view.problems"
   },
@@ -210,31 +218,23 @@
     "command": "prStatus:github.focus"
   },
   {
-    "key": "shift+cmd+v",
-    "command": "targetsContainers.focus"
-  },
-  {
     "key": "shift+cmd+c",
-    "command": "git.openChange"
-  },
-  {
-    "key": "cmd+o",
-    "command": "git.openFile"
+    "command": "targetsContainers.focus"
   },
   {
     "key": "shift+cmd+;",
     "command": "editor.action.revealDefinition"
   },
-  {
-    "key": "cmd+k shift+cmd+u",
-    "command": "workbench.action.openSnippets"
-  },
-  {
-    "key": "cmd+k shift+cmd+k",
-    "command": "workbench.action.openGlobalKeybindingsFile"
-  },
 
   // git
+  {
+    "key": "cmd+g shift+cmd+f",
+    "command": "git.fetch"
+  },
+  {
+    "key": "cmd+g shift+cmd+p",
+    "command": "git.pull"
+  },
   {
     "key": "cmd+g shift+cmd+c",
     "command": "git.checkout"
@@ -246,14 +246,6 @@
   {
     "key": "cmd+g shift+cmd+u",
     "command": "git.push"
-  },
-  {
-    "key": "cmd+g shift+cmd+f",
-    "command": "git.fetch"
-  },
-  {
-    "key": "cmd+g shift+cmd+p",
-    "command": "git.pull"
   },
   {
     "key": "cmd+g shift+cmd+m",
@@ -316,6 +308,20 @@
     "key": "shift+cmd+backspace",
     "command": "git.revertSelectedRanges",
     "when": "isInDiffEditor && !operationInProgress"
+  },
+
+  // settings
+  {
+    "key": "cmd+k shift+cmd+,",
+    "command": "workbench.action.openSettingsJson"
+  },
+  {
+    "key": "cmd+k shift+cmd+k",
+    "command": "workbench.action.openGlobalKeybindingsFile"
+  },
+  {
+    "key": "cmd+k shift+cmd+u",
+    "command": "workbench.action.openSnippets"
   },
 
   // restarts
