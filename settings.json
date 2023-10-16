@@ -5,6 +5,7 @@
   "editor.bracketPairColorization.enabled": false,
   "editor.formatOnPaste": false,
   "editor.minimap.enabled": false,
+  "editor.accessibilitySupport": "off",
   "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "file-icons",
   "workbench.editor.focusRecentEditorAfterClose": false,
@@ -16,6 +17,21 @@
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "extensions.ignoreRecommendations": true,
   "emmet.showExpandedAbbreviation": "never",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "files.exclude": {
     "**/.git": true
   }
