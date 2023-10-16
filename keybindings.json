@@ -320,7 +320,7 @@
     "command": "workbench.action.openGlobalKeybindingsFile"
   },
   {
-    "key": "cmd+k shift+cmd+u",
+    "key": "cmd+k shift+cmd+s",
     "command": "workbench.action.openSnippets"
   },
 
