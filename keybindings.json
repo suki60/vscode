@@ -1,5 +1,25 @@
 [
-  // editor
+  // text
+  {
+    "key": "ctrl+backspace",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "eslint.executeAutofix",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "prettier.forceFormatDocument",
+    "when": "editorTextFocus && !editorReadonly"
+  },
   {
     "key": "ctrl+up",
     "command": "cursorMove",
@@ -20,31 +40,46 @@
     },
     "when": "editorTextFocus"
   },
+
+  // list
   {
-    "key": "ctrl+cmd+down",
-    "command": "editor.action.moveLinesDownAction",
-    "when": "editorTextFocus"
+    "key": "ctrl+left",
+    "command": "workbench.files.action.collapseExplorerFolders"
   },
   {
-    "key": "ctrl+cmd+up",
-    "command": "editor.action.moveLinesUpAction",
-    "when": "editorTextFocus"
+    "key": "ctrl+right",
+    "command": "workbench.files.action.showActiveFileInExplorer"
   },
   {
-    "key": "shift+cmd+backspace",
-    "command": "editor.action.deleteLines",
-    "when": "textInputFocus && !editorReadonly && !isInDiffEditor"
+    "key": "ctrl+up",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp"
+      ]
+    },
+    "when": "listFocus"
   },
   {
-    "key": "cmd+e",
-    "command": "eslint.executeAutofix"
-  },
-  {
-    "key": "cmd+p",
-    "command": "prettier.forceFormatDocument"
+    "key": "ctrl+down",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown"
+      ]
+    },
+    "when": "listFocus"
   },
 
-  // editors
+  // editor
   {
     "key": "cmd+1",
     "command": "workbench.action.openEditorAtIndex1"
@@ -98,66 +133,20 @@
     "command": "git.openFile"
   },
   {
-    "key": "shift+cmd+w",
-    "command": "workbench.action.closeAllGroups"
-  },
-  {
-    "key": "shift+cmd+,",
+    "key": "cmd+,",
     "command": "workbench.action.moveEditorLeftInGroup"
   },
   {
-    "key": "shift+cmd+.",
+    "key": "cmd+.",
     "command": "workbench.action.moveEditorRightInGroup"
   },
   {
-    "key": "shift+cmd+]",
+    "key": "cmd+]",
     "command": "workbench.action.moveEditorToRightGroup"
   },
   {
-    "key": "shift+cmd+[",
+    "key": "cmd+[",
     "command": "workbench.action.moveEditorToLeftGroup"
-  },
-
-  // list
-  {
-    "key": "ctrl+c",
-    "command": "workbench.files.action.collapseExplorerFolders"
-  },
-  {
-    "key": "ctrl+e",
-    "command": "workbench.files.action.focusFilesExplorer"
-  },
-  {
-    "key": "ctrl+left",
-    "command": "workbench.files.action.showActiveFileInExplorer"
-  },
-  {
-    "key": "ctrl+up",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp"
-      ]
-    },
-    "when": "listFocus && !inputFocus"
-  },
-  {
-    "key": "ctrl+down",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown"
-      ]
-    },
-    "when": "listFocus && !inputFocus"
   },
 
   // views
@@ -210,6 +199,10 @@
     "command": "workbench.actions.view.problems"
   },
   {
+    "key": "shift+cmd+,",
+    "command": "workbench.action.openSettings"
+  },
+  {
     "key": "shift+cmd+i",
     "command": "git-graph.view"
   },
@@ -224,6 +217,10 @@
   {
     "key": "shift+cmd+;",
     "command": "editor.action.revealDefinition"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "workbench.action.closeAllGroups"
   },
 
   // git
@@ -268,6 +265,18 @@
     "command": "git.stashPop"
   },
   {
+    "key": "cmd+g cmd+enter",
+    "command": "git.stageAll"
+  },
+  {
+    "key": "cmd+g cmd+backspace",
+    "command": "git.unstageAll"
+  },
+  {
+    "key": "cmd+g shift+cmd+backspace",
+    "command": "git.cleanAll"
+  },
+  {
     "key": "cmd+enter",
     "command": "git.stage",
     "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
@@ -281,18 +290,6 @@
     "key": "shift+cmd+backspace",
     "command": "git.clean",
     "when": "sideBarFocus && activeViewlet == 'workbench.view.scm' && !inputFocus"
-  },
-  {
-    "key": "cmd+g cmd+enter",
-    "command": "git.stageAll"
-  },
-  {
-    "key": "cmd+g cmd+backspace",
-    "command": "git.unstageAll"
-  },
-  {
-    "key": "cmd+g shift+cmd+backspace",
-    "command": "git.cleanAll"
   },
   {
     "key": "cmd+enter",
