@@ -51,22 +51,17 @@
 
   // text
   {
-    "key": "ctrl+backspace",
+    "key": "shift+cmd+backspace",
     "command": "editor.action.deleteLines",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+/",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+e",
+    "key": "cmd+e",
     "command": "eslint.executeAutofix",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+p",
+    "key": "cmd+p",
     "command": "prettier.forceFormatDocument",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -290,17 +285,17 @@
   {
     "key": "cmd+enter",
     "command": "git.stageSelectedRanges",
-    "when": "isInDiffEditor && !operationInProgress"
+    "when": "isInDiffEditor && !operationInProgress && activeViewlet == 'workbench.view.scm'"
   },
   {
     "key": "cmd+backspace",
     "command": "git.unstageSelectedRanges",
-    "when": "isInDiffEditor && !operationInProgress"
+    "when": "isInDiffEditor && !operationInProgress && activeViewlet == 'workbench.view.scm'"
   },
   {
     "key": "shift+cmd+backspace",
     "command": "git.revertSelectedRanges",
-    "when": "isInDiffEditor && !operationInProgress"
+    "when": "isInDiffEditor && !operationInProgress && activeViewlet == 'workbench.view.scm'"
   },
 
   // settings
@@ -329,5 +324,17 @@
   {
     "key": "ctrl+alt+cmd+e",
     "command": "eslint.restart"
+  },
+
+  // explorer
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus"
   }
 ]
