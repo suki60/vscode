@@ -1,25 +1,5 @@
 [
-  // text
-  {
-    "key": "ctrl+backspace",
-    "command": "editor.action.deleteLines",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+/",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+e",
-    "command": "eslint.executeAutofix",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+p",
-    "command": "prettier.forceFormatDocument",
-    "when": "editorTextFocus && !editorReadonly"
-  },
+  // cursor
   {
     "key": "ctrl+up",
     "command": "cursorMove",
@@ -39,16 +19,6 @@
       "value": 5
     },
     "when": "editorTextFocus"
-  },
-
-  // list
-  {
-    "key": "ctrl+left",
-    "command": "workbench.files.action.collapseExplorerFolders"
-  },
-  {
-    "key": "ctrl+right",
-    "command": "workbench.files.action.showActiveFileInExplorer"
   },
   {
     "key": "ctrl+up",
@@ -79,7 +49,29 @@
     "when": "listFocus"
   },
 
-  // editor
+  // text
+  {
+    "key": "ctrl+backspace",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "eslint.executeAutofix",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "prettier.forceFormatDocument",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // editors
   {
     "key": "cmd+1",
     "command": "workbench.action.openEditorAtIndex1"
@@ -149,7 +141,7 @@
     "command": "workbench.action.moveEditorToLeftGroup"
   },
 
-  // views
+  // workbench
   {
     "key": "shift+cmd+o",
     "command": "workbench.action.files.openFolderViaWorkspace"
@@ -211,12 +203,16 @@
     "command": "prStatus:github.focus"
   },
   {
-    "key": "shift+cmd+c",
+    "key": "shift+cmd+v",
     "command": "targetsContainers.focus"
   },
   {
     "key": "shift+cmd+;",
     "command": "editor.action.revealDefinition"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "workbench.files.action.collapseExplorerFolders"
   },
   {
     "key": "shift+cmd+w",
