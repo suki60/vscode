@@ -112,14 +112,6 @@
     "command": "workbench.action.keepEditor"
   },
   {
-    "key": "cmd+i",
-    "command": "git.openChange"
-  },
-  {
-    "key": "cmd+o",
-    "command": "git.openFile"
-  },
-  {
     "key": "cmd+,",
     "command": "workbench.action.moveEditorLeftInGroup"
   },
@@ -134,6 +126,14 @@
   {
     "key": "cmd+[",
     "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  {
+    "key": "cmd+i",
+    "command": "git.openChange"
+  },
+  {
+    "key": "cmd+o",
+    "command": "git.openFile"
   },
 
   // workbench
@@ -204,6 +204,10 @@
   {
     "key": "shift+cmd+;",
     "command": "editor.action.revealDefinition"
+  },
+  {
+    "key": "shift+cmd+.",
+    "command": "workbench.files.action.showActiveFileInExplorer"
   },
   {
     "key": "shift+cmd+c",
