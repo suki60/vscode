@@ -10,21 +10,17 @@
     "prefix": "_in",
     "body": "import { $2 } from '$1'"
   },
-  "export": {
+  "export default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_ex",
-    "body": "export "
+    "body": "export default "
   },
   "export none default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_exn",
     "body": "export { $1 }"
   },
-  "export default": {
-    "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_exd",
-    "body": "export default "
-  },
+
   // javascript
   "const": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -35,6 +31,16 @@
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_l",
     "body": "let $1 = "
+  },
+  "var": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_v",
+    "body": "var $1 = "
+  },
+  "string": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_s",
+    "body": "$1 = \"$2\""
   },
   "array": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -59,7 +65,7 @@
   "function": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_f",
-    "body": "function$1($2) {$3}"
+    "body": "function $1($2) {$3}"
   },
   "arrow function": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -70,11 +76,6 @@
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_afn",
     "body": "$1 => "
-  },
-  "return": {
-    "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_r",
-    "body": "return "
   },
   "if": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -96,10 +97,10 @@
     "prefix": "_do",
     "body": "const { $2 } = $1"
   },
-  "console.log": {
+  "return": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_log",
-    "body": "console.log($1)"
+    "prefix": "_r",
+    "body": "return "
   },
 
   // typescript
@@ -113,6 +114,7 @@
     "prefix": "_int",
     "body": "interface $1 {$2}"
   },
+
   // jsx
   "component": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -190,35 +192,24 @@
     "prefix": "_exp",
     "body": "expect($1)"
   },
-  // init files
-  "index": {
+  
+  // console
+  "console.log": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_iindex",
-    "body": ["import $0 from './$0'", "", "export default $0", ""]
+    "prefix": "_log",
+    "body": "console.log($1)"
   },
-  "init javascript component": {
+  "console.warn": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_icom",
-    "body": [
-      "const $0 = () => (",
-      "  <div>$0</div>",
-      ")",
-      "",
-      "export default $0",
-      ""
-    ]
+    "prefix": "_warn",
+    "body": "console.warn($1)"
   },
-  "init test": {
+  "console.error": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_itest",
-    "body": [
-      "import { render, screen } from '@testing-library/react'",
-      "import $1 from './$1'",
-      "",
-      "describe('$1', () => {$0})",
-      ""
-    ]
+    "prefix": "_err",
+    "body": "console.error($1)"
   },
+
   // json
   "snippet": {
     "scope": "json,jsonc,snippets",
