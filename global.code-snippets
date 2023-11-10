@@ -3,7 +3,7 @@
   "import default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_i",
-    "body": "import $1 from '$2'"
+    "body": "import $2 from '$1'"
   },
   "import none default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -26,16 +26,6 @@
     "body": "export default "
   },
   // javascript
-  "console.log": {
-    "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_log",
-    "body": "console.log($1)"
-  },
-  "console.error": {
-    "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_err",
-    "body": "console.error($1)"
-  },
   "const": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_c",
@@ -46,25 +36,55 @@
     "prefix": "_l",
     "body": "let $1 = "
   },
-  "arrow function without args": {
+  "array": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_a",
+    "body": "$1 = [$2]"
+  },
+  "object": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_o",
+    "body": "$1 = {$2}"
+  },
+  "object property": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_op",
+    "body": "$1: ,"
+  },
+  "object function": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_of",
+    "body": "$1() {$2}"
+  },
+  "function": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_f",
+    "body": "function$1($2) {$3}"
+  },
+  "arrow function": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_af",
-    "body": "() => "
+    "body": "($1) => {$2}"
   },
-  "arrow function with args": {
+  "arrow function none enclosures": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_afa",
-    "body": "($1) => "
-  },
-  "arrow function explicit": {
-    "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_afe",
-    "body": ["() => {", "  $1", "}"]
+    "prefix": "_afn",
+    "body": "$1 => "
   },
   "return": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_r",
     "body": "return "
+  },
+  "if": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_if",
+    "body": "if ($1) {$2}"
+  },
+  "if none enclosures": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_ife",
+    "body": "if ($1) "
   },
   "destructure array": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -76,16 +96,12 @@
     "prefix": "_do",
     "body": "const { $2 } = $1"
   },
-  "if": {
+  "console.log": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_if",
-    "body": "if ($1) "
+    "prefix": "_log",
+    "body": "console.log($1)"
   },
-  "if explicit": {
-    "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_ife",
-    "body": ["if ($1) {", "  $2", "}"]
-  },
+
   // typescript
   "type": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -205,8 +221,8 @@
   },
   // json
   "snippet": {
-	"scope": "json,jsonc",
+    "scope": "json,jsonc,snippets",
     "prefix": "_s",
     "body": ["\"$1\": {", "  \"prefix\": $2,", "  \"body\": $3,", "},"]
-  },
+  }
 }
