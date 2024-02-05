@@ -1,14 +1,14 @@
 {
-  // es modules
+  // modules
   "import default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_i",
-    "body": "import $2 from '$1'"
+    "body": "import $1 from '$2'"
   },
   "import none default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_in",
-    "body": "import { $2 } from '$1'"
+    "body": "import { $1 } from '$2'"
   },
   "export default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -84,7 +84,7 @@
   },
   "if none enclosures": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_ife",
+    "prefix": "_ifn",
     "body": "if ($1) "
   },
   "destructure array": {
@@ -176,7 +176,8 @@
     "prefix": "_cn",
     "body": "className="
   },
-  // jest
+
+  // test
   "describe": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_des",
@@ -192,27 +193,22 @@
     "prefix": "_exp",
     "body": "expect($1)"
   },
-  
+
   // console
   "console.log": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_log",
     "body": "console.log($1)"
   },
-  "console.warn": {
+  "console.log explicit": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_warn",
-    "body": "console.warn($1)"
-  },
-  "console.error": {
-    "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_err",
-    "body": "console.error($1)"
+    "prefix": "_loge",
+    "body": "console.log('___ $1 -> :', $2)"
   },
 
-  // json
+  // snippets
   "snippet": {
-    "scope": "json,jsonc,snippets",
+    "scope": "snippets",
     "prefix": "_s",
     "body": ["\"$1\": {", "  \"prefix\": $2,", "  \"body\": $3,", "},"]
   }
