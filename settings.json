@@ -13,10 +13,14 @@
   "workbench.startupEditor": "none",
   "window.commandCenter": false,
   "terminal.integrated.fontSize": 15,
+  "search.quickOpen.includeHistory": false,
   "git.suggestSmartCommit": false,
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
+  "githubPullRequests.pullBranch": "never",
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "prettier.semi": false,
   "extensions.ignoreRecommendations": true,
-  "emmet.showExpandedAbbreviation": "never",
+  "liveServer.settings.donotShowInfoMsg": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
