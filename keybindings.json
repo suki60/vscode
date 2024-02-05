@@ -63,6 +63,11 @@
 
   // text
   {
+    "key": "tab",
+    "command": "jumpToNextSnippetPlaceholder",
+    "when": "editorTextFocus && hasNextTabstop && inSnippetMode"
+  },
+  {
     "key": "cmd+e",
     "command": "eslint.executeAutofix",
     "when": "editorTextFocus && !editorReadonly"
@@ -165,17 +170,13 @@
   },
   {
     "key": "cmd+;",
-    "command": "editor.action.revealDefinition"
-  },
-  {
-    "key": "cmd+'",
     "command": "editor.action.quickFix"
   },
 
   // workbench
   {
     "key": "shift+cmd+o",
-    "command": "workbench.action.files.openFolderViaWorkspace"
+    "command": "workbench.action.files.openFileFolder"
   },
   {
     "key": "shift+cmd+k",
@@ -333,6 +334,10 @@
     "command": "git.revertSelectedRanges",
     "when": "isInDiffEditor && !operationInProgress && activeViewlet == 'workbench.view.scm'"
   },
+  {
+    "key": "alt+l",
+    "command": "git.viewLineHistory"
+  },
 
   // settings
   {
@@ -381,12 +386,17 @@
     "when": "!quokka.isLiveShareClient && !terminalFocus"
   },
   {
-    "key": "cmd+u shift+cmd+s",
+    "key": "cmd+u shift+cmd+enter",
     "command": "quokka.makeQuokkaFromExistingFile",
     "when": "!quokka.isLiveShareClient && !terminalFocus"
   },
   {
-    "key": "cmd+u shift+cmd+enter",
+    "key": "cmd+u shift+cmd+backspace",
+    "command": "quokka.stopCurrent",
+    "when": "quokka.hasActiveSession && !quokka.isLiveShareClient && !terminalFocus"
+  },
+  {
+    "key": "cmd+u shift+cmd+d",
     "command": "quokka.debug",
     "when": "activeEditor && quokka.isActiveEditorRunningQuokka && !inDebugMode && !quokka.isLiveShareClient && !quokka.traceBeingNavigated || activeEditor && !inDebugMode && !quokka.isLiveShareClient && !quokka.traceBeingNavigated && resourceScheme == 'quokka-code-timeline'"
   },
