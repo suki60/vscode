@@ -1,6 +1,16 @@
 [
   // cursor
   {
+    "key": "ctrl+shift+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "ctrl+up",
     "command": "cursorMove",
     "args": {
@@ -19,6 +29,51 @@
       "value": 5
     },
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "extension.selectEitherQuote",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+[",
+    "command": "extension.selectCurlyBrackets",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "extension.selectSquareBrackets",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "extension.selectParenthesis",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+]",
+    "command": "extension.selectCurlyBracketsOuter",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+]",
+    "command": "extension.selectSquareBracketsOuter",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "extension.selectParenthesisOuter",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "extension.selectBackTick",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "extension.selectAngleBrackets",
+    "when": "editorFocus"
   },
 
   // list
@@ -75,6 +130,18 @@
   {
     "key": "cmd+p",
     "command": "prettier.forceFormatDocument",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+'",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "typescript.removeUnusedImports",
+        "eslint.executeAutofix",
+        "prettier.forceFormatDocument"
+      ]
+    },
     "when": "editorTextFocus && !editorReadonly"
   },
   {
@@ -286,7 +353,7 @@
   },
   {
     "key": "cmd+g shift+cmd+s",
-    "command": "git.stashIncludeUntracked"
+    "command": "git.stashStaged"
   },
   {
     "key": "cmd+g shift+cmd+o",
@@ -338,6 +405,10 @@
     "key": "alt+l",
     "command": "git.viewLineHistory"
   },
+  {
+    "key": "alt+/",
+    "command": "workbench.action.openChat.copilot"
+  },
 
   // settings
   {
@@ -377,6 +448,18 @@
     "key": "shift+a",
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus && !inputFocus"
+  },
+
+  // copy
+  {
+    "key": "shift+alt+cmd+c",
+    "command": "copy-file-name.copyFileName",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+c",
+    "command": "copy-file-name.copyFileNameWithExtension",
+    "when": "editorTextFocus"
   },
 
   // quokka
