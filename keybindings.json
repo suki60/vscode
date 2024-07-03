@@ -302,12 +302,16 @@
     "command": "prStatus:github.focus"
   },
   {
-    "key": "shift+cmd+v",
-    "command": "targetsContainers.focus"
+    "key": "shift+cmd+/",
+    "command": "workbench.panel.chat.view.copilot.focus"
   },
   {
     "key": "shift+cmd+;",
-    "command": "workbench.files.action.showActiveFileInExplorer"
+    "command": "workbench.action.chat.openInSidebar"
+  },
+  {
+    "key": "shift+cmd+'",
+    "command": "workbench.action.chat.openInEditor"
   },
   {
     "key": "shift+cmd+c",
@@ -316,6 +320,14 @@
   {
     "key": "shift+cmd+w",
     "command": "workbench.action.closeAllGroups"
+  },
+  {
+    "key": "shift+cmd+.",
+    "command": "workbench.action.quickSwitchWindow"
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "git.commit"
   },
 
   // git
@@ -333,7 +345,7 @@
   },
   {
     "key": "cmd+g shift+cmd+enter",
-    "command": "git.commit"
+    "command": "git.commitNoVerify"
   },
   {
     "key": "cmd+g shift+cmd+u",
@@ -401,14 +413,6 @@
     "command": "git.revertSelectedRanges",
     "when": "isInDiffEditor && !operationInProgress && activeViewlet == 'workbench.view.scm'"
   },
-  {
-    "key": "alt+l",
-    "command": "git.viewLineHistory"
-  },
-  {
-    "key": "alt+/",
-    "command": "workbench.action.openChat.copilot"
-  },
 
   // settings
   {
@@ -437,6 +441,14 @@
     "key": "ctrl+alt+cmd+e",
     "command": "eslint.restart"
   },
+  {
+    "key": "ctrl+alt+cmd+x",
+    "command": "workbench.action.restartExtensionHost"
+  },
+  {
+    "key": "ctrl+alt+cmd+w",
+    "command": "workbench.action.closeWindow"
+  },
 
   // explorer
   {
@@ -452,60 +464,11 @@
 
   // copy
   {
-    "key": "shift+alt+cmd+c",
-    "command": "copy-file-name.copyFileName",
-    "when": "editorTextFocus"
+    "key": "alt+c",
+    "command": "copy-file-name.copyFileName"
   },
   {
-    "key": "alt+cmd+c",
-    "command": "copy-file-name.copyFileNameWithExtension",
-    "when": "editorTextFocus"
-  },
-
-  // quokka
-  {
-    "key": "cmd+u shift+cmd+n",
-    "command": "quokka.createFile",
-    "when": "!quokka.isLiveShareClient && !terminalFocus"
-  },
-  {
-    "key": "cmd+u shift+cmd+enter",
-    "command": "quokka.makeQuokkaFromExistingFile",
-    "when": "!quokka.isLiveShareClient && !terminalFocus"
-  },
-  {
-    "key": "cmd+u shift+cmd+backspace",
-    "command": "quokka.stopCurrent",
-    "when": "quokka.hasActiveSession && !quokka.isLiveShareClient && !terminalFocus"
-  },
-  {
-    "key": "cmd+u shift+cmd+d",
-    "command": "quokka.debug",
-    "when": "activeEditor && quokka.isActiveEditorRunningQuokka && !inDebugMode && !quokka.isLiveShareClient && !quokka.traceBeingNavigated || activeEditor && !inDebugMode && !quokka.isLiveShareClient && !quokka.traceBeingNavigated && resourceScheme == 'quokka-code-timeline'"
-  },
-  {
-    "key": "cmd+u shift+cmd+backspace",
-    "command": "quokka.stopTraceNavigation",
-    "when": "activeEditor && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode && !quokka.isLiveShareClient || activeEditor && quokka.traceBeingNavigated && !inDebugMode && !quokka.isLiveShareClient && resourceScheme == 'quokka-code-timeline'"
-  },
-  {
-    "key": "right",
-    "command": "quokka.playTraceNextStepOver",
-    "when": "activeEditor && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode && !quokka.isLiveShareClient || activeEditor && quokka.traceBeingNavigated && !inDebugMode && !quokka.isLiveShareClient && resourceScheme == 'quokka-code-timeline'"
-  },
-  {
-    "key": "left",
-    "command": "quokka.playTracePrevStepOver",
-    "when": "activeEditor && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode && !quokka.isLiveShareClient || activeEditor && quokka.traceBeingNavigated && !inDebugMode && !quokka.isLiveShareClient && resourceScheme == 'quokka-code-timeline'"
-  },
-  {
-    "key": "down",
-    "command": "quokka.playTraceNextStep",
-    "when": "activeEditor && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode && !quokka.isLiveShareClient || activeEditor && quokka.traceBeingNavigated && !inDebugMode && !quokka.isLiveShareClient && resourceScheme == 'quokka-code-timeline'"
-  },
-  {
-    "key": "up",
-    "command": "quokka.playTracePrevStep",
-    "when": "activeEditor && quokka.isActiveEditorRunningQuokka && quokka.traceBeingNavigated && !inDebugMode && !quokka.isLiveShareClient || activeEditor && quokka.traceBeingNavigated && !inDebugMode && !quokka.isLiveShareClient && resourceScheme == 'quokka-code-timeline'"
+    "key": "ctrl+c",
+    "command": "copyRelativeFilePath"
   }
 ]
