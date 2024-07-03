@@ -14,13 +14,27 @@
   "window.commandCenter": false,
   "terminal.integrated.fontSize": 15,
   "search.quickOpen.includeHistory": false,
+  "search.useParentIgnoreFiles": true,
   "git.suggestSmartCommit": false,
+  "git.allowNoVerifyCommit": true,
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "githubPullRequests.pullBranch": "never",
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "prettier.semi": false,
+  "zenMode.fullScreen": false,
   "extensions.ignoreRecommendations": true,
-  "liveServer.settings.donotShowInfoMsg": true,
+  "security.promptForLocalFileProtocolHandling": false,
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "githubPullRequests.queries": [],
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -36,6 +50,14 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "eslint.workingDirectories": [
+    {
+      "pattern": "./apps/*/"
+    },
+    {
+      "pattern": "./packages/*/"
+    }
+  ],
   "files.exclude": {
     "**/.git": true
   }
