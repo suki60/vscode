@@ -118,31 +118,17 @@
 
   // text
   {
-    "key": "tab",
-    "command": "jumpToNextSnippetPlaceholder",
-    "when": "editorTextFocus && hasNextTabstop && inSnippetMode"
-  },
-  {
     "key": "cmd+e",
-    "command": "eslint.executeAutofix",
-    "when": "editorTextFocus && !editorReadonly"
+    "command": "eslint.executeAutofix"
   },
   {
     "key": "cmd+p",
-    "command": "prettier.forceFormatDocument",
-    "when": "editorTextFocus && !editorReadonly"
+    "command": "prettier.forceFormatDocument"
   },
   {
-    "key": "cmd+'",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "typescript.removeUnusedImports",
-        "eslint.executeAutofix",
-        "prettier.forceFormatDocument"
-      ]
-    },
-    "when": "editorTextFocus && !editorReadonly"
+    "key": "tab",
+    "command": "jumpToNextSnippetPlaceholder",
+    "when": "editorTextFocus && hasNextTabstop && inSnippetMode"
   },
   {
     "key": "shift+cmd+backspace",
@@ -212,11 +198,11 @@
     "command": "workbench.action.keepEditor"
   },
   {
-    "key": "cmd+,",
+    "key": "cmd+;",
     "command": "workbench.action.moveEditorLeftInGroup"
   },
   {
-    "key": "cmd+.",
+    "key": "cmd+'",
     "command": "workbench.action.moveEditorRightInGroup"
   },
   {
@@ -234,10 +220,6 @@
   {
     "key": "cmd+o",
     "command": "git.openFile"
-  },
-  {
-    "key": "cmd+;",
-    "command": "editor.action.quickFix"
   },
 
   // workbench
@@ -310,10 +292,6 @@
     "command": "workbench.action.chat.openInSidebar"
   },
   {
-    "key": "shift+cmd+'",
-    "command": "workbench.action.chat.openInEditor"
-  },
-  {
     "key": "shift+cmd+c",
     "command": "workbench.files.action.collapseExplorerFolders"
   },
@@ -326,8 +304,12 @@
     "command": "workbench.action.quickSwitchWindow"
   },
   {
-    "key": "shift+cmd+enter",
-    "command": "git.commit"
+    "key": "shift+cmd+'",
+    "command": "workbench.panel.comments"
+  },
+  {
+    "key": "shift+cmd+y",
+    "command": "workbench.view.extension.typescript-explorer"
   },
 
   // git
@@ -340,11 +322,19 @@
     "command": "git.pull"
   },
   {
+    "key": "cmd+g ctrl+alt+cmd+p",
+    "command": "git.pullRebase"
+  },
+  {
     "key": "cmd+g shift+cmd+c",
     "command": "git.checkout"
   },
   {
     "key": "cmd+g shift+cmd+enter",
+    "command": "git.commit"
+  },
+  {
+    "key": "cmd+g ctrl+alt+cmd+enter",
     "command": "git.commitNoVerify"
   },
   {
@@ -352,8 +342,20 @@
     "command": "git.push"
   },
   {
+    "key": "cmd+g ctrl+alt+cmd+u",
+    "command": "git.pushForce"
+  },
+  {
     "key": "cmd+g shift+cmd+m",
     "command": "git.merge"
+  },
+  {
+    "key": "cmd+g shift+cmd+b",
+    "command": "git.rebase"
+  },
+  {
+    "key": "cmd+g ctrl+alt+cmd+b",
+    "command": "git.rebaseAbort"
   },
   {
     "key": "cmd+g shift+cmd+d",
