@@ -16,7 +16,7 @@
     "args": {
       "to": "up",
       "by": "line",
-      "value": 5
+      "value": 4
     },
     "when": "editorTextFocus"
   },
@@ -26,7 +26,7 @@
     "args": {
       "to": "down",
       "by": "line",
-      "value": 5
+      "value": 4
     },
     "when": "editorTextFocus"
   },
@@ -85,7 +85,6 @@
         "list.focusUp",
         "list.focusUp",
         "list.focusUp",
-        "list.focusUp",
         "list.focusUp"
       ]
     },
@@ -96,7 +95,6 @@
     "command": "runCommands",
     "args": {
       "commands": [
-        "list.focusDown",
         "list.focusDown",
         "list.focusDown",
         "list.focusDown",
@@ -124,6 +122,14 @@
   {
     "key": "cmd+p",
     "command": "prettier.forceFormatDocument"
+  },
+  {
+    "key": "cmd+u",
+    "command": "typescript.removeUnusedImports"
+  },
+  {
+    "key": "ctrl+shift+space",
+    "command": "editor.action.insertSnippet"
   },
   {
     "key": "tab",
@@ -264,12 +270,26 @@
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
-    "key": "shift+cmd+l",
+    "key": "shift+cmd+1",
+    "command": "workbench.actions.view.problems"
+  },
+  {
+    "key": "shift+cmd+2",
+    "command": "workbench.action.output.toggleOutput",
+    "when": "workbench.panel.output.active"
+  },
+  {
+    "key": "shift+cmd+3",
+    "command": "workbench.debug.action.toggleRepl",
+    "when": "workbench.panel.repl.view.active"
+  },
+  {
+    "key": "shift+cmd+4",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "shift+cmd+b",
-    "command": "workbench.actions.view.problems"
+    "key": "shift+cmd+5",
+    "command": "workbench.panel.comments"
   },
   {
     "key": "shift+cmd+,",
@@ -284,14 +304,6 @@
     "command": "prStatus:github.focus"
   },
   {
-    "key": "shift+cmd+/",
-    "command": "workbench.panel.chat.view.copilot.focus"
-  },
-  {
-    "key": "shift+cmd+;",
-    "command": "workbench.action.chat.openInSidebar"
-  },
-  {
     "key": "shift+cmd+c",
     "command": "workbench.files.action.collapseExplorerFolders"
   },
@@ -304,12 +316,20 @@
     "command": "workbench.action.quickSwitchWindow"
   },
   {
-    "key": "shift+cmd+'",
-    "command": "workbench.panel.comments"
-  },
-  {
     "key": "shift+cmd+y",
     "command": "workbench.view.extension.typescript-explorer"
+  },
+  {
+    "key": "shift+cmd+/",
+    "command": "workbench.panel.chat.view.copilot.focus"
+  },
+  {
+    "key": "shift+cmd+;",
+    "command": "workbench.action.chat.openInSidebar"
+  },
+  {
+    "key": "shift+cmd+'",
+    "command": "workbench.action.chat.openInEditor"
   },
 
   // git
@@ -350,6 +370,10 @@
     "command": "git.merge"
   },
   {
+    "key": "cmd+g ctrl+alt+cmd+m",
+    "command": "git.mergeAbort"
+  },
+  {
     "key": "cmd+g shift+cmd+b",
     "command": "git.rebase"
   },
@@ -362,7 +386,7 @@
     "command": "git.deleteBranch"
   },
   {
-    "key": "cmd+g shift+cmd+left",
+    "key": "cmd+g ctrl+alt+cmd+,",
     "command": "git.undoCommit"
   },
   {
@@ -370,8 +394,20 @@
     "command": "git.stashStaged"
   },
   {
+    "key": "cmd+g ctrl+alt+cmd+s",
+    "command": "git.stashDropAll"
+  },
+  {
     "key": "cmd+g shift+cmd+o",
+    "command": "git.stashApply"
+  },
+  {
+    "key": "cmd+g ctrl+alt+cmd+o",
     "command": "git.stashPop"
+  },
+  {
+    "key": "cmd+g shift+cmd+l",
+    "command": "git.viewLineHistory"
   },
   {
     "key": "cmd+g cmd+enter",
@@ -472,5 +508,9 @@
   {
     "key": "ctrl+c",
     "command": "copyRelativeFilePath"
+  },
+  {
+    "key": "cmd+g cmd+c",
+    "command": "copy-branch-name.copy-current"
   }
 ]
