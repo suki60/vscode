@@ -3,22 +3,22 @@
   "import default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_i",
-    "body": "import $1 from '$2'"
+    "body": "import $2 from '$1'"
   },
   "import none default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_in",
-    "body": "import { $1 } from '$2'"
+    "body": "import { $2 } from '$1'"
+  },
+  "export": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_ex",
+    "body": "export { $1 }"
   },
   "export default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_ex",
+    "prefix": "_exd",
     "body": "export default "
-  },
-  "export none default": {
-    "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_exn",
-    "body": "export { $1 }"
   },
 
   // javascript
@@ -55,7 +55,7 @@
   "object property": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_op",
-    "body": "$1: ,"
+    "body": "$1: $2,"
   },
   "object function": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -77,6 +77,15 @@
     "prefix": "_afn",
     "body": "$1 => "
   },
+  "return": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_r",
+    "body": "return "
+  },
+  "ternary": {
+    "prefix": "_ter",
+    "body": "$1 ? $2 : "
+  },
   "if": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_if",
@@ -97,11 +106,6 @@
     "prefix": "_do",
     "body": "const { $2 } = $1"
   },
-  "return": {
-    "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_r",
-    "body": "return "
-  },
 
   // typescript
   "type": {
@@ -119,7 +123,7 @@
   "component": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_com",
-    "body": "<$1 />"
+    "body": "<$1 $2/>"
   },
   "component with children": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -188,6 +192,11 @@
     "prefix": "_test",
     "body": "test('$1', () => {$2})"
   },
+  "it": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "_it",
+    "body": "it('$1', () => {$2})"
+  },
   "expect": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_exp",
@@ -203,7 +212,7 @@
   "console.log explicit": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
     "prefix": "_loge",
-    "body": "console.log('___ $1 -> :', $2)"
+    "body": "console.log('$1: ', $2)"
   },
 
   // snippets
