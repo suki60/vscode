@@ -58,5 +58,12 @@
   },
   "files.exclude": {
     "**/.git": false
-  }
+  },
+  "git.ignoreRebaseWarning": true,
+  "bookmarks.sideBar.countBadge": "off",
+  "javascript.preferGoToSourceDefinition": true,
+  "typescript.preferGoToSourceDefinition": true,
+  "bookmarks.keepBookmarksOnLineDelete": true,
+  "notebook.stickyScroll.enabled": true,
+  "bookmarks.revealLocation": "top"
 }
