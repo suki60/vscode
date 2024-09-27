@@ -406,8 +406,20 @@
     "command": "git.stashPop"
   },
   {
-    "key": "cmd+g shift+cmd+l",
+    "key": "cmd+g h",
     "command": "git.viewLineHistory"
+  },
+  {
+    "key": "cmd+g cmd+h",
+    "command": "git.viewFileHistory"
+  },
+  {
+    "key": "cmd+g shift+cmd+h",
+    "command": "git.viewHistory"
+  },
+  {
+    "key": "cmd+g cmd+c",
+    "command": "copy-branch-name.copy-current"
   },
   {
     "key": "cmd+g cmd+enter",
@@ -454,15 +466,15 @@
 
   // settings
   {
-    "key": "cmd+k shift+cmd+,",
+    "key": "ctrl+alt+cmd+,",
     "command": "workbench.action.openSettingsJson"
   },
   {
-    "key": "cmd+k shift+cmd+k",
+    "key": "ctrl+alt+cmd+k",
     "command": "workbench.action.openGlobalKeybindingsFile"
   },
   {
-    "key": "cmd+k shift+cmd+s",
+    "key": "ctrl+alt+cmd+s",
     "command": "workbench.action.openSnippets"
   },
 
@@ -509,8 +521,20 @@
     "key": "ctrl+c",
     "command": "copyRelativeFilePath"
   },
+
+  // bookmarks
   {
-    "key": "cmd+g cmd+c",
-    "command": "copy-branch-name.copy-current"
+    "key": "shift+cmd+b",
+    "command": "bookmarks.selectLines"
+  },
+  {
+    "key": "ctrl+alt+cmd+b",
+    "command": "bookmarks.toggleLabeled"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "bookmarks.listFromAllFiles"
   }
+
+  // TODO: to be moved
 ]
