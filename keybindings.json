@@ -1,4 +1,158 @@
 [
+  // snippets
+  {
+    "key": "shift+space",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "$0 "
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+c",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "const $1 = "
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+a",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "$1 = [$2]"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+shift+a",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "const [$2] = $1"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+o",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "$1 = {$2}"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+shift+o",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "const {$2} = $1"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+shift+o",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "$1: $2,"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+f",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "($1) => {$2}"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+shift+f",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "$1 => $2"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+r",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "return "
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+t",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "$1 ? $2 : "
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+i",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "if ($1) {$2}"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+y",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "type $1 = "
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+,",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "<$1>$2</$1>"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+shift+,",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "<$1 />"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+n",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "className="
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+m",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "import $2 from '$1'"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+e",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "export "
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+l",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "console.log($1)"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
   // cursor
   {
     "key": "ctrl+shift+up",
@@ -29,51 +183,6 @@
       "value": 4
     },
     "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+'",
-    "command": "extension.selectEitherQuote",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+shift+[",
-    "command": "extension.selectCurlyBrackets",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+[",
-    "command": "extension.selectSquareBrackets",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+9",
-    "command": "extension.selectParenthesis",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+shift+]",
-    "command": "extension.selectCurlyBracketsOuter",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+]",
-    "command": "extension.selectSquareBracketsOuter",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+0",
-    "command": "extension.selectParenthesisOuter",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+`",
-    "command": "extension.selectBackTick",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+,",
-    "command": "extension.selectAngleBrackets",
-    "when": "editorFocus"
   },
 
   // list
@@ -130,11 +239,6 @@
   {
     "key": "ctrl+shift+space",
     "command": "editor.action.insertSnippet"
-  },
-  {
-    "key": "tab",
-    "command": "jumpToNextSnippetPlaceholder",
-    "when": "editorTextFocus && hasNextTabstop && inSnippetMode"
   },
   {
     "key": "shift+cmd+backspace",
@@ -226,6 +330,19 @@
   {
     "key": "cmd+o",
     "command": "git.openFile"
+  },
+  {
+    "key": "cmd+r",
+    "command": "editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "cmd+y",
+    "command": "editor.action.goToTypeDefinition"
+  },
+  {
+    "key": "cmd+l",
+    "command": "bracket-select.select",
+    "when": "editorTextFocus"
   },
 
   // workbench
@@ -331,6 +448,14 @@
     "key": "shift+cmd+'",
     "command": "workbench.action.chat.openInEditor"
   },
+  {
+    "key": "shift+cmd+b",
+    "command": "bookmarks.listFromAllFiles"
+  },
+  {
+    "key": "ctrl+alt+cmd+b",
+    "command": "bookmarks.toggleLabeled"
+  },
 
   // git
   {
@@ -392,10 +517,6 @@
   {
     "key": "cmd+g shift+cmd+s",
     "command": "git.stashStaged"
-  },
-  {
-    "key": "cmd+g ctrl+alt+cmd+s",
-    "command": "git.stashDropAll"
   },
   {
     "key": "cmd+g shift+cmd+o",
@@ -499,6 +620,10 @@
     "key": "ctrl+alt+cmd+w",
     "command": "workbench.action.closeWindow"
   },
+  {
+    "key": "ctrl+alt+cmd+u",
+    "command": "update.restartToUpdate"
+  },
 
   // explorer
   {
@@ -514,27 +639,31 @@
 
   // copy
   {
-    "key": "alt+c",
+    "key": "alt+cmd+c",
     "command": "copy-file-name.copyFileName"
   },
   {
-    "key": "ctrl+c",
+    "key": "ctrl+alt+cmd+c",
     "command": "copyRelativeFilePath"
   },
+  {
+    "key": "cmd+g ctrl+alt+cmd+s",
+    "command": "git.stashIncludeUntracked"
+  },
 
-  // bookmarks
+  // search
   {
-    "key": "shift+cmd+b",
-    "command": "bookmarks.selectLines"
+    "key": "shift+cmd+f",
+    "command": "search.action.openEditor"
   },
   {
-    "key": "ctrl+alt+cmd+b",
-    "command": "bookmarks.toggleLabeled"
+    "key": "cmd+e",
+    "command": "search.action.focusFilesToExclude",
+    "when": "inSearchEditor"
   },
   {
-    "key": "shift+cmd+b",
-    "command": "bookmarks.listFromAllFiles"
+    "key": "cmd+i",
+    "command": "search.action.focusFilesToInclude",
+    "when": "inSearchEditor"
   }
-
-  // TODO: to be moved
 ]
