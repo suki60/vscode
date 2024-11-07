@@ -1,6 +1,6 @@
 {
   "editor.fontFamily": "Roboto Mono",
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.bracketPairColorization.enabled": false,
   "editor.formatOnPaste": false,
@@ -8,6 +8,7 @@
   "editor.accessibilitySupport": "off",
   "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "file-icons",
+  "workbench.activityBar.location": "top",
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
@@ -30,12 +31,13 @@
   "scm.showHistoryGraph": false,
   "scm.showChangesSummary": false,
   "scm.showOutgoingChanges": "never",
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "bookmarks.sideBar.countBadge": "off",
   "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": true
   },
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
@@ -59,11 +61,5 @@
   "files.exclude": {
     "**/.git": false
   },
-  "git.ignoreRebaseWarning": true,
-  "bookmarks.sideBar.countBadge": "off",
-  "javascript.preferGoToSourceDefinition": true,
-  "typescript.preferGoToSourceDefinition": true,
-  "bookmarks.keepBookmarksOnLineDelete": true,
-  "notebook.stickyScroll.enabled": true,
-  "bookmarks.revealLocation": "top"
+  "typescript.tsserver.log": "off"
 }
