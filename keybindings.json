@@ -368,11 +368,11 @@
   },
   {
     "key": "shift+cmd+2",
-    "command": "workbench.action.output.toggleOutput",
+    "command": "workbench.action.output.toggleOutput"
   },
   {
     "key": "shift+cmd+3",
-    "command": "workbench.debug.action.toggleRepl",
+    "command": "workbench.debug.action.toggleRepl"
   },
   {
     "key": "shift+cmd+4",
@@ -443,6 +443,14 @@
   {
     "key": "cmd+g ctrl+alt+cmd+p",
     "command": "git.pullRebase"
+  },
+  {
+    "key": "cmd+g shift+cmd+u",
+    "command": "git.push"
+  },
+  {
+    "key": "cmd+g ctrl+alt+cmd+u",
+    "command": "git.pushForce"
   },
   {
     "key": "cmd+g shift+cmd+c",
@@ -655,16 +663,6 @@
   {
     "key": "ctrl+alt+cmd+enter",
     "command": "git.commitNoVerify",
-    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
-  },
-  {
-    "key": "shift+cmd+u",
-    "command": "git.push",
-    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
-  },
-  {
-    "key": "ctrl+alt+cmd+u",
-    "command": "git.pushForce",
     "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
   },
   {
