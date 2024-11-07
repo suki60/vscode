@@ -695,5 +695,12 @@
     "key": "shift+cmd+backspace",
     "command": "git.revertSelectedRanges",
     "when": "isInDiffEditor && !operationInProgress && activeAuxiliary == 'workbench.view.scm'"
+  },
+
+  // escape
+  {
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "auxiliaryBarFocus || sideBarFocus"
   }
 ]
