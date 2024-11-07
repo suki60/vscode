@@ -185,56 +185,21 @@
     "when": "editorTextFocus"
   },
 
-  // list
-  {
-    "key": "ctrl+up",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp"
-      ]
-    },
-    "when": "listFocus"
-  },
-  {
-    "key": "ctrl+down",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown"
-      ]
-    },
-    "when": "listFocus"
-  },
-  {
-    "key": "ctrl+left",
-    "command": "workbench.files.action.collapseExplorerFolders",
-    "when": "listFocus"
-  },
-  {
-    "key": "ctrl+right",
-    "command": "workbench.files.action.showActiveFileInExplorer",
-    "when": "listFocus"
-  },
-
   // text
   {
     "key": "cmd+e",
-    "command": "eslint.executeAutofix"
+    "command": "eslint.executeAutofix",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "cmd+p",
-    "command": "prettier.forceFormatDocument"
+    "command": "prettier.forceFormatDocument",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "cmd+u",
-    "command": "typescript.removeUnusedImports"
+    "command": "typescript.removeUnusedImports",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "shift+cmd+backspace",
@@ -332,12 +297,12 @@
     "command": "editor.action.startFindReplaceAction"
   },
   {
-    "key": "cmd+y",
-    "command": "editor.action.goToTypeDefinition"
-  },
-  {
     "key": "cmd+'",
     "command": "bracket-select.select"
+  },
+  {
+    "key": "cmd+y",
+    "command": "editor.action.goToTypeDefinition"
   },
   {
     "key": "cmd+l",
@@ -404,12 +369,10 @@
   {
     "key": "shift+cmd+2",
     "command": "workbench.action.output.toggleOutput",
-    "when": "workbench.panel.output.active"
   },
   {
     "key": "shift+cmd+3",
     "command": "workbench.debug.action.toggleRepl",
-    "when": "workbench.panel.repl.view.active"
   },
   {
     "key": "shift+cmd+4",
@@ -590,6 +553,34 @@
     "command": "update.restartToUpdate"
   },
 
+  // list
+  {
+    "key": "ctrl+up",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp",
+        "list.focusUp"
+      ]
+    },
+    "when": "listFocus"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown"
+      ]
+    },
+    "when": "listFocus"
+  },
+
   // explorer
   {
     "key": "a",
@@ -599,6 +590,16 @@
   {
     "key": "shift+a",
     "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "workbench.files.action.collapseExplorerFolders",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "workbench.files.action.showActiveFileInExplorer",
     "when": "filesExplorerFocus && !inputFocus"
   },
 
