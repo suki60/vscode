@@ -486,14 +486,6 @@
     "command": "git.checkout"
   },
   {
-    "key": "cmd+g shift+cmd+u",
-    "command": "git.push"
-  },
-  {
-    "key": "cmd+g ctrl+alt+cmd+u",
-    "command": "git.pushForce"
-  },
-  {
     "key": "cmd+g shift+cmd+m",
     "command": "git.merge"
   },
@@ -662,6 +654,16 @@
   {
     "key": "ctrl+alt+cmd+enter",
     "command": "git.commitNoVerify",
+    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
+  },
+  {
+    "key": "shift+cmd+u",
+    "command": "git.push",
+    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
+  },
+  {
+    "key": "ctrl+alt+cmd+u",
+    "command": "git.pushForce",
     "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
   },
   {
