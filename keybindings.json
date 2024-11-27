@@ -49,7 +49,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+shift+o",
+    "key": "shift+p",
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "$1: $2,"
@@ -137,7 +137,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+e",
+    "key": "alt+x",
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "export "
@@ -152,73 +152,11 @@
     },
     "when": "editorTextFocus && !editorReadonly"
   },
-
-  // cursor
   {
-    "key": "ctrl+shift+up",
-    "command": "editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+down",
-    "command": "editor.action.insertCursorBelow",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+up",
-    "command": "cursorMove",
+    "key": "alt+shift+l",
+    "command": "editor.action.insertSnippet",
     "args": {
-      "to": "up",
-      "by": "line",
-      "value": 4
-    },
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+down",
-    "command": "cursorMove",
-    "args": {
-      "to": "down",
-      "by": "line",
-      "value": 4
-    },
-    "when": "editorTextFocus"
-  },
-
-  // text
-  {
-    "key": "cmd+e",
-    "command": "eslint.executeAutofix",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+p",
-    "command": "prettier.forceFormatDocument",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+u",
-    "command": "typescript.removeUnusedImports",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+cmd+backspace",
-    "command": "editor.action.deleteLines",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+cmd+enter",
-    "command": "runCommands",
-    "args": {
-      "commands": ["editor.action.insertLineAfter", "deleteAllLeft"]
-    },
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+cmd+enter",
-    "command": "runCommands",
-    "args": {
-      "commands": ["editor.action.insertLineBefore", "deleteAllLeft"]
+      "snippet": "console.log('$1:', $1)"
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -249,18 +187,6 @@
     "command": "workbench.action.openEditorAtIndex6"
   },
   {
-    "key": "cmd+7",
-    "command": "workbench.action.openEditorAtIndex7"
-  },
-  {
-    "key": "cmd+8",
-    "command": "workbench.action.openEditorAtIndex8"
-  },
-  {
-    "key": "cmd+9",
-    "command": "workbench.action.openEditorAtIndex9"
-  },
-  {
     "key": "cmd+-",
     "command": "workbench.action.moveEditorLeftInGroup"
   },
@@ -269,12 +195,8 @@
     "command": "workbench.action.moveEditorRightInGroup"
   },
   {
-    "key": "cmd+]",
-    "command": "workbench.action.moveEditorToRightGroup"
-  },
-  {
-    "key": "cmd+[",
-    "command": "workbench.action.moveEditorToLeftGroup"
+    "key": "cmd+t",
+    "command": "workbench.action.quickOpen"
   },
   {
     "key": "cmd+i",
@@ -285,10 +207,6 @@
     "command": "git.openFile"
   },
   {
-    "key": "cmd+t",
-    "command": "workbench.action.quickOpen"
-  },
-  {
     "key": "cmd+\\",
     "command": "workbench.action.keepEditor"
   },
@@ -297,23 +215,63 @@
     "command": "editor.action.startFindReplaceAction"
   },
   {
-    "key": "cmd+'",
-    "command": "bracket-select.select"
-  },
-  {
     "key": "cmd+y",
     "command": "editor.action.goToTypeDefinition"
   },
   {
-    "key": "cmd+l",
-    "command": "editor.action.goToImplementation"
-  },
-  {
     "key": "cmd+b",
-    "command": "copy-branch-name.copy-current"
+    "command": "editor.action.marker.next"
   },
 
   // workbench
+  {
+    "key": "shift+cmd+h",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "shift+cmd+y",
+    "command": "workbench.view.extension.typescript-explorer"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "workbench.view.debug"
+  },
+  {
+    "key": "shift+cmd+x",
+    "command": "workbench.view.extensions"
+  },
+  {
+    "key": "shift+cmd+\\",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "shift+cmd+s",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "shift+cmd+/",
+    "command": "workbench.panel.chat.view.copilot.focus"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "workbench.view.extension.github-pull-requests"
+  },
+  {
+    "key": "shift+cmd+u",
+    "command": "prStatus:github.focus"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
   {
     "key": "shift+cmd+o",
     "command": "workbench.action.files.openFileFolder"
@@ -323,32 +281,8 @@
     "command": "workbench.action.openGlobalKeybindings"
   },
   {
-    "key": "shift+cmd+h",
-    "command": "workbench.action.showCommands"
-  },
-  {
-    "key": "shift+cmd+s",
-    "command": "workbench.view.scm"
-  },
-  {
-    "key": "shift+cmd+g",
-    "command": "workbench.view.extension.github-pull-requests"
-  },
-  {
     "key": "shift+cmd+f",
     "command": "search.action.openEditor"
-  },
-  {
-    "key": "shift+cmd+`",
-    "command": "workbench.action.toggleActivityBarVisibility"
-  },
-  {
-    "key": "shift+cmd+a",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "shift+cmd+\\",
-    "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
     "key": "shift+cmd+m",
@@ -391,10 +325,6 @@
     "command": "git-graph.view"
   },
   {
-    "key": "shift+cmd+r",
-    "command": "prStatus:github.focus"
-  },
-  {
     "key": "shift+cmd+c",
     "command": "workbench.files.action.collapseExplorerFolders"
   },
@@ -403,16 +333,8 @@
     "command": "workbench.action.closeAllGroups"
   },
   {
-    "key": "shift+cmd+.",
+    "key": "shift+cmd+0",
     "command": "workbench.action.quickSwitchWindow"
-  },
-  {
-    "key": "shift+cmd+y",
-    "command": "workbench.view.extension.typescript-explorer"
-  },
-  {
-    "key": "shift+cmd+/",
-    "command": "workbench.panel.chat.view.copilot.focus"
   },
   {
     "key": "shift+cmd+;",
@@ -429,6 +351,14 @@
   {
     "key": "ctrl+alt+cmd+b",
     "command": "bookmarks.toggleLabeled"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "workbench.action.moveEditorToRightGroup"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "workbench.action.moveEditorToLeftGroup"
   },
 
   // git
@@ -477,6 +407,14 @@
     "command": "git.deleteBranch"
   },
   {
+    "key": "cmd+g shift+cmd+enter",
+    "command": "git.commit"
+  },
+  {
+    "key": "cmd+g ctrl+alt+cmd+enter",
+    "command": "git.commitNoVerify"
+  },
+  {
     "key": "cmd+g shift+cmd+,",
     "command": "git.undoCommit"
   },
@@ -521,6 +459,102 @@
     "command": "git.cleanAll"
   },
 
+  // cursor
+  {
+    "key": "ctrl+shift+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+
+  // text
+  {
+    "key": "cmd+e",
+    "command": "eslint.executeAutofix",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+p",
+    "command": "prettier.forceFormatDocument",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+u",
+    "command": "typescript.removeUnusedImports",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+backspace",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+cmd+enter",
+    "command": "runCommands",
+    "args": {
+      "commands": ["editor.action.insertLineAfter", "deleteAllLeft"]
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+cmd+enter",
+    "command": "runCommands",
+    "args": {
+      "commands": ["editor.action.insertLineBefore", "deleteAllLeft"]
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // select
+  {
+    "key": "cmd+8",
+    "command": "bracket-select.select"
+  },
+  {
+    "key": "cmd+'",
+    "command": "extension.selectEitherQuote",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+`",
+    "command": "extension.selectBackTick",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+9",
+    "command": "extension.selectParenthesis",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+0",
+    "command": "extension.selectParenthesisOuter",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+[",
+    "command": "extension.selectSquareBrackets",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+]",
+    "command": "extension.selectSquareBracketsOuter",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "extension.selectCurlyBrackets",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "extension.selectCurlyBracketsOuter",
+    "when": "editorFocus"
+  },
+
   // settings
   {
     "key": "ctrl+alt+cmd+,",
@@ -561,34 +595,6 @@
     "command": "update.restartToUpdate"
   },
 
-  // list
-  {
-    "key": "ctrl+up",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp",
-        "list.focusUp"
-      ]
-    },
-    "when": "listFocus"
-  },
-  {
-    "key": "ctrl+down",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown"
-      ]
-    },
-    "when": "listFocus"
-  },
-
   // explorer
   {
     "key": "a",
@@ -600,16 +606,6 @@
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus && !inputFocus"
   },
-  {
-    "key": "ctrl+left",
-    "command": "workbench.files.action.collapseExplorerFolders",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "ctrl+right",
-    "command": "workbench.files.action.showActiveFileInExplorer",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
 
   // copy
   {
@@ -617,8 +613,12 @@
     "command": "copy-file-name.copyFileName"
   },
   {
-    "key": "ctrl+alt+cmd+c",
+    "key": "alt+cmd+p",
     "command": "copyRelativeFilePath"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "copy-branch-name.copy-current"
   },
 
   // search
@@ -628,14 +628,14 @@
     "when": "inSearchEditor"
   },
   {
-    "key": "cmd+o",
+    "key": "cmd+e",
     "command": "search.action.focusFilesToExclude",
     "when": "inSearchEditor"
   },
 
   // scm
   {
-    "key": "cmd+i",
+    "key": "cmd+e",
     "command": "runCommands",
     "args": {
       "commands": ["list.focusFirst", "list.select"]
@@ -643,7 +643,7 @@
     "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
   },
   {
-    "key": "cmd+o",
+    "key": "cmd+c",
     "command": "runCommands",
     "args": {
       "commands": [
@@ -653,6 +653,11 @@
         "list.focusDown"
       ]
     },
+    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
+  },
+  {
+    "key": "cmd+d",
+    "command": "git.openHEADFile",
     "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
   },
   {
