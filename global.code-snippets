@@ -2,223 +2,223 @@
   // modules
   "import default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_i",
+    "prefix": ";i",
     "body": "import $2 from '$1'"
   },
   "import none default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_in",
+    "prefix": ";in",
     "body": "import { $2 } from '$1'"
   },
   "export": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_ex",
-    "body": "export { $1 }"
+    "prefix": ";ex",
+    "body": "export { $2 } from '$1'"
   },
   "export default": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_exd",
+    "prefix": ";exd",
     "body": "export default "
   },
 
   // javascript
   "const": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_c",
+    "prefix": ";c",
     "body": "const $1 = "
   },
   "let": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_l",
+    "prefix": ";l",
     "body": "let $1 = "
   },
   "var": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_v",
+    "prefix": ";v",
     "body": "var $1 = "
-  },
-  "string": {
-    "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_s",
-    "body": "$1 = \"$2\""
   },
   "array": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_a",
+    "prefix": ";a",
     "body": "$1 = [$2]"
   },
   "object": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_o",
+    "prefix": ";o",
     "body": "$1 = {$2}"
   },
   "object property": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_op",
+    "prefix": ";op",
     "body": "$1: $2,"
   },
   "object function": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_of",
+    "prefix": ";of",
     "body": "$1() {$2}"
   },
   "function": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_f",
+    "prefix": ";f",
     "body": "function $1($2) {$3}"
   },
   "arrow function": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_af",
+    "prefix": ";af",
     "body": "($1) => {$2}"
   },
   "arrow function none enclosures": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_afn",
+    "prefix": ";afn",
     "body": "$1 => "
   },
   "return": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_r",
+    "prefix": ";r",
     "body": "return "
   },
   "ternary": {
-    "prefix": "_ter",
+    "prefix": ";ter",
     "body": "$1 ? $2 : "
   },
   "if": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_if",
+    "prefix": ";if",
     "body": "if ($1) {$2}"
   },
   "if none enclosures": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_ifn",
+    "prefix": ";ifn",
     "body": "if ($1) "
   },
   "destructure array": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_da",
+    "prefix": ";da",
     "body": "const [$2] = $1"
   },
   "destructure object": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_do",
+    "prefix": ";do",
     "body": "const { $2 } = $1"
   },
 
   // typescript
   "type": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_typ",
+    "prefix": ";typ",
     "body": "type $1 = "
   },
   "interface": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_int",
+    "prefix": ";int",
     "body": "interface $1 {$2}"
   },
 
   // jsx
   "component": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_com",
+    "prefix": ";com",
     "body": "<$1 $2/>"
   },
   "component with children": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_comchi",
+    "prefix": ";comchi",
     "body": "<$1>$2</$1>"
   },
   "div": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_div",
+    "prefix": ";div",
     "body": "<div>$1</div>"
   },
   "p": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_p",
+    "prefix": ";p",
     "body": "<p>$1</p>"
   },
   "a": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_a",
+    "prefix": ";a",
     "body": "<a>$1</a>"
   },
   "h1": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_h1",
+    "prefix": ";h1",
     "body": "<h1>$1</h1>"
   },
   "h2": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_h2",
+    "prefix": ";h2",
     "body": "<h2>$1</h2>"
   },
   "h3": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_h3",
+    "prefix": ";h3",
     "body": "<h3>$1</h3>"
   },
   "h4": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_h4",
+    "prefix": ";h4",
     "body": "<h4>$1</h4>"
   },
   "h5": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_h5",
+    "prefix": ";h5",
     "body": "<h5>$1</h5>"
   },
   "h6": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_h6",
+    "prefix": ";h6",
     "body": "<h6>$1</h6>"
   },
   "className": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_cn",
+    "prefix": ";cn",
     "body": "className="
+  },
+  "use client": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": ";uc",
+    "body": "'use client'"
   },
 
   // test
   "describe": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_des",
+    "prefix": ";des",
     "body": "describe('$1', () => {$2})"
   },
   "test": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_test",
+    "prefix": ";test",
     "body": "test('$1', () => {$2})"
   },
   "it": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_it",
+    "prefix": ";it",
     "body": "it('$1', () => {$2})"
   },
   "expect": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_exp",
+    "prefix": ";exp",
     "body": "expect($1)"
   },
 
   // console
   "console.log": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_log",
+    "prefix": ";log",
     "body": "console.log($1)"
   },
   "console.log explicit": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact",
-    "prefix": "_loge",
+    "prefix": ";loge",
     "body": "console.log('$1: ', $2)"
   },
 
   // snippets
   "snippet": {
     "scope": "snippets",
-    "prefix": "_s",
+    "prefix": ";s",
     "body": ["\"$1\": {", "  \"prefix\": $2,", "  \"body\": $3,", "},"]
   }
 }
