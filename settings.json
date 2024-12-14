@@ -12,33 +12,32 @@
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
+  "workbench.editor.enablePreviewFromQuickOpen": true,
   "window.commandCenter": false,
   "terminal.integrated.fontSize": 15,
+  "explorer.autoReveal": "focusNoScroll",
   "search.quickOpen.includeHistory": false,
   "search.useParentIgnoreFiles": true,
+  "search.smartCase": true,
   "git.suggestSmartCommit": false,
+  "git.ignoreRebaseWarning": true,
   "git.allowNoVerifyCommit": true,
+  "git.allowForcePush": true,
+  "git.openRepositoryInParentFolders": "always",
+  "git.confirmNoVerifyCommit": false,
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "githubPullRequests.pullBranch": "never",
+  "problems.decorations.enabled": false,
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "prettier.semi": false,
   "zenMode.fullScreen": false,
   "extensions.ignoreRecommendations": true,
   "security.promptForLocalFileProtocolHandling": false,
-  "githubPullRequests.queries": [],
-  "git.allowForcePush": true,
-  "gitHistory.showFileHistorySplit": false,
-  "scm.showHistoryGraph": false,
-  "scm.showChangesSummary": false,
-  "scm.showOutgoingChanges": "never",
-  "diffEditor.ignoreTrimWhitespace": true,
   "bookmarks.sideBar.countBadge": "off",
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true,
-    "scminput": true
-  },
+  "typescript.preferGoToSourceDefinition": true,
+  "javascript.preferGoToSourceDefinition": true,
+  "typescriptExplorer.typeTree.view.icons.colors.enable": false,
+  "typescriptExplorer.typeTree.view.icons.enable": false,
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
@@ -60,6 +59,5 @@
   },
   "files.exclude": {
     "**/.git": false
-  },
-  "typescript.tsserver.log": "off"
+  }
 }
