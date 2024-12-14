@@ -1,6 +1,8 @@
 akamud.vscode-theme-onedark
 alefragnani.bookmarks
 bradlc.vscode-tailwindcss
+chunsen.bracket-select
+davidgg00.remove-all-console-logs
 dbaeumer.vscode-eslint
 dbankier.vscode-quick-select
 donjayamanne.githistory
@@ -15,6 +17,6 @@ ms-vscode-remote.remote-containers
 mxsdev.typescript-explorer
 nemesv.copy-file-name
 pkief.copy-branch-name
+pustelto.bracketeer
 waderyan.gitblame
-wallabyjs.quokka-vscode
 yoavbls.pretty-ts-errors
