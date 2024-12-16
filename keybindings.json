@@ -302,6 +302,11 @@
     "command": "workbench.panel.chat.view.copilot.focus"
   },
   {
+    "key": "shift+cmd+.",
+    "command": "workbench.panel.chatEditing",
+    "when": "workbench.panel.chat.view.edits.active"
+  },
+  {
     "key": "shift+cmd+g",
     "command": "workbench.view.extension.github-pull-requests"
   },
