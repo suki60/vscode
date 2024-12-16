@@ -236,10 +236,6 @@
     "command": "references-view.showCallHierarchy"
   },
   {
-    "key": "cmd+b",
-    "command": "editor.action.marker.next"
-  },
-  {
     "key": "cmd+y",
     "command": "editor.action.goToTypeDefinition"
   },
@@ -568,6 +564,24 @@
     "command": "copy-branch-name.copy-current"
   },
 
+  // problems
+  {
+    "key": "cmd+=",
+    "command": "editor.action.marker.next"
+  },
+  {
+    "key": "cmd+-",
+    "command": "editor.action.marker.prev"
+  },
+  {
+    "key": "shift+cmd+-",
+    "command": "editor.action.marker.prevInFiles"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "editor.action.marker.nextInFiles"
+  },
+
   // explorer
   {
     "key": "a",
@@ -592,6 +606,13 @@
     "when": "inSearchEditor"
   },
 
+  // find
+  {
+    "key": "cmd+r",
+    "command": "editor.action.startFindReplaceAction",
+    "when": "findWidgetVisible"
+  },
+
   // scm
   {
     "key": "cmd+e",
@@ -599,7 +620,7 @@
     "args": {
       "commands": ["list.focusFirst", "list.select"]
     },
-    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
   {
     "key": "cmd+c",
@@ -612,47 +633,47 @@
         "list.focusDown"
       ]
     },
-    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
   {
     "key": "cmd+enter",
     "command": "git.stage",
-    "when": "auxiliaryBarFocus && !inputFocus && activeAuxiliary == 'workbench.view.scm'"
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
   },
   {
     "key": "cmd+backspace",
     "command": "git.unstage",
-    "when": "auxiliaryBarFocus && !inputFocus && activeAuxiliary == 'workbench.view.scm'"
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
   },
   {
     "key": "shift+cmd+backspace",
     "command": "git.clean",
-    "when": "auxiliaryBarFocus && !inputFocus && activeAuxiliary == 'workbench.view.scm'"
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
   },
   {
     "key": "cmd+enter",
     "command": "git.stageSelectedRanges",
-    "when": "isInDiffEditor && !operationInProgress && activeAuxiliary == 'workbench.view.scm'"
+    "when": "activeAuxiliary == 'workbench.view.scm' && isInDiffEditor"
   },
   {
     "key": "cmd+backspace",
     "command": "git.unstageSelectedRanges",
-    "when": "isInDiffEditor && !operationInProgress && activeAuxiliary == 'workbench.view.scm'"
+    "when": "activeAuxiliary == 'workbench.view.scm' && isInDiffEditor"
   },
   {
     "key": "shift+cmd+backspace",
     "command": "git.revertSelectedRanges",
-    "when": "isInDiffEditor && !operationInProgress && activeAuxiliary == 'workbench.view.scm'"
+    "when": "activeAuxiliary == 'workbench.view.scm' && isInDiffEditor"
   },
   {
     "key": "shift+cmd+enter",
     "command": "git.commit",
-    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
   {
     "key": "ctrl+alt+cmd+enter",
     "command": "git.commitNoVerify",
-    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
 
   // copilot
