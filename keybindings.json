@@ -390,8 +390,6 @@
     "key": "shift+cmd+,",
     "command": "workbench.action.openSettings"
   },
-
-  // escape
   {
     "key": "escape",
     "command": "workbench.action.focusActiveEditorGroup",
@@ -585,6 +583,18 @@
   {
     "key": "shift+cmd+=",
     "command": "editor.action.marker.nextInFiles"
+  },
+
+  // diff editor
+  {
+    "key": "cmd+=",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "cmd+-",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
   },
 
   // explorer
