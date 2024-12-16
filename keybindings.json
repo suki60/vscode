@@ -518,13 +518,49 @@
     "when": "editorTextFocus && !editorReadonly"
   },
 
-  // copy
+  // text-transformer
+  {
+    "key": "alt+cmd+l",
+    "command": "text-transformer.lower",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+u",
+    "command": "text-transformer.upper",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+s",
+    "command": "text-transformer.underline",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+k",
+    "command": "text-transformer.dashed",
+    "when": "editorTextFocus"
+  },
   {
     "key": "alt+cmd+c",
-    "command": "copy-file-name.copyFileName"
+    "command": "text-transformer.camel",
+    "when": "editorTextFocus"
   },
   {
     "key": "alt+cmd+p",
+    "command": "text-transformer.pascal"
+  },
+  {
+    "key": "alt+cmd+space",
+    "command": "text-transformer.camel_space",
+    "when": "editorTextFocus"
+  },
+
+  // copy
+  {
+    "key": "alt+cmd+n",
+    "command": "copy-file-name.copyFileName"
+  },
+  {
+    "key": "alt+cmd+c",
     "command": "copyRelativeFilePath"
   },
   {
