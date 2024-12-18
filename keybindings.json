@@ -449,7 +449,8 @@
   // select
   {
     "key": "alt+8",
-    "command": "bracket-select.select"
+    "command": "bracket-select.select",
+    "when": "editorFocus"
   },
   {
     "key": "alt+'",
@@ -517,7 +518,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
 
-  // text-transformer
+  // text transformer
   {
     "key": "alt+cmd+l",
     "command": "text-transformer.lower",
@@ -638,7 +639,7 @@
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
   {
-    "key": "cmd+c",
+    "key": "cmd+i",
     "command": "runCommands",
     "args": {
       "commands": [
@@ -793,6 +794,10 @@
   {
     "key": "cmd+g shift+cmd+backspace",
     "command": "git.cleanAll"
+  },
+  {
+    "key": "cmd+g backspace",
+    "command": "git.clean"
   },
   {
     "key": "cmd+g shift+cmd+r",
