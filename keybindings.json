@@ -441,6 +441,11 @@
     "when": "hasNextTabstop && inSnippetMode && textInputFocus"
   },
   {
+    "key": "alt+/",
+    "command": "github.copilot.nextPanelSolution",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "alt+8",
     "command": "bracket-select.select",
     "when": "editorTextFocus"
@@ -491,7 +496,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+backspace",
+    "key": "shift+cmd+backspace",
     "command": "editor.action.deleteLines",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -514,11 +519,6 @@
 
   // secondary actions
   {
-    "key": "ctrl+/",
-    "command": "github.copilot.nextPanelSolution",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+c",
     "command": "copy-file-name.copyFileName"
   },
@@ -531,34 +531,6 @@
     "command": "copy-branch-name.copy-current"
   },
   {
-    "key": "ctrl+l",
-    "command": "text-transformer.lower"
-  },
-  {
-    "key": "ctrl+u",
-    "command": "text-transformer.upper"
-  },
-  {
-    "key": "ctrl+s",
-    "command": "text-transformer.underline"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "text-transformer.dashed"
-  },
-  {
-    "key": "ctrl+c",
-    "command": "text-transformer.camel"
-  },
-  {
-    "key": "ctrl+a",
-    "command": "text-transformer.pascal"
-  },
-  {
-    "key": "ctrl+m",
-    "command": "text-transformer.camel_space"
-  },
-  {
     "key": "ctrl+up",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus && !editorReadonly"
@@ -566,6 +538,41 @@
   {
     "key": "ctrl+down",
     "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "text-transformer.lower",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "text-transformer.upper",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "text-transformer.underline",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "text-transformer.dashed",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "text-transformer.camel",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "text-transformer.pascal",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+ctrl+m",
+    "command": "text-transformer.camel_space",
     "when": "editorTextFocus && !editorReadonly"
   },
 
