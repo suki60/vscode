@@ -126,10 +126,6 @@
     "command": "bookmarks.listFromAllFiles"
   },
   {
-    "key": "ctrl+alt+cmd+b",
-    "command": "bookmarks.toggleLabeled"
-  },
-  {
     "key": "shift+cmd+,",
     "command": "workbench.action.openSettings"
   },
@@ -205,6 +201,10 @@
     "command": "editor.action.goToTypeDefinition"
   },
   {
+    "key": "cmd+b",
+    "command": "bookmarks.toggleLabeled"
+  },
+  {
     "key": "cmd+=",
     "command": "editor.action.marker.next"
   },
@@ -263,7 +263,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+shift+a",
+    "key": "shift+alt+a",
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "const [$2] = $1"
@@ -279,7 +279,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+shift+o",
+    "key": "shift+alt+o",
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "const {$2} = $1"
@@ -303,7 +303,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+shift+f",
+    "key": "shift+alt+f",
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "$1 => $2"
@@ -351,7 +351,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+shift+,",
+    "key": "shift+alt+,",
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "<$1 />"
@@ -391,7 +391,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+shift+x",
+    "key": "shift+alt+x",
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "export { $2 } from '$1'"
@@ -407,7 +407,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+shift+l",
+    "key": "shift+alt+l",
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "console.log('$1:', $1)"
@@ -490,6 +490,27 @@
     "command": "bracketeer.changeQuotesTo",
     "when": "editorTextFocus"
   },
+  {
+    "key": "shift+alt+backspace",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+enter",
+    "command": "runCommands",
+    "args": {
+      "commands": ["editor.action.insertLineAfter", "deleteAllLeft"]
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+enter",
+    "command": "runCommands",
+    "args": {
+      "commands": ["editor.action.insertLineBefore", "deleteAllLeft"]
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
 
   // secondary actions
   {
@@ -547,27 +568,6 @@
     "command": "editor.action.insertCursorBelow",
     "when": "editorTextFocus && !editorReadonly"
   },
-  {
-    "key": "ctrl+backspace",
-    "command": "editor.action.deleteLines",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "runCommands",
-    "args": {
-      "commands": ["editor.action.insertLineAfter", "deleteAllLeft"]
-    },
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+ctrl+enter",
-    "command": "runCommands",
-    "args": {
-      "commands": ["editor.action.insertLineBefore", "deleteAllLeft"]
-    },
-    "when": "editorTextFocus && !editorReadonly"
-  },
 
   // settings
   {
@@ -605,6 +605,10 @@
   {
     "key": "ctrl+alt+cmd+u",
     "command": "update.restartToUpdate"
+  },
+  {
+    "key": "ctrl+alt+cmd+b",
+    "command": "bookmarks.clear"
   },
 
   // explorer
