@@ -141,6 +141,11 @@
     "key": "shift+cmd+=",
     "command": "editor.action.marker.nextInFiles"
   },
+  {
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "auxiliaryBarFocus || sideBarFocus"
+  },
 
   // editor actions
   {
@@ -200,6 +205,14 @@
     "command": "editor.action.goToTypeDefinition"
   },
   {
+    "key": "cmd+=",
+    "command": "editor.action.marker.next"
+  },
+  {
+    "key": "cmd+-",
+    "command": "editor.action.marker.prev"
+  },
+  {
     "key": "cmd+9",
     "command": "workbench.action.moveEditorLeftInGroup"
   },
@@ -230,14 +243,6 @@
   {
     "key": "cmd+l",
     "command": "remove-all-console-logs.RemoveConsoleLogs"
-  },
-  {
-    "key": "cmd+=",
-    "command": "editor.action.marker.next"
-  },
-  {
-    "key": "cmd+-",
-    "command": "editor.action.marker.prev"
   },
 
   // text actions
@@ -485,77 +490,70 @@
     "command": "bracketeer.changeQuotesTo",
     "when": "editorTextFocus"
   },
-  {
-    "key": "alt+cmd+/",
-    "command": "github.copilot.nextPanelSolution",
-    "when": "editorTextFocus"
-  },
 
   // secondary actions
   {
-    "key": "alt+cmd+n",
+    "key": "ctrl+/",
+    "command": "github.copilot.nextPanelSolution",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+c",
     "command": "copy-file-name.copyFileName"
   },
   {
-    "key": "alt+cmd+c",
+    "key": "ctrl+p",
     "command": "copyRelativeFilePath"
   },
   {
-    "key": "alt+cmd+b",
+    "key": "ctrl+b",
     "command": "copy-branch-name.copy-current"
   },
   {
-    "key": "alt+cmd+l",
+    "key": "ctrl+l",
     "command": "text-transformer.lower"
   },
   {
-    "key": "alt+cmd+u",
+    "key": "ctrl+u",
     "command": "text-transformer.upper"
   },
   {
-    "key": "alt+cmd+s",
+    "key": "ctrl+s",
     "command": "text-transformer.underline"
   },
   {
-    "key": "alt+cmd+k",
+    "key": "ctrl+k",
     "command": "text-transformer.dashed"
   },
   {
-    "key": "alt+cmd+c",
+    "key": "ctrl+c",
     "command": "text-transformer.camel"
   },
   {
-    "key": "alt+cmd+p",
+    "key": "ctrl+a",
     "command": "text-transformer.pascal"
   },
   {
-    "key": "alt+cmd+space",
+    "key": "ctrl+m",
     "command": "text-transformer.camel_space"
   },
-
-  // especial actions
   {
-    "key": "escape",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "auxiliaryBarFocus || sideBarFocus"
-  },
-  {
-    "key": "ctrl+shift+up",
+    "key": "ctrl+up",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+down",
+    "key": "ctrl+down",
     "command": "editor.action.insertCursorBelow",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+cmd+backspace",
+    "key": "ctrl+backspace",
     "command": "editor.action.deleteLines",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+cmd+enter",
+    "key": "ctrl+enter",
     "command": "runCommands",
     "args": {
       "commands": ["editor.action.insertLineAfter", "deleteAllLeft"]
@@ -563,7 +561,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+alt+cmd+enter",
+    "key": "shift+ctrl+enter",
     "command": "runCommands",
     "args": {
       "commands": ["editor.action.insertLineBefore", "deleteAllLeft"]
