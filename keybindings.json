@@ -205,6 +205,22 @@
     "command": "bookmarks.toggleLabeled"
   },
   {
+    "key": "cmd+e",
+    "command": "eslint.executeAutofix"
+  },
+  {
+    "key": "cmd+p",
+    "command": "prettier.forceFormatDocument"
+  },
+  {
+    "key": "cmd+u",
+    "command": "typescript.removeUnusedImports"
+  },
+  {
+    "key": "cmd+l",
+    "command": "remove-all-console-logs.RemoveConsoleLogs"
+  },
+  {
     "key": "cmd+=",
     "command": "editor.action.marker.next"
   },
@@ -227,22 +243,6 @@
   {
     "key": "cmd+[",
     "command": "workbench.action.moveEditorToLeftGroup"
-  },
-  {
-    "key": "cmd+e",
-    "command": "eslint.executeAutofix"
-  },
-  {
-    "key": "cmd+p",
-    "command": "prettier.forceFormatDocument"
-  },
-  {
-    "key": "cmd+u",
-    "command": "typescript.removeUnusedImports"
-  },
-  {
-    "key": "cmd+l",
-    "command": "remove-all-console-logs.RemoveConsoleLogs"
   },
 
   // text actions
@@ -496,7 +496,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+cmd+backspace",
+    "key": "shift+alt+backspace",
     "command": "editor.action.deleteLines",
     "when": "editorTextFocus && !editorReadonly"
   },
