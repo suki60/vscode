@@ -5,10 +5,6 @@
     "command": "workbench.action.showCommands"
   },
   {
-    "key": "shift+cmd+o",
-    "command": "workbench.action.files.openFileFolder"
-  },
-  {
     "key": "shift+cmd+a",
     "command": "workbench.action.toggleSidebarVisibility"
   },
@@ -45,9 +41,16 @@
     "command": "workbench.panel.chat.view.copilot.focus"
   },
   {
+    "key": "shift+cmd+;",
+    "command": "workbench.action.chat.openInEditor"
+  },
+  {
+    "key": "shift+cmd+'",
+    "command": "workbench.action.chat.openInSidebar"
+  },
+  {
     "key": "shift+cmd+.",
-    "command": "workbench.panel.chatEditing",
-    "when": "workbench.panel.chat.view.edits.active"
+    "command": "workbench.panel.chatEditing"
   },
   {
     "key": "shift+cmd+g",
@@ -102,24 +105,20 @@
     "command": "git-graph.view"
   },
   {
-    "key": "shift+cmd+c",
-    "command": "workbench.files.action.collapseExplorerFolders"
-  },
-  {
-    "key": "shift+cmd+w",
-    "command": "workbench.action.closeAllGroups"
+    "key": "shift+cmd+o",
+    "command": "workbench.action.files.openFileFolder"
   },
   {
     "key": "shift+cmd+`",
     "command": "workbench.action.quickSwitchWindow"
   },
   {
-    "key": "shift+cmd+;",
-    "command": "workbench.action.chat.openInEditor"
+    "key": "shift+cmd+w",
+    "command": "workbench.action.closeAllGroups"
   },
   {
-    "key": "shift+cmd+'",
-    "command": "workbench.action.chat.openInSidebar"
+    "key": "shift+cmd+c",
+    "command": "workbench.files.action.collapseExplorerFolders"
   },
   {
     "key": "shift+cmd+b",
