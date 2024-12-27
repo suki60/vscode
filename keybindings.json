@@ -193,7 +193,7 @@
     "command": "references-view.findReferences"
   },
   {
-    "key": "cmd+h",
+    "key": "cmd+j",
     "command": "references-view.showCallHierarchy"
   },
   {
