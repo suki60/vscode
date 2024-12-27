@@ -1,12 +1,12 @@
 [
   // workbench
   {
-    "key": "shift+cmd+o",
-    "command": "workbench.action.files.openFileFolder"
-  },
-  {
     "key": "shift+cmd+h",
     "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "workbench.action.files.openFileFolder"
   },
   {
     "key": "shift+cmd+a",
