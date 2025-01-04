@@ -25,6 +25,10 @@
     "command": "workbench.view.debug"
   },
   {
+    "key": "shift+cmd+v",
+    "command": "targetsContainers.focus"
+  },
+  {
     "key": "shift+cmd+r",
     "command": "workbench.view.extension.references-view"
   },
@@ -495,7 +499,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+backspace",
+    "key": "shift+cmd+backspace",
     "command": "editor.action.deleteLines",
     "when": "editorTextFocus && !editorReadonly"
   },
