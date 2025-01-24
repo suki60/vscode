@@ -634,6 +634,18 @@
     "command": "bookmarks.clear"
   },
 
+  // sugestions
+  {
+    "key": "tab",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionVisible && textInputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "acceptSelectedSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+
   // explorer
   {
     "key": "a",
