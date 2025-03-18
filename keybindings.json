@@ -141,14 +141,6 @@
     "command": "workbench.action.chat.openInSidebar"
   },
   {
-    "key": "shift+cmd+-",
-    "command": "editor.action.marker.prevInFiles"
-  },
-  {
-    "key": "shift+cmd+=",
-    "command": "editor.action.marker.nextInFiles"
-  },
-  {
     "key": "escape",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "auxiliaryBarFocus || sideBarFocus"
@@ -213,8 +205,7 @@
   },
   {
     "key": "cmd+;",
-    "command": "editor.action.goToImplementation",
-    "when": "editorHasImplementationProvider && editorTextFocus"
+    "command": "typescript.goToSourceDefinition"
   },
   {
     "key": "cmd+b",
@@ -426,7 +417,15 @@
     "key": "shift+alt+l",
     "command": "editor.action.insertSnippet",
     "args": {
-      "snippet": "console.log('$1:', $2)"
+      "snippet": "console.log('$2', $1)"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+.",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "------------------------------->"
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -608,6 +607,10 @@
   {
     "key": "ctrl+alt+cmd+l",
     "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "ctrl+alt+cmd+n",
+    "command": "workbench.action.duplicateWorkspaceInNewWindow"
   },
   {
     "key": "ctrl+alt+cmd+w",
