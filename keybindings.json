@@ -590,6 +590,14 @@
     "command": "text-transformer.camel_space",
     "when": "editorTextFocus && !editorReadonly"
   },
+  {
+    "key": "ctrl+=",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "workbench.action.navigateBack"
+  },
 
   // settings
   {
