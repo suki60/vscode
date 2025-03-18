@@ -200,14 +200,6 @@
     "command": "references-view.showCallHierarchy"
   },
   {
-    "key": "cmd+y",
-    "command": "editor.action.goToTypeDefinition"
-  },
-  {
-    "key": "cmd+;",
-    "command": "typescript.goToSourceDefinition"
-  },
-  {
     "key": "cmd+b",
     "command": "bookmarks.toggleLabeled"
   },
@@ -785,6 +777,28 @@
     "key": "escape",
     "command": "keybindings.editor.searchKeybindings",
     "when": "inKeybindings"
+  },
+
+  // go to
+  {
+    "key": "cmd+;",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "typescript.goToSourceDefinition",
+        "workbench.action.closeEditorsToTheLeft"
+      ]
+    }
+  },
+  {
+    "key": "cmd+y",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "editor.action.goToTypeDefinition",
+        "workbench.action.closeEditorsToTheLeft"
+      ]
+    }
   },
 
   // git
