@@ -109,6 +109,10 @@
     "command": "workbench.action.quickSwitchWindow"
   },
   {
+    "key": "shift+cmd+t",
+    "command": "workbench.action.closeOtherEditors"
+  },
+  {
     "key": "shift+cmd+w",
     "command": "workbench.action.closeAllGroups"
   },
