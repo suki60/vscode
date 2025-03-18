@@ -763,6 +763,23 @@
     "when": "textCompareEditorVisible"
   },
 
+  // keybindings
+  {
+    "key": "cmd+k",
+    "command": "keybindings.editor.recordSearchKeys",
+    "when": "inKeybindings"
+  },
+  {
+    "key": "cmd+e",
+    "command": "keybindings.editor.defineWhenExpression",
+    "when": "inKeybindings"
+  },
+  {
+    "key": "escape",
+    "command": "keybindings.editor.searchKeybindings",
+    "when": "inKeybindings"
+  },
+
   // git
   {
     "key": "cmd+g shift+cmd+f",
