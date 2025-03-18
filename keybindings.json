@@ -109,10 +109,6 @@
     "command": "workbench.action.quickSwitchWindow"
   },
   {
-    "key": "shift+cmd+t",
-    "command": "workbench.action.closeOtherEditors"
-  },
-  {
     "key": "shift+cmd+w",
     "command": "workbench.action.closeAllGroups"
   },
@@ -659,6 +655,13 @@
     "key": "enter",
     "command": "acceptSelectedSuggestion",
     "when": "suggestWidgetVisible && textInputFocus"
+  },
+
+  // list
+  {
+    "key": "space",
+    "command": "list.selectAndPreserveFocus",
+    "when": "listFocus"
   },
 
   // explorer
