@@ -181,7 +181,7 @@
   },
   {
     "key": "cmd+o",
-    "command": "git.openFile"
+    "command": "pr.openModifiedFile"
   },
   {
     "key": "cmd+\\",
