@@ -1,7 +1,7 @@
 [
   // workbench
   {
-    "key": "shift+cmd+h",
+    "key": "shift+cmd+p",
     "command": "workbench.action.showCommands"
   },
   {
@@ -9,7 +9,7 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "shift+cmd+s",
+    "key": "shift+cmd+f",
     "command": "workbench.view.search"
   },
   {
@@ -41,7 +41,7 @@
     "command": "workbench.view.extensions"
   },
   {
-    "key": "shift+cmd+g",
+    "key": "shift+cmd+s",
     "command": "workbench.view.scm"
   },
   {
@@ -53,7 +53,7 @@
     "command": "workbench.panel.chatEditing"
   },
   {
-    "key": "shift+cmd+l",
+    "key": "shift+cmd+g",
     "command": "workbench.view.extension.github-pull-requests"
   },
   {
@@ -61,7 +61,7 @@
     "command": "prStatus:github.focus"
   },
   {
-    "key": "shift+cmd+p",
+    "key": "shift+cmd+space",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -93,7 +93,7 @@
     "command": "workbench.action.openGlobalKeybindings"
   },
   {
-    "key": "shift+cmd+f",
+    "key": "shift+cmd+h",
     "command": "search.action.openEditor"
   },
   {
@@ -118,7 +118,8 @@
   },
   {
     "key": "shift+cmd+c",
-    "command": "workbench.files.action.collapseExplorerFolders"
+    "command": "workbench.files.action.collapseExplorerFolders",
+    "when": "explorerViewletVisible"
   },
   {
     "key": "shift+cmd+b",
@@ -900,5 +901,10 @@
   {
     "key": "cmd+g shift+cmd+n",
     "command": "git.renameBranch"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "search.action.collapseSearchResults",
+    "when": "searchViewletVisible"
   }
 ]
