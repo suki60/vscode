@@ -551,40 +551,47 @@
     "command": "editor.action.insertCursorBelow"
   },
   {
-    "key": "ctrl+l",
-    "command": "text-transformer.lower"
-  },
-  {
-    "key": "ctrl+u",
-    "command": "text-transformer.upper"
-  },
-  {
-    "key": "ctrl+s",
-    "command": "text-transformer.underline"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "text-transformer.dashed"
-  },
-  {
-    "key": "ctrl+m",
-    "command": "text-transformer.camel"
-  },
-  {
-    "key": "ctrl+a",
-    "command": "text-transformer.pascal"
-  },
-  {
-    "key": "shift+ctrl+m",
-    "command": "text-transformer.camel_space"
-  },
-  {
     "key": "ctrl+=",
     "command": "workbench.action.navigateForward"
   },
   {
     "key": "ctrl+-",
     "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "text-transformer.lower",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "text-transformer.upper",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "text-transformer.underline",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "text-transformer.dashed",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "text-transformer.camel",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "text-transformer.pascal",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+ctrl+m",
+    "command": "text-transformer.camel_space",
+    "when": "editorTextFocus && !editorReadonly"
   },
 
   // settings
