@@ -1,7 +1,7 @@
 [
   // workbench
   {
-    "key": "shift+cmd+p",
+    "key": "shift+cmd+h",
     "command": "workbench.action.showCommands"
   },
   {
@@ -93,7 +93,7 @@
     "command": "workbench.action.openGlobalKeybindings"
   },
   {
-    "key": "shift+cmd+h",
+    "key": "shift+cmd+p",
     "command": "search.action.openEditor"
   },
   {
@@ -671,6 +671,25 @@
     "when": "filesExplorerFocus && !inputFocus"
   },
 
+  // find
+  {
+    "key": "shift+cmd+c",
+    "command": "search.action.collapseSearchResults",
+    "when": "searchViewletVisible"
+  },
+  {
+    "key": "shift+cmd+backspace",
+    "command": "search.action.clearSearchResults",
+    "when": "hasSearchResult && searchViewletFocus"
+  },
+
+  // find widget
+  {
+    "key": "cmd+r",
+    "command": "editor.action.startFindReplaceAction",
+    "when": "findWidgetVisible"
+  },
+
   // search
   {
     "key": "cmd+i",
@@ -681,13 +700,6 @@
     "key": "cmd+e",
     "command": "search.action.focusFilesToExclude",
     "when": "inSearchEditor"
-  },
-
-  // find
-  {
-    "key": "cmd+r",
-    "command": "editor.action.startFindReplaceAction",
-    "when": "findWidgetVisible"
   },
 
   // scm
@@ -908,10 +920,5 @@
   {
     "key": "cmd+g shift+cmd+n",
     "command": "git.renameBranch"
-  },
-  {
-    "key": "shift+cmd+c",
-    "command": "search.action.collapseSearchResults",
-    "when": "searchViewletVisible"
   }
 ]
