@@ -1,10 +1,6 @@
 [
   // workbench
   {
-    "key": "shift+cmd+h",
-    "command": "workbench.action.showCommands"
-  },
-  {
     "key": "shift+cmd+a",
     "command": "workbench.action.toggleSidebarVisibility"
   },
@@ -93,7 +89,7 @@
     "command": "workbench.action.openGlobalKeybindings"
   },
   {
-    "key": "shift+cmd+p",
+    "key": "shift+cmd+h",
     "command": "search.action.openEditor"
   },
   {
