@@ -5,11 +5,7 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "shift+cmd+f",
-    "command": "workbench.view.search"
-  },
-  {
-    "key": "shift+cmd+'",
+    "key": "shift+cmd+\\",
     "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
@@ -105,10 +101,6 @@
     "command": "workbench.action.files.openFileFolder"
   },
   {
-    "key": "shift+cmd+\\",
-    "command": "workbench.action.quickSwitchWindow"
-  },
-  {
     "key": "shift+cmd+w",
     "command": "workbench.action.closeAllGroups"
   },
@@ -119,7 +111,7 @@
   },
   {
     "key": "shift+cmd+b",
-    "command": "bookmarks.listFromAllFiles"
+    "command": "bookmarks.toggleLabeled"
   },
   {
     "key": "shift+cmd+backspace",
@@ -182,7 +174,7 @@
   },
   {
     "key": "cmd+o",
-    "command": "pr.openModifiedFile"
+    "command": "git.openFile"
   },
   {
     "key": "cmd+\\",
@@ -202,7 +194,7 @@
   },
   {
     "key": "cmd+b",
-    "command": "bookmarks.toggleLabeled"
+    "command": "bookmarks.listFromAllFiles"
   },
   {
     "key": "cmd+e",
@@ -370,7 +362,7 @@
     "key": "alt+i",
     "command": "editor.action.insertSnippet",
     "args": {
-      "snippet": "import $2 from '$1'"
+      "snippet": "import $1 from '$2'"
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -411,6 +403,14 @@
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "console.log('$2', $1)"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+1",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "console.log('HEEEEEEEEEEY')\nconsole.log('HEEEEEEEEEEY')\nconsole.log('HEEEEEEEEEEY')"
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -499,7 +499,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+\\",
+    "key": "shift+alt+'",
     "command": "bracketeer.changeQuotesTo",
     "when": "editorTextFocus"
   },
@@ -526,6 +526,18 @@
   },
 
   // secondary actions
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.quickSwitchWindow"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.closeOtherEditors"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "pr.openModifiedFile"
+  },
   {
     "key": "ctrl+c",
     "command": "copy-file-name.copyFileName"
@@ -773,6 +785,23 @@
     "when": "textCompareEditorVisible"
   },
 
+  // chat
+  {
+    "key": "cmd+a",
+    "command": "workbench.action.chat.openAsk",
+    "when": "inChatInput"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.chat.openEdit",
+    "when": "inChatInput"
+  },
+  {
+    "key": "cmd+/",
+    "command": "workbench.action.chat.openAgent",
+    "when": "inChatInput"
+  },
+
   // keybindings
   {
     "key": "cmd+k",
@@ -858,6 +887,10 @@
     "command": "git.deleteBranch"
   },
   {
+    "key": "cmd+g ctrl+alt+cmd+d",
+    "command": "git.stashDropAll"
+  },
+  {
     "key": "cmd+g shift+cmd+enter",
     "command": "git.commit"
   },
@@ -911,6 +944,10 @@
   },
   {
     "key": "cmd+g shift+cmd+r",
+    "command": "pr.create"
+  },
+  {
+    "key": "cmd+g ctrl+alt+cmd+r",
     "command": "git.refresh"
   },
   {
