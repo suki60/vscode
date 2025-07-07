@@ -1,5 +1,7 @@
 {
-  "bookmarks.saveBookmarksInProject": true,
+  "atlascode.bitbucket.enabled": false,
+  "atlascode.bitbucket.explorer.enabled": false,
+  "atlascode.jira.todoIssues.enabled": false,
   "bookmarks.sideBar.countBadge": "off",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
@@ -11,6 +13,7 @@
   "editor.suggest.filterGraceful": false,
   "editor.suggest.showWords": false,
   "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {},
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "explorer.autoReveal": "focusNoScroll",
   "extensions.ignoreRecommendations": true,
@@ -20,8 +23,10 @@
   "git.confirmNoVerifyCommit": false,
   "git.ignoreRebaseWarning": true,
   "git.openRepositoryInParentFolders": "always",
+  "git.showReferenceDetails": false,
   "git.suggestSmartCommit": false,
   "gitHistory.showFileHistorySplit": false,
+  "githubPullRequests.createOnPublishBranch": "never",
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "githubPullRequests.pullBranch": "never",
   "javascript.preferGoToSourceDefinition": true,
@@ -31,7 +36,16 @@
   "search.smartCase": true,
   "search.useParentIgnoreFiles": true,
   "security.promptForLocalFileProtocolHandling": false,
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
   "terminal.integrated.fontSize": 15,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.profiles.osx": {
+    "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
+  },
+  "terminal.integrated.shellIntegration.enabled": false,
   "typescript.preferGoToSourceDefinition": true,
   "typescriptExplorer.typeTree.view.icons.colors.enable": false,
   "typescriptExplorer.typeTree.view.icons.enable": false,
@@ -46,23 +60,10 @@
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
   "zenMode.fullScreen": false,
-  "tailwindCSS.experimental.classRegex": [
-    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
-  ],
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
