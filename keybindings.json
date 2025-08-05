@@ -511,6 +511,11 @@
     "when": "editorTextFocus"
   },
   {
+    "key": "shift+alt+'",
+    "command": "bracketeer.removeQuotes",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "alt+`",
     "command": "extension.selectBackTick",
     "when": "editorTextFocus"
@@ -535,18 +540,14 @@
     "command": "bracketeer.removeBrackets",
     "when": "editorTextFocus"
   },
+
   {
-    "key": "alt+\\",
-    "command": "bracketeer.removeQuotes",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+alt+]",
+    "key": "ctrl+]",
     "command": "bracketeer.changeBracketsTo",
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+'",
+    "key": "ctrl+'",
     "command": "bracketeer.changeQuotesTo",
     "when": "editorTextFocus"
   },
