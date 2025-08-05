@@ -267,19 +267,19 @@
   },
   {
     "key": "cmd+9",
-    "command": "workbench.action.moveEditorLeftInGroup"
-  },
-  {
-    "key": "cmd+0",
-    "command": "workbench.action.moveEditorRightInGroup"
-  },
-  {
-    "key": "cmd+]",
     "command": "workbench.action.nextEditor"
   },
   {
-    "key": "cmd+[",
+    "key": "cmd+0",
     "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "cmd+]",
+    "command": "workbench.action.moveEditorRightInGroup"
   },
 
   // text actions
