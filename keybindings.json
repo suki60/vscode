@@ -9,6 +9,16 @@
     "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
+    "key": "ctrl+alt+cmd+\\",
+    "command": "workbench.action.maximizeAuxiliaryBar",
+    "when": "!auxiliaryBarMaximized"
+  },
+  {
+    "key": "ctrl+alt+cmd+\\",
+    "command": "workbench.action.restoreAuxiliaryBar",
+    "when": "auxiliaryBarMaximized"
+  },
+  {
     "key": "shift+cmd+e",
     "command": "workbench.view.explorer"
   },
@@ -114,8 +124,7 @@
   },
   {
     "key": "shift+cmd+c",
-    "command": "workbench.files.action.collapseExplorerFolders",
-    "when": "explorerViewletVisible"
+    "command": "workbench.files.action.collapseExplorerFolders"
   },
   {
     "key": "shift+cmd+b",
@@ -126,14 +135,6 @@
     "command": "git.clean"
   },
   {
-    "key": "shift+cmd+,",
-    "command": "workbench.action.chat.openInEditor"
-  },
-  {
-    "key": "shift+cmd+.",
-    "command": "workbench.action.chat.openInSidebar"
-  },
-  {
     "key": "shift+cmd+]",
     "command": "workbench.action.moveEditorToRightGroup"
   },
@@ -142,12 +143,12 @@
     "command": "workbench.action.moveEditorToLeftGroup"
   },
   {
-    "key": "ctrl+alt+cmd+\\",
+    "key": "alt+\\",
     "command": "workbench.action.pinEditor",
     "when": "!activeEditorIsPinned"
   },
   {
-    "key": "ctrl+alt+cmd+\\",
+    "key": "alt+\\",
     "command": "workbench.action.unpinEditor",
     "when": "activeEditorIsPinned"
   },
@@ -230,6 +231,14 @@
     "key": "cmd+l",
     "command": "workbench.action.editor.changeLanguageMode"
   },
+    {
+    "key": "cmd+;",
+    "command": "typescript.goToSourceDefinition"
+  },
+  {
+    "key": "cmd+y",
+    "command": "editor.action.goToTypeDefinition"
+  },
   {
     "key": "cmd+=",
     "command": "editor.action.marker.next"
@@ -308,12 +317,20 @@
     "key": "alt+f",
     "command": "editor.action.insertSnippet",
     "args": {
+      "snippet": "function $1($2) {$3}"
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+.",
+    "command": "editor.action.insertSnippet",
+    "args": {
       "snippet": "($1) => {$2}"
     },
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+alt+f",
+    "key": "shift+alt+.",
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "$1 => $2"
@@ -445,14 +462,6 @@
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "console.log('HEEEEEEEEEEY')\nconsole.log('HEEEEEEEEEEY')\nconsole.log('HEEEEEEEEEEY')"
-    },
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+.",
-    "command": "editor.action.insertSnippet",
-    "args": {
-      "snippet": "------------------------------->"
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -840,12 +849,12 @@
     "when": "inChatInput"
   },
   {
-    "key": "shift+cmd+y",
+    "key": "shift+cmd+enter",
     "command": "chatEditor.action.accept",
     "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress"
   },
   {
-    "key": "shift+cmd+n",
+    "key": "shift+cmd+backspace",
     "command": "chatEditor.action.reject",
     "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress"
   },
