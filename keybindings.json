@@ -55,6 +55,10 @@
     "command": "workbench.panel.chat.view.copilot.focus"
   },
   {
+    "key": "ctrl+alt+cmd+/",
+    "command": "github.copilot.completions.toggle"
+  },
+  {
     "key": "shift+cmd+;",
     "command": "workbench.panel.chatEditing"
   },
@@ -292,6 +296,22 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
+    "key": "alt+l",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "let $1 = "
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+y",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "type $1 = "
+    },
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
     "key": "alt+a",
     "command": "editor.action.insertSnippet",
     "args": {
@@ -320,14 +340,6 @@
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "const {$2} = $1"
-    },
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+p",
-    "command": "editor.action.insertSnippet",
-    "args": {
-      "snippet": "$1: $2,"
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -380,23 +392,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+y",
-    "command": "editor.action.insertSnippet",
-    "args": {
-      "snippet": "type $1 = "
-    },
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "alt+,",
-    "command": "editor.action.insertSnippet",
-    "args": {
-      "snippet": "<$1>$2</$1>"
-    },
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+,",
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "<$1 />"
@@ -404,34 +400,10 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+n",
+    "key": "shift+alt+,",
     "command": "editor.action.insertSnippet",
     "args": {
-      "snippet": "className="
-    },
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+i",
-    "command": "editor.action.insertSnippet",
-    "args": {
-      "snippet": "import $1 from '$2'"
-    },
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+i",
-    "command": "editor.action.insertSnippet",
-    "args": {
-      "snippet": "import { $2 } from '$1'"
-    },
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+x",
-    "command": "editor.action.insertSnippet",
-    "args": {
-      "snippet": "export "
+      "snippet": "<$1>$2</$1>"
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -448,14 +420,6 @@
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "'use server'"
-    },
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+x",
-    "command": "editor.action.insertSnippet",
-    "args": {
-      "snippet": "export { $2 } from '$1'"
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -479,7 +443,7 @@
     "key": "alt+1",
     "command": "editor.action.insertSnippet",
     "args": {
-      "snippet": "console.log('HEEEEEEEEEEY')\nconsole.log('HEEEEEEEEEEY')\nconsole.log('HEEEEEEEEEEY')"
+      "snippet": "console.log('----------------------- $1 -----------------------')"
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -515,10 +479,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+/",
-    "command": "github.copilot.completions.toggle"
-  },
-  {
     "key": "alt+8",
     "command": "bracket-select.select",
     "when": "editorTextFocus"
@@ -549,19 +509,13 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+[",
+    "key": "alt+]",
     "command": "extension.selectCurlyBrackets",
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+]",
+    "key": "shift+alt+]",
     "command": "bracketeer.removeBrackets",
-    "when": "editorTextFocus"
-  },
-
-  {
-    "key": "ctrl+'",
-    "command": "bracketeer.changeQuotesTo",
     "when": "editorTextFocus"
   },
   {
@@ -662,7 +616,12 @@
     "command": "text-transformer.camel_space",
     "when": "editorTextFocus && !editorReadonly"
   },
-    {
+  {
+    "key": "ctrl+'",
+    "command": "bracketeer.changeQuotesTo",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
     "key": "ctrl+\\",
     "command": "workbench.action.pinEditor",
     "when": "!activeEditorIsPinned"
