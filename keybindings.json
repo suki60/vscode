@@ -96,15 +96,23 @@
   },
   {
     "key": "shift+cmd+5",
-    "command": "workbench.panel.comments"
+    "command": "pw.extension.locatorsView.focus"
   },
   {
     "key": "shift+cmd+k",
     "command": "workbench.action.openGlobalKeybindings"
   },
   {
+    "key": "ctrl+alt+cmd+k",
+    "command": "workbench.action.openGlobalKeybindingsFile"
+  },
+  {
     "key": "shift+cmd+,",
     "command": "workbench.action.openSettings"
+  },
+  {
+    "key": "ctrl+alt+cmd+,",
+    "command": "workbench.action.openSettingsJson"
   },
   {
     "key": "shift+cmd+h",
@@ -132,11 +140,27 @@
   },
   {
     "key": "shift+cmd+b",
-    "command": "bookmarks.toggleLabeled"
+    "command": "bookmarks.listFromAllFiles"
+  },
+    {
+    "key": "ctrl+alt+cmd+b",
+    "command": "bookmarks.clear"
   },
   {
     "key": "shift+cmd+backspace",
     "command": "git.clean"
+  },
+    {
+    "key": "ctrl+alt+cmd+n",
+    "command": "workbench.action.duplicateWorkspaceInNewWindow"
+  },
+  {
+    "key": "ctrl+alt+cmd+w",
+    "command": "workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+alt+cmd+l",
+    "command": "workbench.action.reloadWindow"
   },
   {
     "key": "shift+cmd+]",
@@ -145,16 +169,6 @@
   {
     "key": "shift+cmd+[",
     "command": "workbench.action.moveEditorToLeftGroup"
-  },
-  {
-    "key": "alt+\\",
-    "command": "workbench.action.pinEditor",
-    "when": "!activeEditorIsPinned"
-  },
-  {
-    "key": "alt+\\",
-    "command": "workbench.action.unpinEditor",
-    "when": "activeEditorIsPinned"
   },
   {
     "key": "escape",
@@ -217,7 +231,7 @@
   },
   {
     "key": "cmd+b",
-    "command": "bookmarks.listFromAllFiles"
+    "command": "bookmarks.toggleLabeled"
   },
   {
     "key": "cmd+e",
@@ -648,51 +662,15 @@
     "command": "text-transformer.camel_space",
     "when": "editorTextFocus && !editorReadonly"
   },
-
-  // settings
-  {
-    "key": "ctrl+alt+cmd+,",
-    "command": "workbench.action.openSettingsJson"
+    {
+    "key": "ctrl+\\",
+    "command": "workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
   },
   {
-    "key": "ctrl+alt+cmd+k",
-    "command": "workbench.action.openGlobalKeybindingsFile"
-  },
-  {
-    "key": "ctrl+alt+cmd+s",
-    "command": "workbench.action.openSnippets"
-  },
-  {
-    "key": "ctrl+alt+cmd+l",
-    "command": "workbench.action.reloadWindow"
-  },
-  {
-    "key": "ctrl+alt+cmd+n",
-    "command": "workbench.action.duplicateWorkspaceInNewWindow"
-  },
-  {
-    "key": "ctrl+alt+cmd+w",
-    "command": "workbench.action.closeWindow"
-  },
-  {
-    "key": "ctrl+alt+cmd+t",
-    "command": "typescript.restartTsServer"
-  },
-  {
-    "key": "ctrl+alt+cmd+e",
-    "command": "eslint.restart"
-  },
-  {
-    "key": "ctrl+alt+cmd+x",
-    "command": "workbench.action.restartExtensionHost"
-  },
-  {
-    "key": "ctrl+alt+cmd+u",
-    "command": "update.restartToUpdate"
-  },
-  {
-    "key": "ctrl+alt+cmd+b",
-    "command": "bookmarks.clear"
+    "key": "ctrl+\\",
+    "command": "workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
   },
 
   // sugestions
