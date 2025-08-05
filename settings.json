@@ -40,7 +40,7 @@
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.profiles.osx": {
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
@@ -65,5 +65,10 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false
+  },  
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "files.exclude": {
+    "": true,
+    "**/.git": false
   }
 }
