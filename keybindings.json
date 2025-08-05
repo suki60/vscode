@@ -103,6 +103,10 @@
     "command": "workbench.action.openGlobalKeybindings"
   },
   {
+    "key": "shift+cmd+,",
+    "command": "workbench.action.openSettings"
+  },
+  {
     "key": "shift+cmd+h",
     "command": "search.action.openEditor"
   },
@@ -541,11 +545,6 @@
     "when": "editorTextFocus"
   },
 
-  {
-    "key": "ctrl+]",
-    "command": "bracketeer.changeBracketsTo",
-    "when": "editorTextFocus"
-  },
   {
     "key": "ctrl+'",
     "command": "bracketeer.changeQuotesTo",
