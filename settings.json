@@ -44,13 +44,25 @@
 	"search.useParentIgnoreFiles": true,
 	"security.promptForLocalFileProtocolHandling": false,
 	"tailwindCSS.experimental.classRegex": [
-		["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-		["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+		[
+			"cva\\(([^)]*)\\)",
+			"[\"'`]([^\"'`]*).*?[\"'`]"
+		],
+		[
+			"cn\\(([^)]*)\\)",
+			"(?:'|\"|`)([^']*)(?:'|\"|`)"
+		]
 	],
 	"terminal.integrated.fontSize": 16,
 	"terminal.integrated.defaultProfile.osx": "zsh",
 	"terminal.integrated.profiles.osx": {
-		"zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
+		"zsh": {
+			"path": "/bin/zsh",
+			"args": [
+				"-l",
+				"-i"
+			]
+		}
 	},
 	"terminal.integrated.shellIntegration.enabled": false,
 	"typescript.preferGoToSourceDefinition": true,
@@ -75,7 +87,13 @@
 	"[javascript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
-		"files.exclude": {
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"files.exclude": {
 		"": true,
 		"**/.git": true
 	}
