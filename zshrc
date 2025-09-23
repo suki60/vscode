@@ -1,23 +1,29 @@
-# zshrc
-alias zshrc="code ~/.zshrc"
-
 # oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
+
 ZSH_THEME="robbyrussell"
 plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
 
 # add scripts/bin to path
 export PATH="$HOME/bin:$PATH"
 
+# zshrc
+alias zshrc="code ~/.zshrc"
+
 # folders
 alias dt="cd ~/Desktop"
-alias work="cd ~/work"
+alias wk="cd ~/work"
 alias box="cd ~/box"
 alias pj="cd ~/projects"
-alias scripts="cd ~/scripts"
+alias ss="cd ~/scripts"
 
 # repos
 alias app="cd ~/Desktop/my-app"
+alias pp="cd ~/work/cx-partner-portal"
+alias vp="cd ~/work/vendor-portal-fe"
+alias las="cd ~/work/lead-acquisition-service"
 alias cap="cd ~/work/bx-capterra"
 alias www="cd ~/work/bx-capterra/apps/bx-capterra-www"
 alias dra="cd ~/work/dracarys"
@@ -25,41 +31,53 @@ alias pf="cd ~/projects/portfolio"
 alias wp="cd ~/projects/whitepepper"
 
 # npm
-alias i="npm i"
-alias dev="npm run dev"
-alias build="npm run build"
-alias start="npm run start"
-alias lint="npm run lint"
-alias type-check="npm run type-check"
-alias test="npm run test"
-alias testw="npm run test -- --watchAll"
+alias n="npm"
+alias i="n i"
+alias dev="n run dev"
+alias build="n run build"
+alias start="n run start"
+alias lint="n run lint"
+alias type-check="n run type-check"
+alias test="n run test"
+alias testw="n run test:watch"
+alias e2eo="n run e2e:open"
+
+# pnpm
+alias p="pnpm"
+
+# yarn
+alias y="yarn"
+
+# vercel
+alias v="vercel"
 
 # biome
-alias b="npx @biomejs/biome"
+alias b="biome"
 alias bl="b lint"
 alias blo="b lint --only"
+alias bll="b lint --diagnostic-level"
+alias blw="b lint --diagnostic-level warn"
+alias ble="b lint --diagnostic-level error"
+alias blwo="b lint --diagnostic-level warn --only"
+alias bleo="b lint --diagnostic-level error --only"
+alias bf="b format"
 
 # git
 alias g="git"
 alias gri="git rebase -i"
 
-# nvm
-envm() {
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-  echo "NVM environment variables loaded."
-}
-
-# helpers 
+# helpers
 tbn() {
-  if [ -z "$1" ]; then
-    echo "Please provide an argument for tbn"
-  else
-    node ~/scripts/tbn.js $1 | pbcopy
-    echo "Output of tbn $1 copied to clipboard!"
-  fi
+   node ~/scripts/tbn.js $1 | pbcopy
 }
 
-# use node 20
-export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
+# pnpm
+export PNPM_HOME="/Users/{user_name}/Library/pnpm"
+
+case ":$PATH:" in
+ *":$PNPM_HOME:"*) ;;
+ *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
