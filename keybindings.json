@@ -179,7 +179,6 @@
 		"command": "workbench.action.focusActiveEditorGroup",
 		"when": "auxiliaryBarFocus || sideBarFocus"
 	},
-
 	// editor actions
 	{
 		"key": "cmd+1",
@@ -285,7 +284,6 @@
 		"key": "cmd+\\",
 		"command": "workbench.action.keepEditor"
 	},
-
 	// text actions
 	{
 		"key": "alt+c",
@@ -464,7 +462,10 @@
 		"key": "alt+=",
 		"command": "runCommands",
 		"args": {
-			"commands": ["deleteInsideWord", "deleteRight"]
+			"commands": [
+				"deleteInsideWord",
+				"deleteRight"
+			]
 		},
 		"when": "editorTextFocus && !editorReadonly"
 	},
@@ -522,7 +523,10 @@
 		"key": "alt+enter",
 		"command": "runCommands",
 		"args": {
-			"commands": ["editor.action.insertLineAfter", "deleteAllLeft"]
+			"commands": [
+				"editor.action.insertLineAfter",
+				"deleteAllLeft"
+			]
 		},
 		"when": "editorTextFocus && !editorReadonly"
 	},
@@ -530,11 +534,13 @@
 		"key": "shift+alt+enter",
 		"command": "runCommands",
 		"args": {
-			"commands": ["editor.action.insertLineBefore", "deleteAllLeft"]
+			"commands": [
+				"editor.action.insertLineBefore",
+				"deleteAllLeft"
+			]
 		},
 		"when": "editorTextFocus && !editorReadonly"
 	},
-
 	// secondary actions
 	{
 		"key": "ctrl+tab",
@@ -611,7 +617,7 @@
 		"command": "text-transformer.camel_space",
 		"when": "editorTextFocus && !editorReadonly"
 	},
-  {
+	{
 		"key": "ctrl+[",
 		"command": "bracketeer.changeBracketsTo"
 	},
@@ -620,7 +626,7 @@
 		"command": "bracketeer.changeQuotesTo",
 		"when": "editorTextFocus && !editorReadonly"
 	},
-  {
+	{
 		"key": "ctrl+i",
 		"command": "editor.action.organizeImports",
 		"when": "textInputFocus && !editorReadonly"
@@ -635,7 +641,6 @@
 		"command": "workbench.action.unpinEditor",
 		"when": "activeEditorIsPinned"
 	},
-
 	// sugestions
 	{
 		"key": "alt+tab",
@@ -647,14 +652,12 @@
 		"command": "acceptSelectedSuggestion",
 		"when": "suggestWidgetVisible && textInputFocus"
 	},
-
 	// list
 	{
 		"key": "space",
 		"command": "list.selectAndPreserveFocus",
 		"when": "listFocus"
 	},
-
 	// explorer
 	{
 		"key": "a",
@@ -666,7 +669,6 @@
 		"command": "explorer.newFolder",
 		"when": "filesExplorerFocus && !inputFocus"
 	},
-
 	// find
 	{
 		"key": "shift+cmd+c",
@@ -678,14 +680,12 @@
 		"command": "search.action.clearSearchResults",
 		"when": "hasSearchResult && searchViewletFocus"
 	},
-
 	// find widget
 	{
 		"key": "cmd+r",
 		"command": "editor.action.startFindReplaceAction",
 		"when": "findWidgetVisible"
 	},
-
 	// search
 	{
 		"key": "cmd+i",
@@ -697,13 +697,15 @@
 		"command": "search.action.focusFilesToExclude",
 		"when": "inSearchEditor"
 	},
-
 	// scm
 	{
 		"key": "cmd+e",
 		"command": "runCommands",
 		"args": {
-			"commands": ["list.focusFirst", "list.select"]
+			"commands": [
+				"list.focusFirst",
+				"list.select"
+			]
 		},
 		"when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
 	},
@@ -760,7 +762,6 @@
 		"command": "git.commitNoVerify",
 		"when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
 	},
-
 	// diff editor
 	{
 		"key": "cmd+=",
@@ -772,7 +773,6 @@
 		"command": "workbench.action.compareEditor.previousChange",
 		"when": "textCompareEditorVisible"
 	},
-
 	// chat
 	{
 		"key": "cmd+;",
@@ -799,7 +799,6 @@
 		"command": "chatEditor.action.reject",
 		"when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress"
 	},
-
 	// keybindings
 	{
 		"key": "cmd+k",
@@ -816,7 +815,6 @@
 		"command": "keybindings.editor.searchKeybindings",
 		"when": "inKeybindings"
 	},
-
 	// git
 	{
 		"key": "cmd+g shift+cmd+f",
