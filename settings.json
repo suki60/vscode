@@ -2,6 +2,7 @@
 	"atlascode.bitbucket.enabled": false,
 	"atlascode.bitbucket.explorer.enabled": false,
 	"atlascode.jira.todoIssues.enabled": false,
+	"biome.requireConfiguration": true,
 	"bookmarks.sideBar.countBadge": "off",
 	"editor.accessibilitySupport": "off",
 	"editor.bracketPairColorization.enabled": false,
@@ -9,6 +10,7 @@
 	"editor.fontFamily": "Roboto Mono",
 	"editor.fontSize": 15,
 	"editor.formatOnPaste": false,
+	"editor.formatOnSave": true,
 	"editor.minimap.enabled": false,
 	"editor.suggest.filterGraceful": false,
 	"editor.suggest.showWords": false,
@@ -75,20 +77,26 @@
 	"workbench.colorTheme": "Atom One Dark",
 	"workbench.editor.enablePreviewFromQuickOpen": true,
 	"workbench.editor.focusRecentEditorAfterClose": false,
+	"workbench.editor.pinnedTabsOnSeparateRow": true,
+	"workbench.editor.preventPinnedEditorClose": "never",
 	"workbench.iconTheme": "file-icons",
 	"workbench.layoutControl.enabled": false,
 	"workbench.startupEditor": "none",
 	"yaml.schemas": {
-		"file:///Users/faltesan/.vscode/extensions/atlassian.atlascode-3.8.16/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+		"file:///Users/faltesan/.vscode/extensions/atlassian.atlascode-4.0.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
 	},
 	"zenMode.fullScreen": false,
 	"javascript.format.semicolons": "remove",
 	"typescript.format.semicolons": "remove",
-	"[javascript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
+	"editor.defaultFormatter": "vscode.typescript-language-features",
+	"[dockercompose]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
+		"editor.autoIndent": "advanced",
+		"editor.defaultFormatter": "redhat.vscode-yaml"
 	},
-	"[typescript]": {
-		"editor.defaultFormatter": "vscode.typescript-language-features"
+	"[github-actions-workflow]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
 	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
