@@ -135,6 +135,10 @@
 		"command": "workbench.action.files.openFileFolder"
 	},
 	{
+		"key": "ctrl+alt+cmd+o",
+		"command": "git.openAllChanges"
+	},
+	{
 		"key": "shift+cmd+w",
 		"command": "workbench.action.closeAllGroups"
 	},
@@ -159,12 +163,26 @@
 		"command": "workbench.action.duplicateWorkspaceInNewWindow"
 	},
 	{
+		"key": "ctrl+alt+cmd+t",
+		"command": "runCommands",
+		"args": {
+			"commands": [
+				"workbench.action.closeAllGroups",
+				"workbench.action.reopenClosedEditor"
+			]
+		}
+	},
+	{
 		"key": "ctrl+alt+cmd+w",
 		"command": "workbench.action.closeWindow"
 	},
 	{
 		"key": "ctrl+alt+cmd+l",
 		"command": "workbench.action.reloadWindow"
+	},
+	{
+		"key": "shift+cmd+.",
+		"command": "editor.action.fixAll"
 	},
 	{
 		"key": "shift+cmd+]",
@@ -265,11 +283,11 @@
 		"command": "editor.action.marker.prev"
 	},
 	{
-		"key": "cmd+0",
+		"key": "ctrl+right",
 		"command": "workbench.action.nextEditor"
 	},
 	{
-		"key": "cmd+9",
+		"key": "ctrl+left",
 		"command": "workbench.action.previousEditor"
 	},
 	{
@@ -406,6 +424,14 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
+		"key": "alt+x",
+		"command": "editor.action.insertSnippet",
+		"args": {
+			"snippet": "export "
+		},
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
 		"key": "alt+u",
 		"command": "editor.action.insertSnippet",
 		"args": {
@@ -431,14 +457,6 @@
 	},
 	{
 		"key": "shift+alt+l",
-		"command": "editor.action.insertSnippet",
-		"args": {
-			"snippet": "console.log('$2', $1)"
-		},
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "alt+1",
 		"command": "editor.action.insertSnippet",
 		"args": {
 			"snippet": "console.log('----------------------- $1 -----------------------')"
@@ -551,8 +569,16 @@
 		"command": "workbench.action.closeOtherEditors"
 	},
 	{
+		"key": "ctrl+f",
+		"command": "revealFileInOS"
+	},
+	{
 		"key": "ctrl+o",
 		"command": "pr.openModifiedFile"
+	},
+	{
+		"key": "ctrl+shift+o",
+		"command": "git-graph.openFile"
 	},
 	{
 		"key": "ctrl+c",
@@ -644,8 +670,7 @@
 	// sugestions
 	{
 		"key": "alt+tab",
-		"command": "editor.action.inlineSuggest.commit",
-		"when": "inlineSuggestionVisible && textInputFocus"
+		"command": "editor.action.inlineSuggest.commit"
 	},
 	{
 		"key": "enter",
@@ -668,6 +693,11 @@
 		"key": "shift+a",
 		"command": "explorer.newFolder",
 		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "cmd+f",
+		"command": "filesExplorer.findInFolder",
+		"when": "explorerResourceIsFolder && filesExplorerFocus && foldersViewVisible && !inputFocus"
 	},
 	// find
 	{
@@ -725,7 +755,7 @@
 	{
 		"key": "cmd+enter",
 		"command": "git.stage",
-		"when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
+		"when": "auxiliaryBarFocus && !inputFocus && activeAuxiliary == 'workbench.view.scm'"
 	},
 	{
 		"key": "cmd+backspace",
@@ -751,11 +781,6 @@
 		"key": "shift+cmd+backspace",
 		"command": "git.revertSelectedRanges",
 		"when": "activeAuxiliary == 'workbench.view.scm' && isInDiffEditor"
-	},
-	{
-		"key": "shift+cmd+enter",
-		"command": "git.commit",
-		"when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
 	},
 	{
 		"key": "ctrl+alt+cmd+enter",
