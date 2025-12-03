@@ -1,4 +1,5 @@
 # oh-my-zsh
+export DISABLE_AUTO_UPDATE="true"
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
@@ -6,47 +7,51 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# add scripts/bin to path
-export PATH="$HOME/bin:$PATH"
-
 # zshrc
-alias zshrc="code ~/.zshrc"
+alias cz="code ~/.zshrc"
+alias sz="source ~/.zshrc"
 
 # folders
 alias dt="cd ~/Desktop"
-alias wk="cd ~/work"
-alias box="cd ~/box"
-alias pj="cd ~/projects"
-alias ss="cd ~/scripts"
+alias dl="cd ~/Downloads"
+alias doc="cd ~/Documents"
+alias wk="cd ~/Documents/work"
+alias box="cd ~/Documents/box"
+alias pg="cd ~/Documents/playground"
+alias pj="cd ~/Documents/projects"
 
 # repos
-alias app="cd ~/Desktop/my-app"
-alias pp="cd ~/work/cx-partner-portal"
-alias vp="cd ~/work/vendor-portal-fe"
-alias las="cd ~/work/lead-acquisition-service"
-alias cap="cd ~/work/bx-capterra"
-alias www="cd ~/work/bx-capterra/apps/bx-capterra-www"
-alias dra="cd ~/work/dracarys"
-alias pf="cd ~/projects/portfolio"
-alias wp="cd ~/projects/whitepepper"
+alias wp="cd ~/Documents/projects/whitepepper"
 
 # npm
 alias n="npm"
-alias i="n i"
-alias dev="n run dev"
-alias build="n run build"
-alias start="n run start"
-alias lint="n run lint"
-alias type-check="n run type-check"
-alias test="n run test"
-alias testw="n run test:watch"
-alias e2eo="n run e2e:open"
+alias nr="n run"
+alias ni="n install"
+alias ndev="n run dev"
+alias nbuild="n run build"
+alias nstart="n run start"
+alias nlint="n run lint"
+alias ntest="n run test"
 
 # pnpm
 alias p="pnpm"
+alias pr="p run"
+alias pi="p install"
+alias pdev="p run dev"
+alias pbuild="p run build"
+alias pstart="p run start"
+alias plint="p run lint"
+alias ptest="p run test"
 
 # yarn
 alias y="yarn"
+alias yr="y run"
+alias yi="y install"
+alias ydev="y run dev"
+alias ybuild="y run build"
+alias ystart="y run start"
+alias ylint="y run lint"
+alias ytest="y run test"
 
 # vercel
 alias v="vercel"
@@ -64,20 +69,18 @@ alias bf="b format"
 
 # git
 alias g="git"
-alias gri="git rebase -i"
+alias gc="git checkout"
+alias gf="git fetch"
+alias gb="git rebase -i"
+alias gbm="git rebase -i origin/main"
+alias gr="git reset --hard"
+alias grm="git reset --hard origin/main"
+alias gcp="git cherry-pick"
 
-# helpers
-tbn() {
-   node ~/scripts/tbn.js $1 | pbcopy
-}
+# docker 
+alias d="docker"
+alias dc="docker compose"
 
-# pnpm
-export PNPM_HOME="/Users/{user_name}/Library/pnpm"
-
-case ":$PATH:" in
- *":$PNPM_HOME:"*) ;;
- *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-
+# nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
