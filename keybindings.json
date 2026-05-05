@@ -79,7 +79,7 @@
 		"command": "workbench.action.togglePanel"
 	},
 	{
-		"key": "ctrl+alt+cmd+space",
+		"key": "ctrl+alt+cmd+up",
 		"command": "workbench.action.toggleMaximizedPanel"
 	},
 	{
