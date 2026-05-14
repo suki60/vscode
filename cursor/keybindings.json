@@ -584,6 +584,10 @@
     "command": "copy-file-name.copyFileName"
   },
   {
+    "key": "ctrl+e",
+    "command": "copy-file-name.copyFileNameWithExtension",
+  },
+  {
     "key": "ctrl+p",
     "command": "copyRelativeFilePath"
   },
