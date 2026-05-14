@@ -1,0 +1,11 @@
+# Hide the package version (from our previous step)
+[package]
+disabled = true
+
+# Hide the [!?⇡] symbols
+[git_status]
+disabled = true
+
+# Hide the Node.js version info
+[nodejs]
+disabled = true
