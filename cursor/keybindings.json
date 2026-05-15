@@ -294,6 +294,16 @@
   },
   // text actions
   {
+    "key": "shift+space",
+    "command": "editor.action.inlineSuggest.acceptNextWord",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+/",
+    "command": "editor.cpp.toggle",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
     "key": "alt+c",
     "command": "editor.action.insertSnippet",
     "args": {
@@ -454,12 +464,17 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+space",
+    "key": "ctrl+shift+space",
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "$0 "
     },
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+tab",
+    "command": "jumpToNextSnippetPlaceholder",
+    "when": "hasNextTabstop && inSnippetMode && textInputFocus"
   },
   {
     "key": "alt+-",
@@ -476,11 +491,6 @@
       ]
     },
     "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+/",
-    "command": "editor.action.inlineSuggest.trigger",
-    "when": "editorTextFocus"
   },
   {
     "key": "alt+\\",
