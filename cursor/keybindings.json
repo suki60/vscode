@@ -45,10 +45,6 @@
     "command": "workbench.view.scm"
   },
   {
-    "key": "shift+cmd+/",
-    "command": "workbench.panel.chat.view.copilot.focus"
-  },
-  {
     "key": "ctrl+alt+cmd+/",
     "command": "github.copilot.completions.toggle"
   },
