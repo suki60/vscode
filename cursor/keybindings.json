@@ -6,11 +6,11 @@
   },
   {
     "key": "shift+cmd+/",
-    "command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
+    "command": "workbench.action.toggleUnifiedSidebarFromKeyboard"
   },
   {
     "key": "shift+cmd+\\",
-    "command": "workbench.action.toggleAgentsFromKeyboard",
+    "command": "workbench.action.toggleAgentsFromKeyboard"
   },
   {
     "key": "shift+cmd+e",
@@ -585,7 +585,7 @@
   },
   {
     "key": "ctrl+e",
-    "command": "copy-file-name.copyFileNameWithExtension",
+    "command": "copy-file-name.copyFileNameWithExtension"
   },
   {
     "key": "ctrl+p",
