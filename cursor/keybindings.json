@@ -45,10 +45,6 @@
     "command": "workbench.view.scm"
   },
   {
-    "key": "ctrl+alt+cmd+/",
-    "command": "github.copilot.completions.toggle"
-  },
-  {
     "key": "shift+cmd+;",
     "command": "workbench.panel.chatEditing"
   },
@@ -294,13 +290,12 @@
   },
   // text actions
   {
-    "key": "shift+space",
-    "command": "editor.action.inlineSuggest.acceptNextWord",
-    "when": "editorTextFocus && !editorReadonly"
+    "key": "alt+/",
+    "command": "editor.cpp.toggle"
   },
   {
-    "key": "alt+/",
-    "command": "editor.cpp.toggle",
+    "key": "shift+space",
+    "command": "editor.action.inlineSuggest.acceptNextWord",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
@@ -746,7 +741,7 @@
         "list.select"
       ]
     },
-    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
+    "when": "focusedView == 'workbench.scm'"
   },
   {
     "key": "cmd+i",
@@ -759,42 +754,47 @@
         "list.focusDown"
       ]
     },
-    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
+    "when": "focusedView == 'workbench.scm'"
   },
   {
     "key": "cmd+enter",
     "command": "git.stage",
-    "when": "auxiliaryBarFocus && !inputFocus && activeAuxiliary == 'workbench.view.scm'"
+    "when": "focusedView == 'workbench.scm' && !inputFocus"
   },
   {
     "key": "cmd+backspace",
     "command": "git.unstage",
-    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
+    "when": "focusedView == 'workbench.scm' && !inputFocus"
   },
   {
     "key": "shift+cmd+backspace",
     "command": "git.clean",
-    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
+    "when": "focusedView == 'workbench.scm' && !inputFocus"
   },
   {
-    "key": "cmd+enter",
-    "command": "git.stageSelectedRanges",
-    "when": "activeAuxiliary == 'workbench.view.scm' && isInDiffEditor"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "git.unstageSelectedRanges",
-    "when": "activeAuxiliary == 'workbench.view.scm' && isInDiffEditor"
-  },
-  {
-    "key": "shift+cmd+backspace",
-    "command": "git.revertSelectedRanges",
-    "when": "activeAuxiliary == 'workbench.view.scm' && isInDiffEditor"
+    "key": "shift+cmd+enter",
+    "command": "git.commit",
+    "when": "focusedView == 'workbench.scm'"
   },
   {
     "key": "ctrl+alt+cmd+enter",
     "command": "git.commitNoVerify",
-    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
+    "when": "focusedView == 'workbench.scm'"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "git.stageSelectedRanges",
+    "when": "workbench.scm.active && isInDiffEditor"
+  },
+  {
+    "key": "cmd+backspace",
+    "command": "git.unstageSelectedRanges",
+    "when": "workbench.scm.active && isInDiffEditor"
+  },
+  {
+    "key": "shift+cmd+backspace",
+    "command": "git.revertSelectedRanges",
+    "when": "workbench.scm.active && isInDiffEditor"
   },
   // diff editor
   {
@@ -822,16 +822,6 @@
     "key": "cmd+/",
     "command": "workbench.action.chat.openAgent",
     "when": "inChatInput"
-  },
-  {
-    "key": "shift+cmd+enter",
-    "command": "chatEditor.action.accept",
-    "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress"
-  },
-  {
-    "key": "shift+cmd+backspace",
-    "command": "chatEditor.action.reject",
-    "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress"
   },
   // keybindings
   {
