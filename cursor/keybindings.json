@@ -5,12 +5,16 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "shift+cmd+/",
+    "key": "shift+cmd+\\",
     "command": "workbench.action.toggleUnifiedSidebarFromKeyboard"
   },
   {
-    "key": "shift+cmd+\\",
+    "key": "shift+cmd+'",
     "command": "workbench.action.toggleAgentsFromKeyboard"
+  },
+  {
+    "key": "shift+cmd+/",
+    "command": "aichat.newchataction"
   },
   {
     "key": "shift+cmd+e",
@@ -796,19 +800,14 @@
   },
   // chat
   {
-    "key": "cmd+;",
-    "command": "workbench.action.chat.openAsk",
-    "when": "inChatInput"
+    "key": "cmd+.",
+    "command": "composerMode.agent",
+    "when": "composerFocused"
   },
   {
-    "key": "cmd+'",
-    "command": "workbench.action.chat.openEdit",
-    "when": "inChatInput"
-  },
-  {
-    "key": "cmd+/",
-    "command": "workbench.action.chat.openAgent",
-    "when": "inChatInput"
+    "key": "cmd+,",
+    "command": "composerMode.chat",
+    "when": "composerFocused"
   },
   // keybindings
   {
