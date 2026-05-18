@@ -180,8 +180,7 @@
   },
   {
     "key": "escape",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "auxiliaryBarFocus || sideBarFocus"
+    "command": "workbench.action.focusActiveEditorGroup"
   },
   // editor actions
   {
@@ -480,10 +479,7 @@
     "key": "alt+=",
     "command": "runCommands",
     "args": {
-      "commands": [
-        "deleteInsideWord",
-        "deleteRight"
-      ]
+      "commands": ["deleteInsideWord", "deleteRight"]
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -541,10 +537,7 @@
     "key": "alt+enter",
     "command": "runCommands",
     "args": {
-      "commands": [
-        "editor.action.insertLineAfter",
-        "deleteAllLeft"
-      ]
+      "commands": ["editor.action.insertLineAfter", "deleteAllLeft"]
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -552,10 +545,7 @@
     "key": "shift+alt+enter",
     "command": "runCommands",
     "args": {
-      "commands": [
-        "editor.action.insertLineBefore",
-        "deleteAllLeft"
-      ]
+      "commands": ["editor.action.insertLineBefore", "deleteAllLeft"]
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -736,10 +726,7 @@
     "key": "cmd+e",
     "command": "runCommands",
     "args": {
-      "commands": [
-        "list.focusFirst",
-        "list.select"
-      ]
+      "commands": ["list.focusFirst", "list.select"]
     },
     "when": "focusedView == 'workbench.scm'"
   },
