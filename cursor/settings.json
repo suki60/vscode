@@ -65,6 +65,7 @@
   },
   "terminal.integrated.shellIntegration.enabled": false,
   "typescript.format.semicolons": "remove",
+  "typescript.preferences.importModuleSpecifierEnding": "js",
   "typescript.preferGoToSourceDefinition": true,
   "typescriptExplorer.typeTree.view.icons.colors.enable": false,
   "typescriptExplorer.typeTree.view.icons.enable": false,
