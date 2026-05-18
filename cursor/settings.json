@@ -1,11 +1,20 @@
 {
-  "atlascode.bitbucket.enabled": false,
-  "atlascode.bitbucket.explorer.enabled": false,
-  "atlascode.jira.todoIssues.enabled": false,
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
   "biome.requireConfiguration": true,
   "bookmarks.sideBar.countBadge": "off",
+  "cursor.cpp.enablePartialAccepts": true,
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
+  "editor.codeActionsOnSave": {},
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.dragAndDrop": false,
   "editor.fontFamily": "Roboto Mono",
   "editor.fontSize": 15,
@@ -15,10 +24,13 @@
   "editor.suggest.filterGraceful": false,
   "editor.suggest.showWords": false,
   "editor.tabSize": 2,
-  "editor.codeActionsOnSave": {},
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "explorer.autoReveal": "focusNoScroll",
   "extensions.ignoreRecommendations": true,
+  "files.exclude": {
+    "": true,
+    "**/.git": true
+  },
   "git-graph.repository.showRemoteBranches": false,
   "git.allowForcePush": true,
   "git.allowNoVerifyCommit": true,
@@ -27,17 +39,11 @@
   "git.openRepositoryInParentFolders": "always",
   "git.showReferenceDetails": false,
   "git.suggestSmartCommit": false,
-  "gitHistory.showFileHistorySplit": false,
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-  "githubPullRequests.createOnPublishBranch": "never",
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
+  "gitHistory.showFileHistorySplit": false,
+  "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.pullBranch": "never",
+  "javascript.format.semicolons": "remove",
   "javascript.preferGoToSourceDefinition": true,
   "prettier.semi": false,
   "problems.decorations.enabled": false,
@@ -46,27 +52,19 @@
   "search.useParentIgnoreFiles": true,
   "security.promptForLocalFileProtocolHandling": false,
   "tailwindCSS.experimental.classRegex": [
-    [
-      "cva\\(([^)]*)\\)",
-      "[\"'`]([^\"'`]*).*?[\"'`]"
-    ],
-    [
-      "cn\\(([^)]*)\\)",
-      "(?:'|\"|`)([^']*)(?:'|\"|`)"
-    ]
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
-  "terminal.integrated.fontSize": 16,
   "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.profiles.osx": {
     "zsh": {
-      "path": "/bin/zsh",
-      "args": [
-        "-l",
-        "-i"
-      ]
+      "args": ["-l", "-i"],
+      "path": "/bin/zsh"
     }
   },
   "terminal.integrated.shellIntegration.enabled": false,
+  "typescript.format.semicolons": "remove",
   "typescript.preferGoToSourceDefinition": true,
   "typescriptExplorer.typeTree.view.icons.colors.enable": false,
   "typescriptExplorer.typeTree.view.icons.enable": false,
@@ -74,6 +72,7 @@
   "window.commandCenter": false,
   "window.confirmSaveUntitledWorkspace": false,
   "workbench.activityBar.location": "top",
+  "workbench.agentsWindowButton.enabled": false,
   "workbench.colorTheme": "Atom One Dark",
   "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.editor.focusRecentEditorAfterClose": false,
@@ -82,25 +81,5 @@
   "workbench.iconTheme": "file-icons",
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
-  "zenMode.fullScreen": false,
-  "javascript.format.semicolons": "remove",
-  "typescript.format.semicolons": "remove",
-  "editor.defaultFormatter": "vscode.typescript-language-features",
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "files.exclude": {
-    "": true,
-    "**/.git": true
-  },
-  "window.autoDetectColorScheme": false
+  "zenMode.fullScreen": false
 }
