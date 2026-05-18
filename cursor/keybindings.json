@@ -13,8 +13,12 @@
     "command": "workbench.action.toggleAgentsFromKeyboard"
   },
   {
+    "key": "shift+cmd+.",
+    "command": "composerMode.agent"
+  },
+  {
     "key": "shift+cmd+/",
-    "command": "aichat.newchataction"
+    "command": "composerMode.chat"
   },
   {
     "key": "shift+cmd+e",
@@ -797,17 +801,6 @@
     "key": "cmd+-",
     "command": "workbench.action.compareEditor.previousChange",
     "when": "textCompareEditorVisible"
-  },
-  // chat
-  {
-    "key": "cmd+.",
-    "command": "composerMode.agent",
-    "when": "composerFocused"
-  },
-  {
-    "key": "cmd+,",
-    "command": "composerMode.chat",
-    "when": "composerFocused"
   },
   // keybindings
   {
