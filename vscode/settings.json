@@ -1,108 +1,99 @@
 {
-	"atlascode.bitbucket.enabled": false,
-	"atlascode.bitbucket.explorer.enabled": false,
-	"atlascode.jira.todoIssues.enabled": false,
-	"biome.requireConfiguration": true,
-	"bookmarks.sideBar.countBadge": "off",
-	"editor.accessibilitySupport": "off",
-	"editor.bracketPairColorization.enabled": false,
-	"editor.dragAndDrop": false,
-	"editor.fontFamily": "Roboto Mono",
-	"editor.fontSize": 15,
-	"editor.formatOnPaste": false,
-	"editor.formatOnSave": true,
-	"editor.minimap.enabled": false,
-	"editor.suggest.filterGraceful": false,
-	"editor.suggest.showWords": false,
-	"editor.tabSize": 2,
-	"editor.codeActionsOnSave": {},
-	"emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
-	"explorer.autoReveal": "focusNoScroll",
-	"extensions.ignoreRecommendations": true,
-	"git-graph.repository.showRemoteBranches": false,
-	"git.allowForcePush": true,
-	"git.allowNoVerifyCommit": true,
-	"git.confirmNoVerifyCommit": false,
-	"git.ignoreRebaseWarning": true,
-	"git.openRepositoryInParentFolders": "always",
-	"git.showReferenceDetails": false,
-	"git.suggestSmartCommit": false,
-	"gitHistory.showFileHistorySplit": false,
-	"github.copilot.nextEditSuggestions.enabled": true,
-	"github.copilot.enable": {
-		"*": true,
-		"plaintext": false,
-		"markdown": false,
-		"scminput": false
-	},
-	"githubPullRequests.createOnPublishBranch": "never",
-	"gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
-	"githubPullRequests.pullBranch": "never",
-	"javascript.preferGoToSourceDefinition": true,
-	"prettier.semi": false,
-	"problems.decorations.enabled": false,
-	"search.quickOpen.includeHistory": false,
-	"search.smartCase": true,
-	"search.useParentIgnoreFiles": true,
-	"security.promptForLocalFileProtocolHandling": false,
-	"tailwindCSS.experimental.classRegex": [
-		[
-			"cva\\(([^)]*)\\)",
-			"[\"'`]([^\"'`]*).*?[\"'`]"
-		],
-		[
-			"cn\\(([^)]*)\\)",
-			"(?:'|\"|`)([^']*)(?:'|\"|`)"
-		]
-	],
-	"terminal.integrated.fontSize": 16,
-	"terminal.integrated.defaultProfile.osx": "zsh",
-	"terminal.integrated.profiles.osx": {
-		"zsh": {
-			"path": "/bin/zsh",
-			"args": [
-				"-l",
-				"-i"
-			]
-		}
-	},
-	"terminal.integrated.shellIntegration.enabled": false,
-	"typescript.preferGoToSourceDefinition": true,
-	"typescriptExplorer.typeTree.view.icons.colors.enable": false,
-	"typescriptExplorer.typeTree.view.icons.enable": false,
-	"update.showReleaseNotes": false,
-	"window.commandCenter": false,
-	"window.confirmSaveUntitledWorkspace": false,
-	"workbench.activityBar.location": "top",
-	"workbench.colorTheme": "Atom One Dark",
-	"workbench.editor.enablePreviewFromQuickOpen": true,
-	"workbench.editor.focusRecentEditorAfterClose": false,
-	"workbench.editor.pinnedTabsOnSeparateRow": true,
-	"workbench.editor.preventPinnedEditorClose": "never",
-	"workbench.iconTheme": "file-icons",
-	"workbench.layoutControl.enabled": false,
-	"workbench.startupEditor": "none",
-	"yaml.schemas": {
-		"file:///Users/faltesan/.vscode/extensions/atlassian.atlascode-4.0.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-	},
-	"zenMode.fullScreen": false,
-	"javascript.format.semicolons": "remove",
-	"typescript.format.semicolons": "remove",
-	"editor.defaultFormatter": "vscode.typescript-language-features",
-	"[dockercompose]": {
-		"editor.insertSpaces": true,
-		"editor.tabSize": 2,
-		"editor.autoIndent": "advanced",
-		"editor.defaultFormatter": "redhat.vscode-yaml"
-	},
-	"[github-actions-workflow]": {
-		"editor.defaultFormatter": "redhat.vscode-yaml"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"files.exclude": {
-		"": true,
-		"**/.git": true
-	}
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "atlascode.bitbucket.enabled": false,
+  "atlascode.bitbucket.explorer.enabled": false,
+  "atlascode.jira.todoIssues.enabled": false,
+  "biome.requireConfiguration": true,
+  "bookmarks.sideBar.countBadge": "off",
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.codeActionsOnSave": {},
+  "editor.defaultFormatter": "vscode.typescript-language-features",
+  "editor.dragAndDrop": false,
+  "editor.fontFamily": "Roboto Mono",
+  "editor.fontSize": 15,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.suggest.filterGraceful": false,
+  "editor.suggest.showWords": false,
+  "editor.tabSize": 2,
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "explorer.autoReveal": "focusNoScroll",
+  "extensions.ignoreRecommendations": true,
+  "files.exclude": {
+    "": true,
+    "**/.git": true
+  },
+  "git-graph.repository.showRemoteBranches": false,
+  "git.allowForcePush": true,
+  "git.allowNoVerifyCommit": true,
+  "git.confirmNoVerifyCommit": false,
+  "git.ignoreRebaseWarning": true,
+  "git.openRepositoryInParentFolders": "always",
+  "git.showReferenceDetails": false,
+  "git.suggestSmartCommit": false,
+  "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
+  "gitHistory.showFileHistorySplit": false,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": false,
+    "plaintext": false,
+    "scminput": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "githubPullRequests.createOnPublishBranch": "never",
+  "githubPullRequests.pullBranch": "never",
+  "javascript.format.semicolons": "remove",
+  "javascript.preferGoToSourceDefinition": true,
+  "prettier.semi": false,
+  "problems.decorations.enabled": false,
+  "search.quickOpen.includeHistory": false,
+  "search.smartCase": true,
+  "search.useParentIgnoreFiles": true,
+  "security.promptForLocalFileProtocolHandling": false,
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "args": ["-l", "-i"],
+      "path": "/bin/zsh"
+    }
+  },
+  "terminal.integrated.shellIntegration.enabled": false,
+  "typescript.format.semicolons": "remove",
+  "typescript.preferGoToSourceDefinition": true,
+  "typescriptExplorer.typeTree.view.icons.colors.enable": false,
+  "typescriptExplorer.typeTree.view.icons.enable": false,
+  "update.showReleaseNotes": false,
+  "window.commandCenter": false,
+  "window.confirmSaveUntitledWorkspace": false,
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "workbench.editor.focusRecentEditorAfterClose": false,
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "workbench.editor.preventPinnedEditorClose": "never",
+  "workbench.iconTheme": "file-icons",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "yaml.schemas": {
+    "file:///Users/faltesan/.vscode/extensions/atlassian.atlascode-4.0.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "zenMode.fullScreen": false
 }
