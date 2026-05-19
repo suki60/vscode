@@ -930,5 +930,15 @@
   {
     "key": "cmd+g shift+cmd+n",
     "command": "git.renameBranch"
+  },
+  // glass
+  {
+    "key": "alt+tab",
+    "command": "cursor.openOrFocusGlassWindow"
+  },
+  {
+    "key": "alt+tab",
+    "command": "glass.openIde",
+    "when": "glassNoModalOpen && isGlassEmptyWorkspace"
   }
 ]
