@@ -304,6 +304,20 @@
   },
   // text actions
   {
+    "key": "alt+/",
+    "command": "github.copilot.chat.completions.toggle"
+  },
+  {
+    "key": "shift+space",
+    "command": "editor.action.inlineSuggest.acceptNextWord",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+space",
+    "command": "editor.action.inlineSuggest.acceptNextLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
     "key": "alt+c",
     "command": "editor.action.insertSnippet",
     "args": {
