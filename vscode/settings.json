@@ -11,9 +11,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "atlascode.bitbucket.enabled": false,
-  "atlascode.bitbucket.explorer.enabled": false,
-  "atlascode.jira.todoIssues.enabled": false,
   "biome.enabled": false,
   "bookmarks.sideBar.countBadge": "off",
   "editor.accessibilitySupport": "off",
@@ -55,8 +52,8 @@
   "github.copilot.nextEditSuggestions.enabled": true,
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.pullBranch": "never",
-  "javascript.format.semicolons": "remove",
-  "javascript.preferGoToSourceDefinition": true,
+  "js/ts.format.semicolons": "remove",
+  "js/ts.preferGoToSourceDefinition": true,
   "prettier.semi": false,
   "problems.decorations.enabled": false,
   "search.quickOpen.includeHistory": false,
@@ -64,20 +61,27 @@
   "search.useParentIgnoreFiles": true,
   "security.promptForLocalFileProtocolHandling": false,
   "tailwindCSS.experimental.classRegex": [
-    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+    [
+      "cva\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
+    [
+      "cn\\(([^)]*)\\)",
+      "(?:'|\"|`)([^']*)(?:'|\"|`)"
+    ]
   ],
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.profiles.osx": {
     "zsh": {
-      "args": ["-l", "-i"],
+      "args": [
+        "-l",
+        "-i"
+      ],
       "path": "/bin/zsh"
     }
   },
   "terminal.integrated.shellIntegration.enabled": false,
-  "typescript.format.semicolons": "remove",
-  "typescript.preferGoToSourceDefinition": true,
   "typescriptExplorer.typeTree.view.icons.colors.enable": false,
   "typescriptExplorer.typeTree.view.icons.enable": false,
   "update.showReleaseNotes": false,
