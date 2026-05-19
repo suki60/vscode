@@ -14,7 +14,7 @@
   "atlascode.bitbucket.enabled": false,
   "atlascode.bitbucket.explorer.enabled": false,
   "atlascode.jira.todoIssues.enabled": false,
-  "biome.requireConfiguration": true,
+  "biome.enabled": false,
   "bookmarks.sideBar.countBadge": "off",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,

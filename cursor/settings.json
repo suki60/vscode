@@ -8,7 +8,7 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "biome.requireConfiguration": true,
+  "biome.enabled": false,
   "bookmarks.sideBar.countBadge": "off",
   "cursor.cpp.enablePartialAccepts": true,
   "editor.accessibilitySupport": "off",
