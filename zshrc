@@ -1,14 +1,14 @@
-# oh-my-zsh
-export DISABLE_AUTO_UPDATE="true"
-export ZSH="$HOME/.oh-my-zsh"
+# starship
+eval "$(starship init zsh)"
 
-ZSH_THEME="robbyrussell"
-plugins=(git)
+# cursor
+alias cs="cursor"
 
-source $ZSH/oh-my-zsh.sh
+# vscode
+alias vs="code"
 
 # zshrc
-alias cz="code ~/.zshrc"
+alias cz="cs ~/.zshrc"
 alias sz="source ~/.zshrc"
 
 # folders
@@ -84,3 +84,15 @@ alias dc="docker compose"
 # nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# antigravity
+export PATH="$PATH:/Users/suki60/.antigravity/antigravity/bin"
+alias ag="antigravity"
+
+# Tool Initializations (Zoxide & FZF)
+eval "$(zoxide init zsh)"
+eval "$(fzf --zsh)"
+
+# Zsh Plugins (Order matters here!)
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
