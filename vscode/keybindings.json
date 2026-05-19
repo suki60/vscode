@@ -954,5 +954,16 @@
   {
     "key": "cmd+g shift+cmd+n",
     "command": "git.renameBranch"
+  },
+  // agents
+  {
+    "key": "alt+tab",
+    "command": "workbench.action.openAgentsWindow",
+    "when": "!isSessionsWindow"
+  },
+  {
+    "key": "alt+tab",
+    "command": "agents.openSessionInVSCode",
+    "when": "isSessionsWindow"
   }
 ]
