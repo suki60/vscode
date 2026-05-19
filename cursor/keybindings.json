@@ -669,16 +669,6 @@
     "command": "workbench.action.unpinEditor",
     "when": "activeEditorIsPinned"
   },
-  // sugestions
-  {
-    "key": "alt+tab",
-    "command": "editor.action.inlineSuggest.commit"
-  },
-  {
-    "key": "enter",
-    "command": "acceptSelectedSuggestion",
-    "when": "suggestWidgetVisible && textInputFocus"
-  },
   // list
   {
     "key": "space",
