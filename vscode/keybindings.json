@@ -304,20 +304,6 @@
   },
   // text actions
   {
-    "key": "alt+/",
-    "command": "github.copilot.chat.completions.toggle"
-  },
-  {
-    "key": "shift+space",
-    "command": "editor.action.inlineSuggest.acceptNextWord",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+cmd+space",
-    "command": "editor.action.inlineSuggest.acceptNextLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "alt+c",
     "command": "editor.action.insertSnippet",
     "args": {
@@ -486,23 +472,24 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+-",
-    "command": "deleteInsideWord",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+=",
-    "command": "runCommands",
-    "args": {
-      "commands": ["deleteInsideWord", "deleteRight"]
-    },
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "alt+/",
-    "command": "editor.action.inlineSuggest.trigger",
+    "command": "github.copilot.chat.completions.toggle"
+  },
+  {
+    "key": "shift+space",
+    "command": "editor.action.inlineSuggest.acceptNextWord",
     "when": "editorTextFocus"
   },
+  {
+    "key": "shift+cmd+space",
+    "command": "editor.action.inlineSuggest.acceptNextLine",
+    "when": "editorTextFocus"
+  },
+  // {
+  //   "key": "alt+/",
+  //   "command": "editor.action.inlineSuggest.trigger",
+  //   "when": "editorTextFocus"
+  // },
   {
     "key": "alt+\\",
     "command": "bracket-select.select",
@@ -546,6 +533,19 @@
   {
     "key": "shift+alt+backspace",
     "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+-",
+    "command": "deleteInsideWord",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+=",
+    "command": "runCommands",
+    "args": {
+      "commands": ["deleteInsideWord", "deleteRight"]
+    },
     "when": "editorTextFocus && !editorReadonly"
   },
   {
