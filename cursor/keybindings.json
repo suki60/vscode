@@ -175,7 +175,7 @@
     "command": "workbench.action.reloadWindow"
   },
   {
-    "key": "shift+cmd+.",
+    "key": "ctrl+alt+cmd+.",
     "command": "editor.action.fixAll"
   },
   {
