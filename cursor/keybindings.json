@@ -6,11 +6,11 @@
   },
   {
     "key": "shift+cmd+\\",
-    "command": "workbench.action.toggleUnifiedSidebarFromKeyboard"
+    "command": "workbench.action.toggleAgentsFromKeyboard"
   },
   {
     "key": "shift+cmd+'",
-    "command": "workbench.action.toggleAgentsFromKeyboard"
+    "command": "workbench.action.toggleUnifiedSidebarFromKeyboard"
   },
   {
     "key": "shift+cmd+.",
