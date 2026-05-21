@@ -91,7 +91,6 @@
   "workbench.colorTheme": "Atom One Dark",
   "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.editor.focusRecentEditorAfterClose": false,
-  "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.editor.preventPinnedEditorClose": "never",
   "workbench.editor.useModal": "off",
   "workbench.iconTheme": "file-icons",
