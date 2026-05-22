@@ -805,6 +805,12 @@
     "command": "git.commitNoVerify",
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
+  // chat
+  {
+    "key": "cmd+/",
+    "command": "workbench.action.chat.openModelPicker",
+    "when": "chatIsEnabled && inChatInput"
+  },
   // diff editor
   {
     "key": "cmd+=",
