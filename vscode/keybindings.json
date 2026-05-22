@@ -181,10 +181,6 @@
     "command": "workbench.action.reloadWindow"
   },
   {
-    "key": "shift+cmd+=",
-    "command": "github.copilot.chat.attachFile"
-  },
-  {
     "key": "shift+cmd+.",
     "command": "editor.action.fixAll"
   },
@@ -307,6 +303,14 @@
     "command": "workbench.action.keepEditor"
   },
   // text actions
+  {
+    "key": "alt+=",
+    "command": "github.copilot.chat.attachSelection"
+  },
+  {
+    "key": "shift+alt+=",
+    "command": "github.copilot.chat.attachFile"
+  },
   {
     "key": "alt+c",
     "command": "editor.action.insertSnippet",
@@ -542,17 +546,6 @@
   {
     "key": "alt+-",
     "command": "deleteInsideWord",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+=",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "deleteInsideWord",
-        "deleteRight"
-      ]
-    },
     "when": "editorTextFocus && !editorReadonly"
   },
   {
