@@ -181,6 +181,10 @@
     "command": "workbench.action.reloadWindow"
   },
   {
+    "key": "shift+cmd+=",
+    "command": "github.copilot.chat.attachFile"
+  },
+  {
     "key": "shift+cmd+.",
     "command": "editor.action.fixAll"
   },
@@ -544,7 +548,10 @@
     "key": "alt+=",
     "command": "runCommands",
     "args": {
-      "commands": ["deleteInsideWord", "deleteRight"]
+      "commands": [
+        "deleteInsideWord",
+        "deleteRight"
+      ]
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -552,7 +559,10 @@
     "key": "alt+enter",
     "command": "runCommands",
     "args": {
-      "commands": ["editor.action.insertLineAfter", "deleteAllLeft"]
+      "commands": [
+        "editor.action.insertLineAfter",
+        "deleteAllLeft"
+      ]
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -560,7 +570,10 @@
     "key": "shift+alt+enter",
     "command": "runCommands",
     "args": {
-      "commands": ["editor.action.insertLineBefore", "deleteAllLeft"]
+      "commands": [
+        "editor.action.insertLineBefore",
+        "deleteAllLeft"
+      ]
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -737,7 +750,10 @@
     "key": "cmd+e",
     "command": "runCommands",
     "args": {
-      "commands": ["list.focusFirst", "list.select"]
+      "commands": [
+        "list.focusFirst",
+        "list.select"
+      ]
     },
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
@@ -799,32 +815,6 @@
     "key": "cmd+-",
     "command": "workbench.action.compareEditor.previousChange",
     "when": "textCompareEditorVisible"
-  },
-  // chat
-  {
-    "key": "cmd+;",
-    "command": "workbench.action.chat.openAsk",
-    "when": "inChatInput"
-  },
-  {
-    "key": "cmd+'",
-    "command": "workbench.action.chat.openEdit",
-    "when": "inChatInput"
-  },
-  {
-    "key": "cmd+/",
-    "command": "workbench.action.chat.openAgent",
-    "when": "inChatInput"
-  },
-  {
-    "key": "shift+cmd+enter",
-    "command": "chatEditor.action.accept",
-    "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress"
-  },
-  {
-    "key": "shift+cmd+backspace",
-    "command": "chatEditor.action.reject",
-    "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress"
   },
   // keybindings
   {
