@@ -13,12 +13,8 @@
     "command": "workbench.action.toggleUnifiedSidebarFromKeyboard"
   },
   {
-    "key": "shift+cmd+.",
-    "command": "composerMode.agent"
-  },
-  {
     "key": "shift+cmd+/",
-    "command": "composerMode.chat"
+    "command": "aichat.newchataction"
   },
   {
     "key": "shift+cmd+e",
