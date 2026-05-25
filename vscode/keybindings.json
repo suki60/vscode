@@ -181,6 +181,10 @@
     "command": "workbench.action.reloadWindow"
   },
   {
+    "key": "shift+alt+=",
+    "command": "github.copilot.chat.attachFile"
+  },
+  {
     "key": "shift+cmd+.",
     "command": "editor.action.fixAll"
   },
@@ -303,14 +307,6 @@
     "command": "workbench.action.keepEditor"
   },
   // text actions
-  {
-    "key": "alt+=",
-    "command": "github.copilot.chat.attachSelection"
-  },
-  {
-    "key": "shift+alt+=",
-    "command": "github.copilot.chat.attachFile"
-  },
   {
     "key": "alt+c",
     "command": "editor.action.insertSnippet",
@@ -954,5 +950,9 @@
     "key": "alt+tab",
     "command": "agents.openSessionInVSCode",
     "when": "isSessionsWindow"
+  },
+  {
+    "key": "alt+=",
+    "command": "github.copilot.chat.attachSelection"
   }
 ]
