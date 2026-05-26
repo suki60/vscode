@@ -1,20 +1,10 @@
 {
-  "[dockercompose]": {
-    "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
   "biome.enabled": false,
   "bookmarks.sideBar.countBadge": "off",
   "cursor.cpp.enablePartialAccepts": true,
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
   "editor.codeActionsOnSave": {},
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.dragAndDrop": false,
   "editor.fontFamily": "Roboto Mono",
   "editor.fontSize": 15,
@@ -24,7 +14,6 @@
   "editor.suggest.filterGraceful": false,
   "editor.suggest.showWords": false,
   "editor.tabSize": 2,
-  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "explorer.autoReveal": "focusNoScroll",
   "extensions.ignoreRecommendations": true,
   "files.exclude": {
@@ -43,26 +32,14 @@
   "gitHistory.showFileHistorySplit": false,
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.pullBranch": "never",
-  "javascript.format.semicolons": "remove",
   "javascript.preferGoToSourceDefinition": true,
-  "prettier.semi": false,
   "problems.decorations.enabled": false,
   "search.quickOpen.includeHistory": false,
   "search.smartCase": true,
   "search.useParentIgnoreFiles": true,
   "security.promptForLocalFileProtocolHandling": false,
-  "tailwindCSS.experimental.classRegex": [
-    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
-  ],
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontSize": 16,
-  "terminal.integrated.profiles.osx": {
-    "zsh": {
-      "args": ["-l", "-i"],
-      "path": "/bin/zsh"
-    }
-  },
   "terminal.integrated.shellIntegration.enabled": false,
   "typescript.format.semicolons": "remove",
   "typescript.preferences.importModuleSpecifierEnding": "js",
