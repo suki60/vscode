@@ -33,6 +33,7 @@
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.pullBranch": "never",
   "javascript.preferGoToSourceDefinition": true,
+  "prettier.enable": false,
   "problems.decorations.enabled": false,
   "search.quickOpen.includeHistory": false,
   "search.smartCase": true,
