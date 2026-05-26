@@ -2,13 +2,13 @@
 eval "$(starship init zsh)"
 
 # cursor
-alias cs="cursor"
+alias c="cursor"
 
 # vscode
 alias vs="code"
 
 # zshrc
-alias cz="cs ~/.zshrc"
+alias cz="c ~/.zshrc"
 alias sz="source ~/.zshrc"
 
 # folders
@@ -22,36 +22,23 @@ alias pj="cd ~/Documents/projects"
 
 # repos
 alias wp="cd ~/Documents/projects/whitepepper"
+alias dot="cd ~/Documents/projects/dotfiles"
+alias cdot="cd ~/Documents/projects/dotfiles && c ."
 
 # npm
 alias n="npm"
 alias nr="n run"
 alias ni="n install"
-alias ndev="n run dev"
-alias nbuild="n run build"
-alias nstart="n run start"
-alias nlint="n run lint"
-alias ntest="n run test"
 
 # pnpm
 alias p="pnpm"
 alias pr="p run"
 alias pi="p install"
-alias pdev="p run dev"
-alias pbuild="p run build"
-alias pstart="p run start"
-alias plint="p run lint"
-alias ptest="p run test"
 
 # yarn
 alias y="yarn"
 alias yr="y run"
 alias yi="y install"
-alias ydev="y run dev"
-alias ybuild="y run build"
-alias ystart="y run start"
-alias ylint="y run lint"
-alias ytest="y run test"
 
 # vercel
 alias v="vercel"
