@@ -16,7 +16,7 @@ alias dot="cd ~/Documents/projects/dotfiles"
 
 # cursor
 alias c="cursor"
-alias cz="c ~/.zshrc"
+alias czsh="c ~/.zshrc"
 alias cdot="c ~/Documents/projects/dotfiles"
 
 # vscode
