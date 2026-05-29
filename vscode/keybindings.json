@@ -372,18 +372,18 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+.",
+    "key": "alt+w",
     "command": "editor.action.insertSnippet",
     "args": {
-      "snippet": "($1) => {$2}"
+      "snippet": "$1 => $2"
     },
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+alt+.",
+    "key": "shift+alt+w",
     "command": "editor.action.insertSnippet",
     "args": {
-      "snippet": "$1 => $2"
+      "snippet": "($1) => {$2}"
     },
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -480,12 +480,12 @@
     "command": "github.copilot.chat.completions.toggle"
   },
   {
-    "key": "shift+space",
+    "key": "alt+.",
     "command": "editor.action.inlineSuggest.acceptNextWord",
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+cmd+space",
+    "key": "shift+alt+.",
     "command": "editor.action.inlineSuggest.acceptNextLine",
     "when": "editorTextFocus"
   },
