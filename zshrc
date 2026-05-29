@@ -14,13 +14,10 @@ alias pj="cd ~/Documents/projects"
 alias wp="cd ~/Documents/projects/whitepepper"
 alias dot="cd ~/Documents/projects/dotfiles"
 
-# cursor
-alias c="cursor"
+# vscode
+alias c="code"
 alias czsh="c ~/.zshrc"
 alias cdot="c ~/Documents/projects/dotfiles"
-
-# vscode
-alias vs="code"
 
 # npm
 alias n="npm"
@@ -77,3 +74,6 @@ eval "$(fzf --zsh)"
 # Zsh Plugins (Order matters here!)
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# local bin
+export PATH="$HOME/.local/bin:$PATH"
