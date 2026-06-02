@@ -592,6 +592,11 @@
     "command": "copy-file-name.copyFileName"
   },
   {
+    "key": "ctrl+x",
+    "command": "copy-file-name.copyFileNameWithExtension",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "ctrl+p",
     "command": "copyRelativeFilePath"
   },
