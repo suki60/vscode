@@ -489,11 +489,6 @@
     "command": "editor.action.inlineSuggest.acceptNextLine",
     "when": "editorTextFocus"
   },
-  // {
-  //   "key": "alt+/",
-  //   "command": "editor.action.inlineSuggest.trigger",
-  //   "when": "editorTextFocus"
-  // },
   {
     "key": "alt+\\",
     "command": "bracket-select.select",
@@ -678,6 +673,16 @@
     "key": "ctrl+\\",
     "command": "workbench.action.unpinEditor",
     "when": "activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "jumpToNextSnippetPlaceholder",
+    "when": "hasNextTabstop && inSnippetMode && textInputFocus"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "jumpToPrevSnippetPlaceholder",
+    "when": "hasPrevTabstop && inSnippetMode && textInputFocus"
   },
   // sugestions
   {
