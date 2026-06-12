@@ -14,10 +14,14 @@ alias pj="cd ~/Documents/projects"
 alias wp="cd ~/Documents/projects/whitepepper"
 alias dot="cd ~/Documents/projects/dotfiles"
 
+# claude
+alias c="claude"
+
 # vscode
-alias c="code"
-alias czsh="c ~/.zshrc"
-alias cdot="c ~/Documents/projects/dotfiles"
+alias v="code"
+alias vzsh="v ~/.zshrc"
+alias vdot="v ~/Documents/projects/dotfiles"
+alias vcl="v ~/.claude"
 
 # npm
 alias n="npm"
@@ -32,7 +36,7 @@ alias y="yarn"
 alias yr="y run"
 
 # vercel
-alias v="vercel"
+alias vl="vercel"
 
 # biome
 alias b="biome"
