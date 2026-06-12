@@ -67,13 +67,5 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 export PATH="$PATH:/Users/suki60/.antigravity/antigravity/bin"
 alias ag="antigravity"
 
-# Tool Initializations (Zoxide & FZF)
-eval "$(zoxide init zsh)"
-eval "$(fzf --zsh)"
-
-# Zsh Plugins (Order matters here!)
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # local bin
 export PATH="$HOME/.local/bin:$PATH"
