@@ -15,13 +15,13 @@ alias wp="cd ~/Documents/projects/whitepepper"
 alias dot="cd ~/Documents/projects/dotfiles"
 
 # claude
-alias c="claude"
+alias k="claude"
 
 # vscode
-alias v="code"
-alias vzsh="v ~/.zshrc"
-alias vdot="v ~/Documents/projects/dotfiles"
-alias vcl="v ~/.claude"
+alias c="code"
+alias czsh="v ~/.zshrc"
+alias cdot="v ~/Documents/projects/dotfiles"
+alias ccl="v ~/.claude"
 
 # npm
 alias n="npm"
@@ -36,7 +36,7 @@ alias y="yarn"
 alias yr="y run"
 
 # vercel
-alias vl="vercel"
+alias v="vercel"
 
 # biome
 alias b="biome"
@@ -73,3 +73,15 @@ alias ag="antigravity"
 
 # local bin
 export PATH="$HOME/.local/bin:$PATH"
+
+# helpers
+cm() {
+  local encoded=$(pwd | sed 's|/|-|g')
+  local memory_dir="$HOME/.claude/projects/${encoded}/memory"
+  if [ -d "$memory_dir" ]; then
+    code "$memory_dir"
+  else
+    echo "No memory directory found for: $(pwd)"
+    echo "Expected: $memory_dir"
+  fi
+}
