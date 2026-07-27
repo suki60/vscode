@@ -60,6 +60,7 @@
   "search.smartCase": true,
   "search.useParentIgnoreFiles": true,
   "security.promptForLocalFileProtocolHandling": false,
+  "security.workspace.trust.untrustedFiles": "open",
   "tailwindCSS.experimental.classRegex": [
     [
       "cva\\(([^)]*)\\)",
