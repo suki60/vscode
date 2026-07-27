@@ -476,7 +476,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+/",
+    "key": "ctrl+/",
     "command": "github.copilot.chat.completions.toggle"
   },
   {
@@ -675,20 +675,16 @@
     "when": "activeEditorIsPinned"
   },
   {
-    "key": "ctrl+.",
+    "key": "alt+tab",
     "command": "jumpToNextSnippetPlaceholder",
     "when": "hasNextTabstop && inSnippetMode && textInputFocus"
   },
   {
-    "key": "ctrl+,",
+    "key": "shift+alt+tab",
     "command": "jumpToPrevSnippetPlaceholder",
     "when": "hasPrevTabstop && inSnippetMode && textInputFocus"
   },
   // sugestions
-  {
-    "key": "alt+tab",
-    "command": "editor.action.inlineSuggest.commit"
-  },
   {
     "key": "enter",
     "command": "acceptSelectedSuggestion",
@@ -950,14 +946,22 @@
     "key": "cmd+g shift+cmd+n",
     "command": "git.renameBranch"
   },
+  {
+    "key": "cmd+g shift+cmd+w",
+    "command": "git.createWorktree"
+  },
+  {
+    "key": "cmd+g ctrl+alt+cmd+w",
+    "command": "git.deleteWorktree"
+  },
   // agents
   {
-    "key": "alt+tab",
+    "key": "cmd+`",
     "command": "workbench.action.openAgentsWindow",
     "when": "!isSessionsWindow"
   },
   {
-    "key": "alt+tab",
+    "key": "cmd+`",
     "command": "agents.openSessionInVSCode",
     "when": "isSessionsWindow"
   },
