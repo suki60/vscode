@@ -36,5 +36,10 @@ CURSOR="$HOME/Library/Application Support/Cursor/User"
 link "$DOTFILES/cursor/settings.json"    "$CURSOR/settings.json"
 link "$DOTFILES/cursor/keybindings.json" "$CURSOR/keybindings.json"
 
+echo "→ Zed"
+ZED="$HOME/.config/zed"
+link "$DOTFILES/zed/settings.json" "$ZED/settings.json"
+link "$DOTFILES/zed/keymap.json"   "$ZED/keymap.json"
+
 echo ""
 echo "Done."
