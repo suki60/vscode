@@ -79,7 +79,7 @@
     "command": "workbench.action.togglePanel"
   },
   {
-    "key": "ctrl+alt+cmd+up",
+    "key": "ctrl+alt+cmd+space",
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
@@ -313,7 +313,7 @@
     "args": {
       "snippet": "const $1 = "
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+e",
@@ -321,7 +321,7 @@
     "args": {
       "snippet": "let $1 = "
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+y",
@@ -329,7 +329,7 @@
     "args": {
       "snippet": "type $1 = "
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+a",
@@ -337,7 +337,7 @@
     "args": {
       "snippet": "$1 = [$2]"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "shift+alt+a",
@@ -345,7 +345,7 @@
     "args": {
       "snippet": "const [$2] = $1"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+o",
@@ -353,7 +353,7 @@
     "args": {
       "snippet": "$1 = {$2}"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "shift+alt+o",
@@ -361,7 +361,7 @@
     "args": {
       "snippet": "const {$2} = $1"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+f",
@@ -369,7 +369,7 @@
     "args": {
       "snippet": "function $1($2) {$3}"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+w",
@@ -377,7 +377,7 @@
     "args": {
       "snippet": "$1 => $2"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "shift+alt+w",
@@ -385,7 +385,7 @@
     "args": {
       "snippet": "($1) => {$2}"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+r",
@@ -393,7 +393,7 @@
     "args": {
       "snippet": "return "
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+t",
@@ -401,7 +401,7 @@
     "args": {
       "snippet": "$1 ? $2 : "
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+i",
@@ -409,7 +409,7 @@
     "args": {
       "snippet": "if ($1) {$2}"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+,",
@@ -417,7 +417,7 @@
     "args": {
       "snippet": "<$1 />"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "shift+alt+,",
@@ -425,7 +425,7 @@
     "args": {
       "snippet": "<$1>$2</$1>"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+x",
@@ -433,7 +433,7 @@
     "args": {
       "snippet": "export "
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+u",
@@ -441,7 +441,7 @@
     "args": {
       "snippet": "'use client'"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "shift+alt+u",
@@ -449,7 +449,7 @@
     "args": {
       "snippet": "'use server'"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+l",
@@ -457,7 +457,7 @@
     "args": {
       "snippet": "console.log($1)"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "shift+alt+l",
@@ -465,7 +465,7 @@
     "args": {
       "snippet": "console.log('----------------------- $1 -----------------------')"
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "shift+space",
@@ -473,7 +473,7 @@
     "args": {
       "snippet": "$0 "
     },
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "ctrl+/",
