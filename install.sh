@@ -41,5 +41,8 @@ ZED="$HOME/.config/zed"
 link "$DOTFILES/zed/settings.json" "$ZED/settings.json"
 link "$DOTFILES/zed/keymap.json"   "$ZED/keymap.json"
 
+echo "→ Claude"
+link "$DOTFILES/claude/settings.json" "$HOME/.claude/settings.json"
+
 echo ""
 echo "Done."
