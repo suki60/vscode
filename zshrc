@@ -13,15 +13,17 @@ alias pj="cd ~/Documents/projects"
 # repos
 alias wp="cd ~/Documents/projects/whitepepper"
 alias dot="cd ~/Documents/projects/dotfiles"
+alias pf="cd ~/Documents/projects/portfolio"
+alias cv="cd ~/Documents/projects/cv"
 
 # claude
 alias k="claude"
 
 # vscode
 alias c="code"
-alias czsh="v ~/.zshrc"
-alias cdot="v ~/Documents/projects/dotfiles"
-alias ccl="v ~/.claude"
+alias czsh="c ~/.zshrc"
+alias cdot="c ~/Documents/projects/dotfiles"
+alias ccl="c ~/.claude"
 
 # npm
 alias n="npm"
