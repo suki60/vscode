@@ -20,20 +20,45 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
   "biome.enabled": false,
   "bookmarks.sideBar.countBadge": "off",
+  "chat.fontSize": 14,
+  "claudeCode.allowDangerouslySkipPermissions": true,
+  "claudeCode.enableNewConversationShortcut": true,
+  "claudeCode.focusView": true,
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
   "editor.codeActionsOnSave": {},
   "editor.defaultFormatter": "vscode.typescript-language-features",
   "editor.dragAndDrop": false,
-  "editor.fontFamily": "Roboto Mono",
+  "editor.fontFamily": "'Cascadia Code', monospace",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss19', 'ss20'",
   "editor.fontSize": 15,
+  "editor.fontWeight": "300",
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
+  "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.minimap.enabled": false,
   "editor.suggest.filterGraceful": false,
   "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "keyword",
+          "keyword.control",
+          "storage.type",
+          "storage.modifier",
+          "comment"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "explorer.autoReveal": "focusNoScroll",
   "extensions.ignoreRecommendations": true,
@@ -58,10 +83,12 @@
     "scminput": false
   },
   "github.copilot.nextEditSuggestions.enabled": true,
-  "githubPullRequests.createOnPublishBranch": "never",
-  "githubPullRequests.pullBranch": "never",
+  "gopls": {
+    "ui.navigation.importShortcut": "Definition"
+  },
   "js/ts.format.semicolons": "remove",
   "js/ts.preferGoToSourceDefinition": true,
+  "liveServer.settings.donotShowInfoMsg": true,
   "prettier.semi": false,
   "problems.decorations.enabled": false,
   "search.quickOpen.includeHistory": false,
@@ -97,11 +124,14 @@
   "window.commandCenter": false,
   "window.confirmSaveUntitledWorkspace": false,
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorTheme": "One Dark Pro",
   "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.editor.preventPinnedEditorClose": "never",
   "workbench.editor.useModal": "off",
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
   "workbench.iconTheme": "file-icons",
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
