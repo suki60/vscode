@@ -52,7 +52,7 @@
   },
   {
     "key": "shift+cmd+/",
-    "command": "workbench.panel.chat.view.copilot.focus"
+    "command": "workbench.view.extension.claude-sidebar-secondary"
   },
   {
     "key": "ctrl+alt+cmd+/",
@@ -404,7 +404,7 @@
     "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
-    "key": "alt+i",
+    "key": "shift+alt+f",
     "command": "editor.action.insertSnippet",
     "args": {
       "snippet": "if ($1) {$2}"
@@ -426,6 +426,14 @@
       "snippet": "<$1>$2</$1>"
     },
     "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
+  },
+  {
+    "key": "alt+i",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "import $2 from '$1'"
+    },
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "alt+x",
@@ -474,6 +482,11 @@
       "snippet": "$0 "
     },
     "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
+  },
+  {
+    "key": "shift+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   },
   {
     "key": "ctrl+/",
@@ -594,6 +607,10 @@
   {
     "key": "ctrl+p",
     "command": "copyRelativeFilePath"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "copyFilePath"
   },
   {
     "key": "ctrl+b",
@@ -968,5 +985,5 @@
   {
     "key": "alt+=",
     "command": "github.copilot.chat.attachSelection"
-  }
+  },
 ]
