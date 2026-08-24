@@ -27,6 +27,7 @@ alias ccl="c ~/.claude"
 
 # npm
 alias n="npm"
+alias ni="n i"
 alias nr="n run"
 
 # pnpm
