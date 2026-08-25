@@ -1,4 +1,7 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
   "[dockercompose]": {
     "editor.autoIndent": "advanced",
     "editor.defaultFormatter": "redhat.vscode-yaml",
@@ -17,6 +20,9 @@
     "editor.formatOnSaveMode": "file",
     "editor.insertSpaces": false
   },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -29,6 +35,7 @@
   "claudeCode.allowDangerouslySkipPermissions": true,
   "claudeCode.enableNewConversationShortcut": true,
   "claudeCode.focusView": true,
+  "claudeCode.initialPermissionMode": "bypassPermissions",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
   "editor.codeActionsOnSave": {},
@@ -69,6 +76,7 @@
   "git-graph.repository.showRemoteBranches": false,
   "git.allowForcePush": true,
   "git.allowNoVerifyCommit": true,
+  "git.autoRepositoryDetection": false,
   "git.confirmNoVerifyCommit": false,
   "git.ignoreRebaseWarning": true,
   "git.openRepositoryInParentFolders": "always",
