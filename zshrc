@@ -88,3 +88,6 @@ cm() {
     echo "Expected: $memory_dir"
   fi
 }
+
+# zsh-autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
