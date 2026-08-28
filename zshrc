@@ -61,6 +61,7 @@ alias gbm="git rebase -i origin/main"
 alias gr="git reset --hard"
 alias grm="git reset --hard origin/main"
 alias gcp="git cherry-pick"
+alias gcl="git clone"
 
 # docker 
 alias d="docker"
