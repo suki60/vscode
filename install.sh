@@ -44,5 +44,8 @@ link "$DOTFILES/zed/keymap.json"   "$ZED/keymap.json"
 echo "→ Claude"
 link "$DOTFILES/claude/settings.json" "$HOME/.claude/settings.json"
 
+echo "→ Ghostty"
+link "$DOTFILES/ghostty/config" "$HOME/.config/ghostty/config"
+
 echo ""
 echo "Done."
