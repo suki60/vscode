@@ -19,3 +19,6 @@ cursor-style-blink = false
 shell-integration = zsh
 copy-on-select = true
 confirm-close-surface = false
+
+# macOS
+macos-option-as-alt = true
