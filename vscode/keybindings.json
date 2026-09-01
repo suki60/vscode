@@ -789,6 +789,16 @@
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
   {
+    "key": "shift+cmd+u",
+    "command": "git.push",
+    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
+  },
+  {
+    "key": "shift+cmd+,",
+    "command": "git.undoCommit",
+    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
+  },
+  {
     "key": "cmd+enter",
     "command": "git.stage",
     "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm' && !inputFocus"
