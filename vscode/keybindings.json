@@ -155,10 +155,6 @@
     "command": "bookmarks.clear"
   },
   {
-    "key": "shift+cmd+backspace",
-    "command": "git.clean"
-  },
-  {
     "key": "ctrl+alt+cmd+n",
     "command": "workbench.action.duplicateWorkspaceInNewWindow"
   },
@@ -900,7 +896,7 @@
     "command": "git.stashDropAll"
   },
   {
-    "key": "cmd+g shift+cmd+enter",
+    "key": "cmd+g enter",
     "command": "git.commit"
   },
   {
@@ -941,14 +937,26 @@
   },
   {
     "key": "cmd+g cmd+enter",
-    "command": "git.stageAll"
+    "command": "git.stageFile"
   },
   {
     "key": "cmd+g cmd+backspace",
-    "command": "git.unstageAll"
+    "command": "git.unstageFile"
+  },
+  {
+    "key": "cmd+g alt+cmd+backspace",
+    "command": "git.clean"
+  },
+  {
+    "key": "cmd+g shift+cmd+enter",
+    "command": "git.stageAll"
   },
   {
     "key": "cmd+g shift+cmd+backspace",
+    "command": "git.unstageAll"
+  },
+  {
+    "key": "cmd+g shift+alt+cmd+backspace",
     "command": "git.cleanAll"
   },
   {
@@ -981,9 +989,5 @@
     "key": "cmd+`",
     "command": "agents.openSessionInVSCode",
     "when": "isSessionsWindow"
-  },
-  {
-    "key": "alt+=",
-    "command": "github.copilot.chat.attachSelection"
-  },
+  }
 ]
