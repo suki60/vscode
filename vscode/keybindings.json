@@ -48,7 +48,7 @@
   },
   {
     "key": "shift+cmd+s",
-    "command": "workbench.view.scm"
+    "command": "workbench.scm.focus"
   },
   {
     "key": "shift+cmd+/",
@@ -779,9 +779,19 @@
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
   {
+    "key": "enter",
+    "command": "git.commit",
+    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
+  },
+  {
+    "key": "ctrl+alt+cmd+enter",
+    "command": "git.commitNoVerify",
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
+  },
+  {
     "key": "cmd+enter",
     "command": "git.stage",
-    "when": "auxiliaryBarFocus && !inputFocus && activeAuxiliary == 'workbench.view.scm'"
+    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm' && !inputFocus"
   },
   {
     "key": "cmd+backspace",
@@ -790,7 +800,22 @@
   },
   {
     "key": "shift+cmd+backspace",
+    "command": "git.unstageAll",
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
+  },
+  {
+    "key": "alt+cmd+backspace",
     "command": "git.clean",
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "git.stageAll",
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
+  },
+  {
+    "key": "shift+alt+cmd+backspace",
+    "command": "git.cleanAll",
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
   },
   {
@@ -807,11 +832,6 @@
     "key": "shift+cmd+backspace",
     "command": "git.revertSelectedRanges",
     "when": "activeAuxiliary == 'workbench.view.scm' && isInDiffEditor"
-  },
-  {
-    "key": "ctrl+alt+cmd+enter",
-    "command": "git.commitNoVerify",
-    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
   // chat
   {
