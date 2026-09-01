@@ -87,8 +87,8 @@
   "gitHistory.showFileHistorySplit": false,
   "github.copilot.enable": {
     "*": true,
+    "plaintext": true,
     "markdown": false,
-    "plaintext": false,
     "scminput": false
   },
   "github.copilot.nextEditSuggestions.enabled": true,
