@@ -72,9 +72,11 @@ alias dc="docker compose"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-# antigravity
-export PATH="$PATH:/Users/suki60/.antigravity/antigravity/bin"
-alias ag="antigravity"
+# nnn
+alias n="nnn"
+export NNN_PLUG='c:vscode;z:zed;f:finder'
+BLK="04" CHR="04" DIR="04" EXE="00" REG="00" HARDLINK="00" SYMLINK="06" MISSING="00" ORPHAN="01" FIFO="0F" SOCK="0F" OTHER="02"
+export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
 
 # local bin
 export PATH="$HOME/.local/bin:$PATH"
