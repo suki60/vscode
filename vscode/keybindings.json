@@ -139,6 +139,10 @@
     "command": "git.openAllChanges"
   },
   {
+    "key": "ctrl+alt+cmd+u",
+    "command": "git.viewStagedChanges"
+  },
+  {
     "key": "shift+cmd+w",
     "command": "workbench.action.closeAllGroups"
   },
