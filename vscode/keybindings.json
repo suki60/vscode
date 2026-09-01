@@ -421,7 +421,12 @@
     "args": {
       "snippet": "<$1>$2</$1>"
     },
-    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
+    "when": "!editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
+  },
+  {
+    "key": "alt+s",
+    "command": "json.sort",
+    "when": "editorTextFocus && (editorLangId == json || editorLangId == jsonc)"
   },
   {
     "key": "alt+i",
