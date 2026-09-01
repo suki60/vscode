@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -d "$nnn" ]; then
+    zed "$nnn"
+else
+    zed "$(dirname "$nnn")"
+fi

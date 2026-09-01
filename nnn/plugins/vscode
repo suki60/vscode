@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -d "$nnn" ]; then
+    code "$nnn"
+else
+    code "$(dirname "$nnn")"
+fi

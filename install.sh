@@ -47,5 +47,11 @@ link "$DOTFILES/claude/settings.json" "$HOME/.claude/settings.json"
 echo "→ Ghostty"
 link "$DOTFILES/ghostty/config" "$HOME/.config/ghostty/config"
 
+echo "→ nnn"
+NNN_PLUGINS="$HOME/.config/nnn/plugins"
+for plugin in "$DOTFILES"/nnn/plugins/*; do
+  link "$plugin" "$NNN_PLUGINS/$(basename "$plugin")"
+done
+
 echo ""
 echo "Done."

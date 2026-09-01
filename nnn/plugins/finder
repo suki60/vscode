@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -d "$nnn" ]; then
+    open "$nnn"
+else
+    open "$(dirname "$nnn")"
+fi
