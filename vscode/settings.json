@@ -74,6 +74,7 @@
     "": true,
     "**/.git": true
   },
+  "git-graph.dialog.rebase.launchInteractiveRebase": true,
   "git-graph.repository.showRemoteBranches": false,
   "git.allowForcePush": true,
   "git.allowNoVerifyCommit": true,
@@ -85,12 +86,6 @@
   "git.suggestSmartCommit": false,
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "gitHistory.showFileHistorySplit": false,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": false,
-    "scminput": false
-  },
   "github.copilot.nextEditSuggestions.enabled": true,
   "gopls": {
     "ui.navigation.importShortcut": "Definition"
