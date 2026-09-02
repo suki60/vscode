@@ -67,6 +67,8 @@
       }
     ]
   },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "explorer.autoReveal": "focusNoScroll",
   "extensions.ignoreRecommendations": true,
@@ -86,6 +88,12 @@
   "git.suggestSmartCommit": false,
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "gitHistory.showFileHistorySplit": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
   "github.copilot.nextEditSuggestions.enabled": true,
   "gopls": {
     "ui.navigation.importShortcut": "Definition"
@@ -128,7 +136,9 @@
   "window.commandCenter": false,
   "window.confirmSaveUntitledWorkspace": false,
   "workbench.activityBar.location": "top",
+  "workbench.browser.showInTitleBar": false,
   "workbench.colorTheme": "One Dark Pro",
+  "workbench.editor.defaultBinaryEditor": "default",
   "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.editor.preventPinnedEditorClose": "never",
