@@ -279,6 +279,10 @@
     "command": "editor.action.goToTypeDefinition"
   },
   {
+    "key": "cmd+/",
+    "command": "github.copilot.chat.completions.toggle"
+  },
+  {
     "key": "cmd+=",
     "command": "editor.action.marker.next"
   },
@@ -305,6 +309,11 @@
   {
     "key": "cmd+\\",
     "command": "workbench.action.keepEditor"
+  },
+  {
+    "key": "cmd+d",
+    "command": "json.sort",
+    "when": "editorTextFocus && editorLangId == 'json' || editorTextFocus && editorLangId == 'jsonc'"
   },
   // text actions
   {
@@ -425,12 +434,7 @@
     "args": {
       "snippet": "<$1>$2</$1>"
     },
-    "when": "!editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
-  },
-  {
-    "key": "alt+s",
-    "command": "json.sort",
-    "when": "editorTextFocus && (editorLangId == json || editorLangId == jsonc)"
+    "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
   },
   {
     "key": "alt+i",
@@ -492,10 +496,6 @@
     "key": "shift+space",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
-  },
-  {
-    "key": "ctrl+/",
-    "command": "github.copilot.chat.completions.toggle"
   },
   {
     "key": "alt+.",
@@ -851,12 +851,6 @@
     "key": "shift+cmd+backspace",
     "command": "git.revertSelectedRanges",
     "when": "activeAuxiliary == 'workbench.view.scm' && isInDiffEditor"
-  },
-  // chat
-  {
-    "key": "cmd+/",
-    "command": "workbench.action.chat.openModelPicker",
-    "when": "chatIsEnabled && inChatInput"
   },
   // diff editor
   {
