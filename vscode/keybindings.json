@@ -762,7 +762,7 @@
     "command": "search.action.focusFilesToExclude",
     "when": "inSearchEditor"
   },
-  // scm
+  // source control
   {
     "key": "cmd+e",
     "command": "runCommands",
@@ -818,11 +818,6 @@
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
   },
   {
-    "key": "shift+cmd+backspace",
-    "command": "git.unstageAll",
-    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
-  },
-  {
     "key": "alt+cmd+backspace",
     "command": "git.clean",
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
@@ -830,12 +825,17 @@
   {
     "key": "shift+cmd+enter",
     "command": "git.stageAll",
-    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
+  },
+  {
+    "key": "shift+cmd+backspace",
+    "command": "git.unstageAll",
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
   {
     "key": "shift+alt+cmd+backspace",
     "command": "git.cleanAll",
-    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
+    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
   {
     "key": "cmd+enter",
