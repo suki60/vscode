@@ -90,8 +90,8 @@
   "gitHistory.showFileHistorySplit": false,
   "github.copilot.enable": {
     "*": false,
-    "plaintext": false,
     "markdown": false,
+    "plaintext": false,
     "scminput": false
   },
   "github.copilot.nextEditSuggestions.enabled": true,
@@ -101,6 +101,32 @@
   "js/ts.format.semicolons": "remove",
   "js/ts.preferGoToSourceDefinition": true,
   "liveServer.settings.donotShowInfoMsg": true,
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.scmFocus",
+      "interval": 10,
+      "sequence": [
+        "workbench.scm.focus",
+        "list.focusFirst"
+      ]
+    },
+    {
+      "command": "multiCommand.scmFocusMessage",
+      "sequence": [
+        "multiCommand.scmFocus",
+        "list.select"
+      ]
+    },
+    {
+      "command": "multiCommand.scmFocusChanges",
+      "sequence": [
+        "multiCommand.scmFocus",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown"
+      ]
+    }
+  ],
   "prettier.semi": false,
   "problems.decorations.enabled": false,
   "search.quickOpen.includeHistory": false,

@@ -184,26 +184,16 @@
   },
   {
     "key": "shift+cmd+;",
-    "command": "runCommands",
+    "command": "extension.multiCommand.execute",
     "args": {
-      "commands": [
-        "workbench.scm.focus",
-        "list.focusFirst",
-        "list.select"
-      ]
+      "command": "multiCommand.scmFocusMessage"
     }
   },
   {
     "key": "shift+cmd+'",
-    "command": "runCommands",
+    "command": "extension.multiCommand.execute",
     "args": {
-      "commands": [
-        "workbench.scm.focus",
-        "list.focusFirst",
-        "list.focusDown",
-        "list.focusDown",
-        "list.focusDown"
-      ]
+      "command": "multiCommand.scmFocusChanges"
     }
   },
   {
