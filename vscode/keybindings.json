@@ -183,6 +183,30 @@
     "command": "git.viewStagedChanges"
   },
   {
+    "key": "shift+cmd+;",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.scm.focus",
+        "list.focusFirst",
+        "list.select"
+      ]
+    }
+  },
+  {
+    "key": "shift+cmd+'",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.scm.focus",
+        "list.focusFirst",
+        "list.focusDown",
+        "list.focusDown",
+        "list.focusDown"
+      ]
+    }
+  },
+  {
     "key": "escape",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "auxiliaryBarFocus || sideBarFocus || panelFocus"
@@ -287,11 +311,6 @@
   {
     "key": "cmd+]",
     "command": "workbench.action.focusRightGroup"
-  },
-  {
-    "key": "cmd+d",
-    "command": "json.sort",
-    "when": "editorTextFocus && editorLangId == 'json' || editorTextFocus && editorLangId == 'jsonc'"
   },
   // text actions
   {
@@ -469,6 +488,11 @@
       "snippet": "$0 "
     },
     "when": "editorTextFocus && !editorReadonly && (resourceLangId == javascript || resourceLangId == typescript || resourceLangId == javascriptreact || resourceLangId == typescriptreact)"
+  },
+  {
+    "key": "alt+s",
+    "command": "json.sort",
+    "when": "editorTextFocus && editorLangId == 'json' || editorTextFocus && editorLangId == 'jsonc'"
   },
   {
     "key": "alt+/",
@@ -696,7 +720,7 @@
   },
   // source control
   {
-    "key": "cmd+e",
+    "key": "cmd+;",
     "command": "runCommands",
     "args": {
       "commands": [
@@ -707,7 +731,7 @@
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
   {
-    "key": "cmd+i",
+    "key": "cmd+'",
     "command": "runCommands",
     "args": {
       "commands": [
@@ -780,7 +804,7 @@
     "when": "activeAuxiliary == 'workbench.view.scm' && isInDiffEditor"
   },
   {
-    "key": "shift+cmd+backspace",
+    "key": "alt+cmd+backspace",
     "command": "git.revertSelectedRanges",
     "when": "activeAuxiliary == 'workbench.view.scm' && isInDiffEditor"
   },
