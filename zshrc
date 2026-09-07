@@ -19,6 +19,9 @@ alias cv="cd ~/Documents/projects/cv"
 
 # claude
 alias k="claude"
+alias kp="k -p"
+alias kc="k --continue"
+alias kcp="k --continue -p"
 
 # vscode
 alias c="code"
