@@ -754,34 +754,19 @@
     "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
   },
   {
-    "key": "cmd+enter",
+    "key": "shift+cmd+enter",
     "command": "git.stage",
     "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm' && !inputFocus"
   },
   {
-    "key": "cmd+backspace",
+    "key": "shift+cmd+backspace",
     "command": "git.unstageFile",
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
   },
   {
-    "key": "alt+cmd+backspace",
+    "key": "shift+alt+cmd+backspace",
     "command": "git.clean",
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus && !inputFocus"
-  },
-  {
-    "key": "shift+cmd+enter",
-    "command": "git.stageAll",
-    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
-  },
-  {
-    "key": "shift+cmd+backspace",
-    "command": "git.unstageAll",
-    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
-  },
-  {
-    "key": "shift+alt+cmd+backspace",
-    "command": "git.cleanAll",
-    "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
   {
     "key": "cmd+enter",
@@ -913,18 +898,6 @@
   {
     "key": "cmd+g ctrl+alt+cmd+h",
     "command": "git.viewHistory"
-  },
-  {
-    "key": "cmd+g cmd+enter",
-    "command": "git.stageFile"
-  },
-  {
-    "key": "cmd+g cmd+backspace",
-    "command": "git.unstageFile"
-  },
-  {
-    "key": "cmd+g alt+cmd+backspace",
-    "command": "git.clean"
   },
   {
     "key": "cmd+g shift+cmd+enter",
