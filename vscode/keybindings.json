@@ -734,11 +734,6 @@
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
   },
   {
-    "key": "enter",
-    "command": "git.commit",
-    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
-  },
-  {
     "key": "ctrl+alt+cmd+enter",
     "command": "git.commitNoVerify",
     "when": "activeAuxiliary == 'workbench.view.scm' && auxiliaryBarFocus"
@@ -746,11 +741,6 @@
   {
     "key": "shift+cmd+u",
     "command": "git.push",
-    "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
-  },
-  {
-    "key": "shift+cmd+,",
-    "command": "git.undoCommit",
     "when": "auxiliaryBarFocus && activeAuxiliary == 'workbench.view.scm'"
   },
   {
@@ -860,7 +850,7 @@
     "command": "git.stashDropAll"
   },
   {
-    "key": "cmd+g enter",
+    "key": "cmd+g cmd+enter",
     "command": "git.commit"
   },
   {
@@ -868,7 +858,7 @@
     "command": "git.commitNoVerify"
   },
   {
-    "key": "cmd+g shift+cmd+,",
+    "key": "cmd+g cmd+backspace",
     "command": "git.undoCommit"
   },
   {
